@@ -1,0 +1,101 @@
+body {
+  background: #fafafa;
+  font-size: 16px;
+  color: #222;
+  border-top: 3px solid #690cb0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.header {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.name {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.name:hover {
+  color: #690cb0;
+}
+
+.header ul {
+  flex: 1;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.header ul li a {
+  text-decoration: none;
+}
+
+.header ul li a:hover {
+  color: #690cb0;
+  border-bottom: 2px solid #690cb0;
+  padding-bottom: 3px;
+}
+
+.header ul li + li {
+  margin-left: 10px;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #999;
+  margin: 40px 10%;
+  padding-top: 20px;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li + li {
+  margin-left: 20px;
+}
+
+.footerTwitter {
+  border-radius: 50%;
+  padding: 6px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #222;
+}
+
+.footerTwitter svg {
+  width: 100%;
+  height: 100%;
+}
+
+.footerTwitter path {
+  fill: #fafafa;
+}
+
+.footerGithub svg {
+  height: 30px;
+}
+
+.footerProductHunt svg {
+  height: 30px;
+}
+
+.footerLinkedIn svg {
+  height: 30px;
+}

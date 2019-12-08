@@ -31,5 +31,5 @@
     "isolatedModules": true
   },
   "include": ["./**/*"],
-  "exclude": [".next/**/*", "server/**/*", "node_modules/**/*"]
+  "exclude": [".next/**/*", "node_modules/**/*"]
 }
