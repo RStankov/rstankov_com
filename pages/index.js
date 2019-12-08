@@ -1,6 +1,3 @@
-import React from 'react';
-import Layout from '~/components/Layout';
+import page from '~/screens/home';
 
-export default function Page() {
-  return <Layout>hi</Layout>;
-}
+export default page;
