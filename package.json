@@ -11,6 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "lodash": "^4.17.15",
     "next": "^9.1.4",
     "react": "^16.12.0",
@@ -19,6 +20,21 @@
     "styled-reset": "^4.0.8"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.149"
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.14",
+    "@types/react": "^16.9.15",
+    "babel-plugin-inline-react-svg": "^1.1.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-root-import": "^6.4.1",
+    "postcss-color-function": "^4.1.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-import": "^12.0.1",
+    "postcss-media-minmax": "^4.0.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-reporter": "^6.0.1",
+    "postcss-simple-vars": "^5.0.2",
+    "typescript": "^3.7.3",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "webpack-filter-warnings-plugin": "^1.2.1"
   }
 }
