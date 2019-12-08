@@ -1,9 +1,9 @@
 import React from 'react';
 import Head from './Head';
-import IconProductHunt from './IconProductHunt.svg';
-import IconGithub from './IconGithub.svg';
-import IconTwitter from './IconTwitter.svg';
-import IconLinkedIn from './IconLinkedIn.svg';
+import IconProductHunt from './IconProductHunt';
+import IconGithub from './IconGithub';
+import IconTwitter from './IconTwitter';
+import IconLinkedIn from './IconLinkedIn';
 import Link from '~/components/Link';
 import styles from './styles.css';
 
