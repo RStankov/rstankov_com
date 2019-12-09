@@ -1,3 +1,30 @@
+.item {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.content {
+  flex: 1;
+}
+
+.links {
+  margin-left: 20px;
+}
+
 .icon {
-  height: 50px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.link + .link {
+  margin-left: 10px;
+}
+
+.linkIcon {
+  height: 20px;
 }

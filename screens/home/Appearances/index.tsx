@@ -4,6 +4,7 @@ import React from 'react';
 import Switch from './Switch';
 import data from './data';
 import { groupBy, sortBy } from 'lodash';
+import styles from './styles.css';
 
 interface IProps {}
 
@@ -38,7 +39,7 @@ export default class Appearances extends React.Component<IProps, IState> {
   render() {
     return (
       <React.Fragment>
-        <h1>Appearances</h1>
+        <h1 className={styles.header}>Appearances</h1>
         <Switch
           options={TYPES}
           selected={this.state.filters}
@@ -48,10 +49,11 @@ export default class Appearances extends React.Component<IProps, IState> {
           filterAppearances(data.appearances, this.state.filters),
         ).map(([year, appearances]) => (
           <section key={year}>
-            <h2>
-              {year}
-              <small>({appearances.length})</small>
-            </h2>
+            <header className={styles.sectionHeader}>
+              <h2>{year}</h2>
+              <small>{appearances.length}</small>
+              <hr />
+            </header>
             {appearances.map((appearance, index) => (
               <Appearance key={index} appearance={appearance} />
             ))}
