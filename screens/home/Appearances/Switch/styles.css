@@ -1,0 +1,33 @@
+.container {
+  border: 2px solid purple;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.button {
+  background: white;
+  color: purple;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.button + .button {
+  border-left: 2px solid purple;
+}
+
+.button:hover {
+  background: purple;
+  color: white;
+  opacity: 0.5;
+}
+
+.button.active:hover {
+  opacity: 0.8;
+}
+
+.button.active {
+  background: purple;
+  color: white;
+}

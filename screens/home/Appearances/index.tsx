@@ -1,46 +1,49 @@
 import Appearance from './Appearance';
 import IAppearance from '~/types/Appearance';
 import React from 'react';
-import classNames from 'classnames';
+import Switch from './Switch';
 import data from './data';
-import styles from './styles.css';
-import { groupBy, sortBy, uniq } from 'lodash';
+import { groupBy, sortBy } from 'lodash';
 
 interface IProps {}
 
-type IType = IAppearance['type'];
+type IType = string;
 
 interface IState {
   filters: IType[];
 }
+
+const TYPES = [
+  {
+    value: 'presentation',
+    label: 'Presentations',
+  },
+  {
+    value: 'podcast-episode',
+    label: 'Podcast',
+  },
+];
 
 export default class Appearances extends React.Component<IProps, IState> {
   state: IState = {
     filters: [],
   };
 
-  filterToggleHandler(type: IAppearance['type']) {
-    return () => {
-      this.setState({
-        filters: toggleFilter(type, this.state.filters),
-      });
-    };
-  }
+  filterToggleHandler = (type: IType) => {
+    this.setState({
+      filters: toggleFilter(type, this.state.filters),
+    });
+  };
 
   render() {
     return (
       <React.Fragment>
         <h1>Appearances</h1>
-        {getTypes(data.appearances).map(type => (
-          <button
-            key={type}
-            onClick={this.filterToggleHandler(type)}
-            className={classNames(styles.filterButton, {
-              [styles.active]: this.state.filters.indexOf(type) !== -1,
-            })}>
-            {type}s
-          </button>
-        ))}
+        <Switch
+          options={TYPES}
+          selected={this.state.filters}
+          onSelect={this.filterToggleHandler}
+        />
         {groupAppearances(
           filterAppearances(data.appearances, this.state.filters),
         ).map(([year, appearances]) => (
@@ -84,8 +87,4 @@ function groupAppearances(appearances: IAppearance[]) {
     ),
     0,
   ).reverse();
-}
-
-function getTypes(appearances: IAppearance[]) {
-  return uniq(appearances.map(({ type }) => type));
 }
