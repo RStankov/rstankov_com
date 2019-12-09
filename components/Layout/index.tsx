@@ -6,6 +6,9 @@ import IconTwitter from './IconTwitter';
 import IconLinkedIn from './IconLinkedIn';
 import Link from '~/components/Link';
 import styles from './styles.css';
+import paths from '~/paths';
+import useCurrentPath from '~/hooks/useCurrentPath';
+import classNames from 'classnames';
 
 import './html.css';
 
@@ -18,20 +21,28 @@ interface IProps {
 }
 
 export default function Layout({ children, ...headProps }: IProps) {
+  const currentPath = useCurrentPath();
+
   return (
     <>
       <Head {...headProps} />
       <div className={styles.container}>
         <header className={styles.header}>
-          <Link href="/" className={styles.name}>
+          <Link href={paths.home} className={styles.name}>
             Radoslav Stankov
           </Link>
           <ul>
             <li>
-              <Link href="/">Blog</Link>
+              <Link href={paths.blog}>Blog</Link>
             </li>
             <li>
-              <Link href="/">Speaking</Link>
+              <Link
+                href={paths.appearances}
+                className={classNames({
+                  [styles.active]: currentPath === paths.appearances,
+                })}>
+                Appearances
+              </Link>
             </li>
             <li>
               <Link href="/">Projects</Link>
