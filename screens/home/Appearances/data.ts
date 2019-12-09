@@ -1,3 +1,5 @@
+import IAppearance from '~/types/Appearance';
+
 export default {
   appearances: [
     {
@@ -1046,7 +1048,7 @@ export default {
       language: '🇧🇬',
       links: [{ type: 'episode', url: 'http://www.nerds2nerds.com/?p=167' }],
     },
-  ],
+  ] as IAppearance[],
   links: [
     {
       type: 'twitter',

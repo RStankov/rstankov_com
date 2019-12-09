@@ -1,4 +1,5 @@
 import Appearance from './Appearance';
+import IAppearance from '~/types/Appearance';
 import React from 'react';
 import classNames from 'classnames';
 import data from './data';
@@ -7,16 +8,18 @@ import { groupBy, sortBy, uniq } from 'lodash';
 
 interface IProps {}
 
+type IType = IAppearance['type'];
+
 interface IState {
-  filters: any[];
+  filters: IType[];
 }
 
 export default class Appearances extends React.Component<IProps, IState> {
-  state = {
+  state: IState = {
     filters: [],
   };
 
-  filterToggleHandler(type: any) {
+  filterToggleHandler(type: IAppearance['type']) {
     return (e: any) => {
       e.preventDefault();
 
@@ -35,7 +38,7 @@ export default class Appearances extends React.Component<IProps, IState> {
             key={type}
             onClick={this.filterToggleHandler(type)}
             className={classNames(styles.filterButton, {
-              [styles.active]: (this.state.filters as any).indexOf(type) !== -1,
+              [styles.active]: this.state.filters.indexOf(type) !== -1,
             })}>
             {type}s
           </button>
@@ -58,7 +61,7 @@ export default class Appearances extends React.Component<IProps, IState> {
   }
 }
 
-function toggleFilter(type: any, filters: any[]) {
+function toggleFilter(type: IType, filters: IType[]) {
   if (filters.indexOf(type) === -1) {
     return [...filters, type];
   } else {
@@ -66,14 +69,14 @@ function toggleFilter(type: any, filters: any[]) {
   }
 }
 
-function filterAppearances(appearances: any[], types: any) {
+function filterAppearances(appearances: IAppearance[], types: any) {
   if (types.length === 0) {
     return appearances;
   }
   return appearances.filter(({ type }) => types.indexOf(type) !== -1);
 }
 
-function groupAppearances(appearances: any[]) {
+function groupAppearances(appearances: IAppearance[]) {
   return sortBy(
     Object.entries(
       groupBy(
@@ -85,6 +88,6 @@ function groupAppearances(appearances: any[]) {
   ).reverse();
 }
 
-function getTypes(appearances: any[]): any[] {
+function getTypes(appearances: IAppearance[]) {
   return uniq(appearances.map(({ type }) => type));
 }
