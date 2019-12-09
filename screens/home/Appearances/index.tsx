@@ -20,9 +20,7 @@ export default class Appearances extends React.Component<IProps, IState> {
   };
 
   filterToggleHandler(type: IAppearance['type']) {
-    return (e: any) => {
-      e.preventDefault();
-
+    return () => {
       this.setState({
         filters: toggleFilter(type, this.state.filters),
       });
