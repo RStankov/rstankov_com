@@ -3,7 +3,6 @@ import Head from './Head';
 import IconProductHunt from './IconProductHunt';
 import IconGithub from './IconGithub';
 import IconTwitter from './IconTwitter';
-import IconLinkedIn from './IconLinkedIn';
 import Link from '~/components/Link';
 import styles from './styles.css';
 import paths from '~/paths';
@@ -21,8 +20,6 @@ interface IProps {
 }
 
 export default function Layout({ children, ...headProps }: IProps) {
-  const currentPath = useCurrentPath();
-
   return (
     <>
       <Head {...headProps} />
@@ -33,19 +30,16 @@ export default function Layout({ children, ...headProps }: IProps) {
           </Link>
           <ul>
             <li>
-              <Link href={paths.blog}>Blog</Link>
+              <NavLink href={paths.blog} label="Blog" />
             </li>
             <li>
-              <Link
-                href={paths.appearances}
-                className={classNames({
-                  [styles.active]: currentPath === paths.appearances,
-                })}>
-                Appearances
-              </Link>
+              <NavLink href={paths.appearances} label="Appearances" />
             </li>
             <li>
-              <Link href="/">Projects</Link>
+              <NavLink href={paths.projects} label="Projects" />
+            </li>
+            <li>
+              <NavLink href={paths.about} label="About" />
             </li>
           </ul>
         </header>
@@ -78,5 +72,19 @@ export default function Layout({ children, ...headProps }: IProps) {
         </footer>
       </div>
     </>
+  );
+}
+
+function NavLink({ label, href }: { label: string; href: string }) {
+  const currentPath = useCurrentPath();
+
+  return (
+    <Link
+      href={href}
+      className={classNames({
+        [styles.active]: currentPath === href,
+      })}>
+      {label}
+    </Link>
   );
 }
