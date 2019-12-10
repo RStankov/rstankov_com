@@ -54,7 +54,7 @@ export default function Layout({ children, ...headProps }: IProps) {
           <ul>
             <li>
               <a
-                href="https://github.com/rstankov"
+                href="https://twitter.com/rstankov"
                 className={styles.footerTwitter}>
                 <IconTwitter />
               </a>
@@ -71,13 +71,6 @@ export default function Layout({ children, ...headProps }: IProps) {
                 href="https://producthunt.com/@rstankov"
                 className={styles.footerProductHunt}>
                 <IconProductHunt />
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://blog.rstankov.com"
-                className={styles.footerLinkedIn}>
-                <IconLinkedIn />
               </a>
             </li>
           </ul>
