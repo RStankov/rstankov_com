@@ -1,23 +1,8 @@
-.container {
-  margin: 0 auto;
-  max-width: 700px;
-}
-
 .header {
   margin: 20px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.name {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.name:hover {
-  color: #690cb0;
 }
 
 .header ul {
@@ -34,17 +19,31 @@
 }
 
 .header ul li a.active {
-  color: #690cb0;
+  color: $active;
 }
 
 .header ul li a:hover {
-  color: #690cb0;
-  border-bottom: 2px solid #690cb0;
+  color: $active;
+  border-bottom: 2px solid $active;
   padding-bottom: 3px;
 }
 
 .header ul li + li {
   margin-left: 10px;
+}
+
+.name {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.name:hover {
+  color: $active;
+}
+
+.main {
+  flex: 1;
 }
 
 .footer {
@@ -74,25 +73,29 @@
   display: inline-block;
   box-sizing: border-box;
   background: #222;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  path {
+    fill: $background;
+  }
+
+  &:hover {
+    background: $active;
+  }
 }
 
-.footerTwitter svg {
-  width: 100%;
-  height: 100%;
-}
+.footerGithub,
+.footerProductHunt,
+.footerLinkedIn {
+  svg {
+    height: 30px;
+  }
 
-.footerTwitter path {
-  fill: #fafafa;
-}
-
-.footerGithub svg {
-  height: 30px;
-}
-
-.footerProductHunt svg {
-  height: 30px;
-}
-
-.footerLinkedIn svg {
-  height: 30px;
+  &:hover path {
+    fill: $active;
+  }
 }

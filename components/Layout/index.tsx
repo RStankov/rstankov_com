@@ -21,54 +21,58 @@ export default function Layout({ children, ...headProps }: IProps) {
   return (
     <>
       <Head {...headProps} />
-      <div className={styles.container}>
-        <header className={styles.header}>
-          <Link href={paths.home} className={styles.name}>
-            Radoslav Stankov
-          </Link>
-          <ul>
-            <li>
-              <NavLink href={paths.blog} label="Blog" />
-            </li>
-            <li>
-              <NavLink href={paths.appearances} label="Appearances" />
-            </li>
-            <li>
-              <NavLink href={paths.projects} label="Projects" />
-            </li>
-            <li>
-              <NavLink href={paths.about} label="About" />
-            </li>
-          </ul>
-        </header>
-        {children}
-        <footer className={styles.footer}>
-          <ul>
-            <li>
-              <a
-                href="https://twitter.com/rstankov"
-                className={styles.footerTwitter}>
-                <IconTwitter />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/rstankov"
-                className={styles.footerGithub}>
-                <IconGithub />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://producthunt.com/@rstankov"
-                className={styles.footerProductHunt}>
-                <IconProductHunt />
-              </a>
-            </li>
-          </ul>
-          <small>© 2019 Radoslav Stankov</small>
-        </footer>
-      </div>
+      <header className={styles.header}>
+        <Link href={paths.home} className={styles.name}>
+          Radoslav Stankov
+        </Link>
+        <ul>
+          <li>
+            <NavLink href={paths.blog} label="Blog" />
+          </li>
+          <li>
+            <NavLink href={paths.appearances} label="Appearances" />
+          </li>
+          <li>
+            <NavLink href={paths.projects} label="Projects" />
+          </li>
+          <li>
+            <NavLink href={paths.about} label="About" />
+          </li>
+        </ul>
+      </header>
+      <main className={styles.main}>{children}</main>
+      <footer className={styles.footer}>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/rstankov"
+              target="_blank"
+              title="Twitter"
+              className={styles.footerTwitter}>
+              <IconTwitter />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/rstankov"
+              target="_blank"
+              title="GitHub"
+              className={styles.footerGithub}>
+              <IconGithub />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://producthunt.com/@rstankov"
+              target="_blank"
+              title="Product Hunt"
+              className={styles.footerProductHunt}>
+              <IconProductHunt />
+            </a>
+          </li>
+        </ul>
+        <small>© Radoslav Stankov {new Date().getFullYear()} </small>
+      </footer>
     </>
   );
 }

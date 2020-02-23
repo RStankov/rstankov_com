@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '~/components/Layout';
 
 import '~/styles/reset.css';
-import '~/styles/html.css';
+import '~/styles/layout.css';
 
 interface IProps {
   Component: React.ComponentType;
