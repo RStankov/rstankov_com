@@ -1,9 +1,8 @@
 import * as React from 'react';
-import Layout from '~/components/Layout';
 
 export default function Page() {
   return (
-    <Layout>
+    <>
       Hey, I'm Rado, 👋
       <p>
         I'm head of engineering of{' '}
@@ -43,6 +42,6 @@ export default function Page() {
         about anything related to Graphql, React JavaScript, Ruby, product
         development, remote work, or software engineering in general.
       </p>
-    </Layout>
+    </>
   );
 }

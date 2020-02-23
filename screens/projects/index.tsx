@@ -1,9 +1,8 @@
 import * as React from 'react';
-import Layout from '~/components/Layout';
 
 export default function Page() {
   return (
-    <Layout>
+    <>
       <h1>Projects</h1>
       <section>
         <h2>Ongoing projects</h2>
@@ -30,6 +29,6 @@ export default function Page() {
           <li>Backbone.Model</li>
         </ul>
       </section>
-    </Layout>
+    </>
   );
 }

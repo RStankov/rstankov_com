@@ -4,12 +4,10 @@ import IconProductHunt from './IconProductHunt';
 import IconGithub from './IconGithub';
 import IconTwitter from './IconTwitter';
 import Link from '~/components/Link';
-import styles from './styles.css';
+import styles from './styles.module.css';
 import paths from '~/paths';
 import useCurrentPath from '~/hooks/useCurrentPath';
 import classNames from 'classnames';
-
-import './html.css';
 
 interface IProps {
   children: React.ReactNode;
@@ -68,7 +66,7 @@ export default function Layout({ children, ...headProps }: IProps) {
               </a>
             </li>
           </ul>
-          <small>© 2019, Radoslav Stankov</small>
+          <small>© 2019 Radoslav Stankov</small>
         </footer>
       </div>
     </>

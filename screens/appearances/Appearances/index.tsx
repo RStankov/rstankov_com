@@ -4,7 +4,7 @@ import React from 'react';
 import Switch from './Switch';
 import data from './data';
 import { groupBy, sortBy } from 'lodash';
-import styles from './styles.css';
+import styles from './styles.module.css';
 
 interface IProps {}
 

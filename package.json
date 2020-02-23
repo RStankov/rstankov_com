@@ -12,20 +12,20 @@
   },
   "dependencies": {
     "@types/date-fns": "^2.6.0",
-    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-source-maps": "^0.0.3",
     "classnames": "^2.2.6",
-    "date-fns": "^2.8.1",
+    "date-fns": "2.9.0",
     "lodash": "^4.17.15",
-    "next": "^9.1.4",
+    "next": "9.2.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.9",
     "@types/lodash": "^4.14.149",
-    "@types/node": "^12.12.14",
-    "@types/react": "^16.9.15",
-    "babel-plugin-inline-react-svg": "^1.1.0",
+    "@types/node": "13.7.4",
+    "@types/react": "16.9.22",
+    "babel-plugin-inline-react-svg": "1.1.1",
     "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-root-import": "^6.4.1",
     "math-calc": "^1.2.0",
@@ -36,7 +36,7 @@
     "postcss-nested": "^4.2.1",
     "postcss-reporter": "^6.0.1",
     "postcss-simple-vars": "^5.0.2",
-    "typescript": "^3.7.3",
+    "typescript": "3.8.2",
     "typings-for-css-modules-loader": "^1.7.0",
     "webpack-filter-warnings-plugin": "^1.2.1"
   }

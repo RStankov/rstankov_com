@@ -3,22 +3,22 @@ const variables = join(__dirname, 'styles', 'variables');
 const javascripts = join(__dirname, '.');
 
 module.exports = {
-  plugins: [
-    require('postcss-import')({
+  plugins: {
+    'postcss-import': {
       path: [javascripts],
-    }),
-    require('postcss-simple-vars')({
+    },
+    'postcss-simple-vars': {
       variables: () => require(variables),
-    }),
-    require('postcss-color-function')(),
-    require('math-calc'),
-    require('postcss-custom-media')(),
-    require('postcss-nested')(),
-    require('postcss-media-minmax')(),
-    require('autoprefixer')({
+    },
+    'postcss-color-function': {},
+    'math-calc': {},
+    'postcss-custom-media': {},
+    'postcss-nested': {},
+    'postcss-media-minmax': {},
+    autoprefixer: {
       browserlist: ['last 2 versions'],
       remove: false,
-    }),
-    require('postcss-reporter')(),
-  ],
+    },
+    'postcss-reporter': {},
+  },
 };

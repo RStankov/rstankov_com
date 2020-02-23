@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './styles.css';
+import styles from './styles.module.css';
 import classNames from 'classnames';
 
 interface IProps {

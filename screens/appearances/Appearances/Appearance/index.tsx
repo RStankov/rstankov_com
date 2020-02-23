@@ -6,7 +6,7 @@ import IconPodcast from './IconPodcast';
 import IconPresentaion from './IconPresentaion';
 import IconSlides from './IconSlides';
 import IconYouTube from './IconYouTube';
-import styles from './styles.css';
+import styles from './styles.module.css';
 import { parse, format } from 'date-fns';
 
 interface IProps {
