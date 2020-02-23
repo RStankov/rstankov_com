@@ -1,0 +1,13 @@
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-left: $spacing-medium;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: $spacing-medium;
+}

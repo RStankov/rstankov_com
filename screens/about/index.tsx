@@ -10,7 +10,7 @@ export default function Page() {
         className={styles.cover}
         alt="Radoslav Stankov"
       />
-      <h1>A bit about me</h1>
+      <h1 className={styles.title}>A bit about me</h1>
       <p>
         In 2002, I started web development with{' '}
         <a href="https://en.wikipedia.org/wiki/Adobe_Flash" target="_blank">
@@ -108,8 +108,8 @@ export default function Page() {
         and contribute to{' '}
         <a href="https://github.com/rstankov" target="_blank">
           open source
-        </a>{' '}
-        whenever I have time. 😅
+        </a>
+        , whenever I have time 😅
       </p>
       <p>
         You can ping me on{' '}

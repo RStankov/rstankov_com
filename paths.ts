@@ -11,6 +11,6 @@ export default {
 
   image: {
     cover: '/cover.jpg',
-    avatar: '/avatar.png',
+    avatar: '/avatar.jpg',
   },
 };

@@ -28,10 +28,6 @@ body {
   max-width: 700px;
 }
 
-h1 {
-  margin-bottom: $spacing-medium;
-}
-
 p {
   a:hover {
     text-decoration: none;

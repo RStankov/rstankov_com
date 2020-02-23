@@ -1,9 +1,18 @@
 import * as React from 'react';
+import paths from '~/paths';
+import styles from './styles.module.css';
 
 export default function Page() {
   return (
     <>
-      <h1>👋 Hey, I'm Rado</h1>
+      <div className={styles.container}>
+        <h1>👋 Hey, I'm Rado</h1>
+        <img
+          src={paths.image.avatar}
+          className={styles.avatar}
+          alt="Radoslav Stankov"
+        />
+      </div>
       <p>
         I'm head of engineering of{' '}
         <a href="https://www.producthunt.com" target="_blank">
@@ -33,8 +42,8 @@ export default function Page() {
         and contribute to{' '}
         <a href="https://github.com/rstankov" target="_blank">
           open source
-        </a>{' '}
-        when I can. 😅
+        </a>
+        , whenever I have time 😅
       </p>
       <p>
         You can ping me on{' '}
