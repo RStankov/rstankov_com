@@ -27,3 +27,17 @@ body {
   margin: 0 auto;
   max-width: 700px;
 }
+
+h1 {
+  margin-bottom: $spacing-medium;
+}
+
+p {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+p + p {
+  margin-top: $spacing-small;
+}

@@ -1,15 +1,22 @@
 import * as React from 'react';
+import styles from './styles.module.css';
+import paths from '~/paths';
 
 export default function Page() {
   return (
     <>
-      Hey, I'm Rado, 👋
+      <img
+        src={paths.image.cover}
+        className={styles.cover}
+        alt="Radoslav Stankov"
+      />
+      <h1>A bit about me</h1>
       <p>
-        I started web development with{' '}
+        In 2002, I started web development with{' '}
         <a href="https://en.wikipedia.org/wiki/Adobe_Flash" target="_blank">
           Flash
         </a>{' '}
-        in 2002 in an agency in my home town of{' '}
+        in an agency in my home town of{' '}
         <a
           href="https://www.google.com/maps?q=Dobrich+Bulgaria"
           target="_blank">
@@ -18,9 +25,13 @@ export default function Page() {
         . I quickly switched to PHP and JavaScript. Then moved to Ruby on Rails.
       </p>
       <p>
-        In 2010 I finished my bachelor in computer science from{' '}
+        In 2010, I finished my bachelor in computer science from{' '}
         <a href="http://fs.tu-varna.bg/">Technical University Varna</a>, I
-        joined a startup named LOOKK. <i>I became its CTO in 2012.</i>
+        joined a startup named{' '}
+        <a href="https://www.crunchbase.com/organization/lookk" target="_blank">
+          LOOKK
+        </a>
+        . <i>I became its CTO in 2012.</i>
       </p>
       <p>
         In 2012, I started a conference named{' '}
@@ -87,7 +98,7 @@ export default function Page() {
         <a href="howtographql.com" target="_blank">
           HowToGraphQL.com
         </a>
-        . This was a busy year 🤩
+        . <i>This was a busy year</i> 🤩
       </p>
       <p>
         I try to{' '}
@@ -105,7 +116,7 @@ export default function Page() {
         <a href="https://twitter.com/rstankov" target="_blank">
           Twitter
         </a>{' '}
-        about anything related to Graphql, React JavaScript, Ruby, product
+        about anything related to GraphQL, React, JavaScript, Ruby, product
         development, remote work, or software engineering in general.
       </p>
     </>
