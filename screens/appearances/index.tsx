@@ -6,13 +6,7 @@ import data from './data';
 import { groupBy, sortBy } from 'lodash';
 import styles from './styles.module.css';
 
-interface IProps {}
-
 type IType = string;
-
-interface IState {
-  filters: IType[];
-}
 
 const TYPES = [
   {
@@ -25,29 +19,19 @@ const TYPES = [
   },
 ];
 
-export default class Appearances extends React.Component<IProps, IState> {
-  state: IState = {
-    filters: [],
-  };
+export default function Appearances() {
+  const [filters, setFilters] = React.useState<IType[]>([]);
 
-  filterToggleHandler = (type: IType) => {
-    this.setState({
-      filters: toggleFilter(type, this.state.filters),
-    });
-  };
-
-  render() {
-    return (
-      <React.Fragment>
-        <h1 className={styles.header}>Appearances</h1>
-        <Switch
-          options={TYPES}
-          selected={this.state.filters}
-          onSelect={this.filterToggleHandler}
-        />
-        {groupAppearances(
-          filterAppearances(data.appearances, this.state.filters),
-        ).map(([year, appearances]) => (
+  return (
+    <>
+      <h1>Appearances</h1>
+      <Switch
+        options={TYPES}
+        selected={filters}
+        onSelect={type => setFilters(toggleFilter(type, filters))}
+      />
+      {groupAppearances(filterAppearances(data.appearances, filters)).map(
+        ([year, appearances]) => (
           <section key={year}>
             <header className={styles.sectionHeader}>
               <h2>{year}</h2>
@@ -58,10 +42,10 @@ export default class Appearances extends React.Component<IProps, IState> {
               <Appearance key={index} appearance={appearance} />
             ))}
           </section>
-        ))}
-      </React.Fragment>
-    );
-  }
+        ),
+      )}
+    </>
+  );
 }
 
 function toggleFilter(type: IType, filters: IType[]) {
