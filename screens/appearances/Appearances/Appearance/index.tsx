@@ -20,18 +20,26 @@ const LINK_ICONS = {
   code: <IconGithub className={styles.linkIcon} />,
 };
 
+const TYPE_ICONS = {
+  presentation: (
+    <IconPresentaion className={styles.typeIcon} title="Presentation" />
+  ),
+  'podcast-episode': (
+    <IconPodcast className={styles.typeIcon} title="Podcast episode" />
+  ),
+};
+
 export default function Appearance({ appearance }: IProps) {
   return (
     <div className={styles.item}>
-      {appearance.type === 'presentation' ? (
-        <IconPresentaion className={styles.icon} title="presentation" />
-      ) : (
-        <IconPodcast className={styles.icon} title="podcast episod" />
-      )}
+      {TYPE_ICONS[appearance.type]}
       <div className={styles.content}>
         <strong>{appearance.name}</strong>
         <div>
-          <a href={appearance.event.url} target="_blank">
+          <a
+            href={appearance.event.url}
+            target="_blank"
+            className={styles.event}>
             {appearance.event.name}
           </a>
           {' on '}
@@ -43,7 +51,11 @@ export default function Appearance({ appearance }: IProps) {
       {appearance.links.length > 0 && (
         <div className={styles.links}>
           {appearance.links.map((link, index) => (
-            <a key={index} href={link.url} className={styles.link}>
+            <a
+              key={index}
+              href={link.url}
+              className={styles.link}
+              title={link.type}>
               {LINK_ICONS[link.type] || null}
             </a>
           ))}

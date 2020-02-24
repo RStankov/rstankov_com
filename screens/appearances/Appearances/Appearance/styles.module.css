@@ -4,7 +4,7 @@
   align-items: center;
 
   & + & {
-    margin-top: 10px;
+    margin-top: $spacing-small;
   }
 }
 
@@ -12,11 +12,15 @@
   flex: 1;
 }
 
+.event:hover {
+  text-decoration: none;
+}
+
 .links {
   margin-left: 20px;
 }
 
-.icon {
+.typeIcon {
   width: 40px;
   margin-right: 10px;
 }
@@ -27,4 +31,8 @@
 
 .linkIcon {
   height: 20px;
+
+  &:hover path {
+    fill: $active;
+  }
 }
