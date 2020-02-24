@@ -1,11 +1,11 @@
 import * as React from 'react';
 import IAppearance from '~/types/Appearance';
-import IconGithub from './IconGithub';
-import IconListen from './IconListen';
-import IconPodcast from './IconPodcast';
-import IconPresentaion from './IconPresentaion';
-import IconSlides from './IconSlides';
-import IconYouTube from './IconYouTube';
+import IconGithub from '~/icons/Github';
+import IconListen from '~/icons/Listen';
+import IconPodcast from '~/icons/Podcast';
+import IconPresentaion from '~/icons/Presentation';
+import IconSlides from '~/icons/Slides';
+import IconYouTube from '~/icons/YouTube';
 import styles from './styles.module.css';
 import { parse, format } from 'date-fns';
 
