@@ -7,12 +7,12 @@ export default function Page() {
   return (
     <>
       <div className={styles.container}>
-        <h1>👋 Hey, I'm Rado</h1>
         <img
           src={paths.image.avatar}
           className={styles.avatar}
           alt="Radoslav Stankov"
         />
+        <h1>Hey, I'm Rado 👋</h1>
       </div>
       <p>
         I'm head of engineering of{' '}

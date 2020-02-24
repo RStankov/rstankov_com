@@ -40,8 +40,8 @@ export default function Appearance({ appearance }: IProps) {
           <LinkExternal href={appearance.event.url} className={styles.event}>
             {appearance.event.name}
           </LinkExternal>
-          {' on '}
-          <time>
+          <span className={styles.on}>{' on '}</span>
+          <time className={styles.time}>
             {format(parse(appearance.date, 'yyyy/MM/dd', new Date()), 'd MMMM')}
           </time>
         </div>

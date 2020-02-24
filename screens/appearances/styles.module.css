@@ -1,11 +1,21 @@
+@import 'styles/media.css';
+
 .header {
   display: flex;
   flex-flow: row;
   align-items: center;
 
+  @media (--mobile) {
+    flex-flow: column;
+  }
+
   h1 {
     flex: 1;
     margin-right: $spacing-medium;
+    @media (--mobile) {
+      margin-right: 0;
+      margin-bottom: $spacing-medium;
+    }
   }
 }
 

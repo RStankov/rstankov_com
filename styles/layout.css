@@ -1,3 +1,5 @@
+@import 'styles/media.css';
+
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -26,6 +28,11 @@ body {
   height: 100%;
   margin: 0 auto;
   max-width: 700px;
+
+  @media (--mobile) {
+    padding-left: $spacing-medium;
+    padding-right: $spacing-medium;
+  }
 }
 
 p {

@@ -1,3 +1,5 @@
+@import 'styles/media.css';
+
 .item {
   display: flex;
   flex-flow: row;
@@ -26,7 +28,7 @@
 }
 
 .link + .link {
-  margin-left: spacing-small;
+  margin-left: $spacing-small;
 }
 
 .linkIcon {
@@ -34,5 +36,15 @@
 
   &:hover path {
     fill: $active;
+  }
+}
+
+@media (--mobile) {
+  .time {
+    display: block;
+  }
+
+  .on {
+    display: none;
   }
 }

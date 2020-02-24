@@ -1,8 +1,15 @@
+@import 'styles/media.css';
+
 .avatar {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  margin-left: $spacing-medium;
+  margin-right: $spacing-medium;
+
+  @media (--mobile) {
+    margin-right: 0;
+    margin-bottom: $spacing-medium;
+  }
 }
 
 .container {
@@ -10,4 +17,8 @@
   flex-flow: row;
   align-items: center;
   margin-bottom: $spacing-medium;
+
+  @media (--mobile) {
+    flex-flow: column;
+  }
 }

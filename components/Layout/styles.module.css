@@ -1,3 +1,5 @@
+@import 'styles/media.css';
+
 .header {
   margin: $spacing-medium 0;
   display: flex;
@@ -12,6 +14,10 @@
   padding: 0;
   list-style: none;
   justify-content: flex-end;
+
+  @media (--mobile) {
+    justify-content: center;
+  }
 }
 
 .header ul li a {
@@ -36,6 +42,16 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+
+  @media (--mobile) {
+    display: none;
+  }
+}
+
+.home {
+  @media (--tablet-or-desktop) {
+    display: none;
+  }
 }
 
 .name:hover {
