@@ -17,6 +17,6 @@ module.exports = {
   'small-screen-breakpoint': '576px',
   'large-screen-breakpoint': '768px',
 
-  active: '#690cb0',
+  active: 'purple',
   background: '#fafafa',
 };

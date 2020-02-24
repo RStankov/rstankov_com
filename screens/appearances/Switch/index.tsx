@@ -15,9 +15,8 @@ export default function Switch({ options, selected, onSelect }: IProps) {
         <button
           key={option.value}
           onClick={() => onSelect(option.value)}
-          className={classNames(styles.button, {
-            [styles.active]: selected.indexOf(option.value) !== -1,
-          })}>
+          className={classNames(styles.button, {})}>
+          {selected.indexOf(option.value) !== -1 ? '✅' : '🚫'}
           {option.label}
         </button>
       ))}

@@ -1,6 +1,4 @@
 .container {
-  border: 2px solid purple;
-  border-radius: 10px;
   overflow: hidden;
   display: inline-flex;
   flex-flow: row;
@@ -9,30 +7,31 @@
 }
 
 .button {
-  background: white;
-  color: purple;
+  background: $background;
+  color: black;
   outline: none;
   cursor: pointer;
   border: none;
   font-size: 16px;
   line-height: 18px;
-}
+  padding: 8px 10px;
+  border: 1px solid #999;
 
-.button + .button {
-  border-left: 2px solid purple;
+  &:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+
+  & + & {
+    border-left: 0px;
+  }
+
+  &:last-child {
+    border-radius: 0 5px 5px 0;
+  }
 }
 
 .button:hover {
-  background: purple;
-  color: white;
-  opacity: 0.5;
-}
-
-.button.active:hover {
-  opacity: 0.8;
-}
-
-.button.active {
-  background: purple;
+  background: $active;
+  border-color: $active;
   color: white;
 }

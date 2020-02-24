@@ -15,21 +15,25 @@ const TYPES = [
   },
   {
     value: 'podcast-episode',
-    label: 'Podcast',
+    label: 'Podcasts',
   },
 ];
 
+const initialFilters = TYPES.map(type => type.value);
+
 export default function Appearances() {
-  const [filters, setFilters] = React.useState<IType[]>([]);
+  const [filters, setFilters] = React.useState<IType[]>(initialFilters);
 
   return (
     <>
-      <h1>Appearances</h1>
-      <Switch
-        options={TYPES}
-        selected={filters}
-        onSelect={type => setFilters(toggleFilter(type, filters))}
-      />
+      <header className={styles.header}>
+        <h1>Appearances</h1>
+        <Switch
+          options={TYPES}
+          selected={filters}
+          onSelect={type => setFilters(toggleFilter(type, filters))}
+        />
+      </header>
       {groupAppearances(filterAppearances(data.appearances, filters)).map(
         ([year, appearances]) => (
           <section key={year}>
