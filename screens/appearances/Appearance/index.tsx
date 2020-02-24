@@ -8,6 +8,7 @@ import IconSlides from '~/icons/Slides';
 import IconYouTube from '~/icons/YouTube';
 import styles from './styles.module.css';
 import { parse, format } from 'date-fns';
+import LinkExternal from '~/components/LinkExternal';
 
 interface IProps {
   appearance: IAppearance;
@@ -36,12 +37,9 @@ export default function Appearance({ appearance }: IProps) {
       <div className={styles.content}>
         <strong>{appearance.name}</strong>
         <div>
-          <a
-            href={appearance.event.url}
-            target="_blank"
-            className={styles.event}>
+          <LinkExternal href={appearance.event.url} className={styles.event}>
             {appearance.event.name}
-          </a>
+          </LinkExternal>
           {' on '}
           <time>
             {format(parse(appearance.date, 'yyyy/MM/dd', new Date()), 'd MMMM')}
@@ -51,13 +49,13 @@ export default function Appearance({ appearance }: IProps) {
       {appearance.links.length > 0 && (
         <div className={styles.links}>
           {appearance.links.map((link, index) => (
-            <a
+            <LinkExternal
               key={index}
               href={link.url}
               className={styles.link}
               title={link.type}>
               {LINK_ICONS[link.type] || null}
-            </a>
+            </LinkExternal>
           ))}
         </div>
       )}

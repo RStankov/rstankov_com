@@ -8,6 +8,7 @@ import styles from './styles.module.css';
 import paths from '~/paths';
 import useCurrentPath from '~/hooks/useCurrentPath';
 import classNames from 'classnames';
+import LinkExternal from '~/components/LinkExternal';
 
 interface IProps {
   children: React.ReactNode;
@@ -27,7 +28,7 @@ export default function Layout({ children, ...headProps }: IProps) {
         </Link>
         <ul>
           <li>
-            <a href={paths.blog}>Blog</a>
+            <LinkExternal href={paths.blog}>Blog</LinkExternal>
           </li>
           <li>
             <NavLink href={paths.appearances} label="Appearances" />
@@ -44,31 +45,28 @@ export default function Layout({ children, ...headProps }: IProps) {
       <footer className={styles.footer}>
         <ul>
           <li>
-            <a
+            <LinkExternal
               href="https://twitter.com/rstankov"
-              target="_blank"
               title="Twitter"
               className={styles.footerTwitter}>
               <IconTwitter />
-            </a>
+            </LinkExternal>
           </li>
           <li>
-            <a
+            <LinkExternal
               href="https://github.com/rstankov"
-              target="_blank"
               title="GitHub"
               className={styles.footerGithub}>
               <IconGithub />
-            </a>
+            </LinkExternal>
           </li>
           <li>
-            <a
+            <LinkExternal
               href="https://producthunt.com/@rstankov"
-              target="_blank"
               title="Product Hunt"
               className={styles.footerProductHunt}>
               <IconProductHunt />
-            </a>
+            </LinkExternal>
           </li>
         </ul>
         <small>© Radoslav Stankov {new Date().getFullYear()} </small>
