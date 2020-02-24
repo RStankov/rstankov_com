@@ -27,7 +27,7 @@ export default function Layout({ children, ...headProps }: IProps) {
         </Link>
         <ul>
           <li>
-            <NavLink href={paths.blog} label="Blog" />
+            <a href={paths.blog}>Blog</a>
           </li>
           <li>
             <NavLink href={paths.appearances} label="Appearances" />

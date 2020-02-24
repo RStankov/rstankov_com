@@ -48,7 +48,7 @@
 
 .footer {
   text-align: center;
-  border-top: 1px solid #999;
+  border-top: 1px solid $line;
   margin: 40px 10%;
   padding-top: 20px;
 }

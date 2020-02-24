@@ -9,7 +9,7 @@ interface IProps {
 
 export default React.forwardRef(({ href, ...props }: IProps, ref: any) => {
   return (
-    <Link href={href} prefetch={false}>
+    <Link href={href}>
       <a {...props} ref={ref} />
     </Link>
   );
