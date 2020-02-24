@@ -17,16 +17,16 @@
 }
 
 .links {
-  margin-left: 20px;
+  margin-left: $spacing-medium;
 }
 
 .typeIcon {
   width: 40px;
-  margin-right: 10px;
+  margin-right: $spacing-small;
 }
 
 .link + .link {
-  margin-left: 10px;
+  margin-left: spacing-small;
 }
 
 .linkIcon {

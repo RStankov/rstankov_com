@@ -1,5 +1,5 @@
 .header {
-  margin: 20px 0;
+  margin: $spacing-medium 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -29,7 +29,7 @@
 }
 
 .header ul li + li {
-  margin-left: 10px;
+  margin-left: $spacing-small;
 }
 
 .name {
@@ -50,7 +50,7 @@
   text-align: center;
   border-top: 1px solid $line;
   margin: 40px 10%;
-  padding-top: 20px;
+  padding-top: $spacing-medium;
 }
 
 .footer ul {
@@ -62,7 +62,7 @@
 }
 
 .footer ul li + li {
-  margin-left: 20px;
+  margin-left: $spacing-medium;
 }
 
 .footerTwitter {
@@ -72,7 +72,7 @@
   height: 30px;
   display: inline-block;
   box-sizing: border-box;
-  background: #222;
+  background: $text-color;
 
   svg {
     width: 100%;
