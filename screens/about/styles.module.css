@@ -1,3 +1,5 @@
+@include 'styles/mobile.css';
+
 .cover {
   max-width: 100%;
   border-radius: $radius;
@@ -5,4 +7,39 @@
 
 .title {
   margin-bottom: $spacing-medium;
+}
+
+.year {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: $text-color;
+  color: $background;
+  height: 60px;
+  width: 60px;
+  min-height: 60px;
+  min-width: 60px;
+  border-radius: 50%;
+  margin-right: $spacing-medium;
+  font-weight: bold;
+
+  @media (--mobile) {
+    margin-right: 0;
+    margin-bottom: $spacing-medium;
+  }
+}
+
+.row {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: $spacing-medium;
+
+  @media (--mobile) {
+    flex-flow: column;
+  }
+}
+
+.continue {
+  text-align: center;
 }
