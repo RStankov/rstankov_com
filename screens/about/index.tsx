@@ -80,10 +80,7 @@ export default function Page() {
       </Row>
       <Row year={2015}>
         Started to blogging at{' '}
-        <LinkExternal href="http://blog.rstankov.com">
-          blog.rstankov.com
-        </LinkExternal>
-        .
+        <LinkExternal href={paths.blog}>blog.rstankov.com</LinkExternal>.
       </Row>
       <Row year={2016}>
         Started to organize{' '}

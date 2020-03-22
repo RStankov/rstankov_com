@@ -34,18 +34,15 @@ export default function Page() {
         .
       </p>
       <p className={styles.paragraph}>
-        I try to{' '}
-        <LinkExternal href="http://blog.rstankov.com/">blog</LinkExternal> and
+        I try to <LinkExternal href={paths.blog}>blog</LinkExternal> and
         contribute to{' '}
-        <LinkExternal href="https://github.com/rstankov">
-          open source
-        </LinkExternal>{' '}
+        <LinkExternal href={paths.external.github}>open source</LinkExternal>{' '}
         projects, whenever I have time 😅
       </p>
       <p className={styles.paragraph}>
         You can ping me on{' '}
-        <LinkExternal href="https://twitter.com/rstankov">Twitter</LinkExternal>{' '}
-        about anything related to GraphQL, React, JavaScript, Ruby, product
+        <LinkExternal href={paths.external.twitter}>Twitter</LinkExternal> about
+        anything related to GraphQL, React, JavaScript, Ruby, product
         development, remote work, or software engineering in general.
       </p>
     </>

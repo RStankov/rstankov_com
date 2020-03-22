@@ -1,5 +1,6 @@
-import React from 'react';
 import NextHead from 'next/head';
+import React from 'react';
+import paths from '~/paths';
 import useCurrentPath from '~/hooks/useCurrentPath';
 
 interface IProps {
@@ -12,7 +13,7 @@ interface IProps {
 
 export default function Head({ meta }: IProps) {
   const title = meta ? meta.title : 'Radoslav Stankov';
-  const url = 'https://rstankov.com/' + useCurrentPath();
+  const url = paths.url + useCurrentPath();
 
   return (
     <NextHead>
@@ -52,9 +53,3 @@ export default function Head({ meta }: IProps) {
     </NextHead>
   );
 }
-
-Head.defaultProps = {
-  title: 'Radoslav Stankov',
-  description: 'Head of engineering at @ProductHunt',
-  url: 'http://rstankov.com',
-};

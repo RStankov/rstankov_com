@@ -1,14 +1,14 @@
-import React from 'react';
 import Head from './Head';
-import IconProductHunt from '~/icons/ProductHunt';
 import IconGithub from '~/icons/Github';
+import IconProductHunt from '~/icons/ProductHunt';
 import IconTwitter from '~/icons/Twitter';
 import Link from '~/components/Link';
-import styles from './styles.module.css';
-import paths from '~/paths';
-import useCurrentPath from '~/hooks/useCurrentPath';
-import classNames from 'classnames';
 import LinkExternal from '~/components/LinkExternal';
+import React from 'react';
+import classNames from 'classnames';
+import paths from '~/paths';
+import styles from './styles.module.css';
+import useCurrentPath from '~/hooks/useCurrentPath';
 
 interface IProps {
   children: React.ReactNode;
@@ -47,7 +47,7 @@ export default function Layout({ children, meta }: IProps) {
         <ul>
           <li>
             <LinkExternal
-              href="https://twitter.com/rstankov"
+              href={paths.external.twitter}
               title="Twitter"
               className={styles.footerTwitter}>
               <IconTwitter />
@@ -55,7 +55,7 @@ export default function Layout({ children, meta }: IProps) {
           </li>
           <li>
             <LinkExternal
-              href="https://github.com/rstankov"
+              href={paths.external.github}
               title="GitHub"
               className={styles.footerGithub}>
               <IconGithub />
@@ -63,7 +63,7 @@ export default function Layout({ children, meta }: IProps) {
           </li>
           <li>
             <LinkExternal
-              href="https://producthunt.com/@rstankov"
+              href={paths.external.productHunt}
               title="Product Hunt"
               className={styles.footerProductHunt}>
               <IconProductHunt />

@@ -3,6 +3,7 @@ export default {
 
   appearances: '/appearances',
 
+  url: 'https://rstankov.com',
   blog: 'http://blog.rstankov.com',
 
   about: '/about',
@@ -10,5 +11,11 @@ export default {
   image: {
     cover: '/cover.jpg',
     avatar: '/avatar.jpg',
+  },
+
+  external: {
+    github: 'https://github.com/rstankov',
+    twitter: 'https://twitter.com/rstankov',
+    productHunt: 'https://producthunt.com/@rstankov',
   },
 };
