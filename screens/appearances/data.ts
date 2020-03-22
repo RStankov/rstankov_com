@@ -3,10 +3,414 @@ import IAppearance from '~/types/Appearance';
 export default {
   appearances: [
     {
+      date: '2020/03/03',
+      type: 'podcast-episode',
+      name: 'MJS 139: Radoslav Stankovm',
+      event: {
+        name: 'My JavScript Story',
+        url: 'https://devchat.tv/my-javascript-story/',
+      },
+      language: '🇺🇸',
+      links: [
+        {
+          type: 'episode',
+          url:
+            'https://devchat.tv/my-javascript-story/mjs-139-radoslav-stankov/',
+        },
+      ],
+    },
+    {
+      date: '2020/02/25',
+      type: 'presentation',
+      name: 'Intro to Next.js',
+      event: {
+        name: 'React.Sofia Meetup',
+        url: 'https://www.meetup.com/React-Sofia/events/268599409/',
+      },
+      links: [
+        {
+          type: 'slides',
+          url: 'https://speakerdeck.com/rstankov/intro-to-next-dot-js',
+        },
+      ],
+    },
+    {
+      date: '2020/02/21',
+      type: 'presentation',
+      name: '3 Years GraphQL at Product Hunt',
+      event: {
+        name: 'GraphQL Asia',
+        url: 'https://graphql.asia/',
+      },
+      links: [
+        {
+          type: 'slides',
+          url:
+            'https://speakerdeck.com/rstankov/3-years-graphql-at-product-hunt',
+        },
+      ],
+    },
+    {
+      date: '2019/11/27',
+      type: 'presentation',
+      name: 'Product Development',
+      event: {
+        name: 'Founder Institute Chapter Sofia',
+        url: 'https://fi.co/mentors/sofia',
+      },
+      links: [
+        {
+          type: 'slides',
+          url: 'https://speakerdeck.com/rstankov/product-development',
+        },
+      ],
+    },
+    {
+      date: '2019/11/23',
+      type: 'presentation',
+      name: 'Eliminating noise from your code',
+      event: {
+        name: 'JSTalks',
+        url: 'http://jstalks.net/',
+      },
+      links: [
+        {
+          type: 'slides',
+          url:
+            'https://speakerdeck.com/rstankov/eliminating-noice-from-your-code',
+        },
+      ],
+    },
+    {
+      date: '2019/10/30',
+      type: 'presentation',
+      name: 'Dealing With Dependancies in JavaScript',
+      event: {
+        name: 'Beer.js Meetup',
+        url: 'https://www.facebook.com/events/419697515386637/',
+      },
+      links: [
+        {
+          type: 'slides',
+          url:
+            'https://speakerdeck.com/rstankov/dealing-with-dependancies-in-javascript',
+        },
+      ],
+    },
+    {
+      date: '2019/10/22',
+      type: 'podcast-episode',
+      name:
+        'Building a World-Class Onboarding Process For Your Software Engineering Team',
+      event: {
+        name: 'Scaling Software Teams',
+        url: 'https://software.fireside.fm/',
+      },
+      language: '🇺🇸',
+      links: [
+        {
+          type: 'episode',
+          url: 'https://software.fireside.fm/community-5',
+        },
+      ],
+    },
+    {
+      date: '2019/10/13',
+      type: 'presentation',
+      name: 'Productivity for Developers',
+      event: {
+        name: 'HackConf',
+        url: 'https://www.hackconf.bg/en/',
+      },
+      links: [
+        {
+          type: 'slides',
+          url: 'https://speakerdeck.com/rstankov/productivity-for-developers',
+        },
+        {
+          type: 'video',
+          url: 'https://www.youtube.com/watch?v=JkIeWiO3M8I',
+        },
+      ],
+    },
+    {
+      date: '2019/09/27',
+      type: 'presentation',
+      name: 'React Architecture in Product Hunt',
+      event: {
+        name: 'React Alicante 2019',
+        url: 'https://reactalicante.es/',
+      },
+      links: [
+        {
+          type: 'slides',
+          url:
+            'https://speakerdeck.com/rstankov/react-architecture-in-product-hunt-8c56efb1-aeef-43b3-8cda-62ae02461143',
+        },
+        {
+          type: 'video',
+          url: 'https://www.youtube.com/watch?v=bo0u9402OXU',
+        },
+      ],
+    },
+    {
+      date: '2019/09/06',
+      type: 'presentation',
+      name: 'How to get to zero unhandled exceptions in production',
+      event: {
+        name: 'Ruby Conf Thailand',
+        url: 'https://rubyconfth.com/',
+      },
+      links: [
+        {
+          type: 'slides',
+          url:
+            'https://speakerdeck.com/rstankov/how-to-get-to-zero-unhandled-exceptions-in-production',
+        },
+        {
+          type: 'video',
+          url: 'https://www.youtube.com/watch?v=btUnSR-NGV0',
+        },
+      ],
+    },
+    {
+      date: '2019/08/09',
+      type: 'presentation',
+      name: 'How to be productive with React',
+      event: {
+        name: 'SoftUni Seminar',
+        url:
+          'https://softuni.bg/trainings/2466/tech-stage-how-to-be-productive-with-react',
+      },
+      links: [],
+    },
+    {
+      date: '2019/08/01',
+      type: 'presentation',
+      name: 'Making Good Decisions About Javascript Dependencies',
+      event: {
+        name: 'BeerJS Summit',
+        url: 'https://www.facebook.com/events/335809237260372/',
+      },
+      links: [
+        {
+          type: 'slides',
+          url:
+            'https://speakerdeck.com/rstankov/making-good-decisions-about-javascript-dependencies',
+        },
+      ],
+    },
+    {
+      date: '2019/07/14',
+      type: 'podcast-episode',
+      name: 'Using Checklists For Onboarding Success, with Radoslav Stankov',
+      event: {
+        name: 'Scaling Software Teams',
+        url: 'https://software.fireside.fm/',
+      },
+      language: '🇺🇸',
+      links: [
+        {
+          type: 'episode',
+          url: 'https://software.fireside.fm/radoslav-stankov',
+        },
+      ],
+    },
+    {
+      date: '2019/07/01',
+      type: 'podcast-episode',
+      name:
+        'Episode 3 - Episode 3: Radoslav Stankov on how to approach Remote Work',
+      event: {
+        name: 'Inside Remote',
+        url: 'https://inside-remote.simplecast.com/',
+      },
+      language: '🇺🇸',
+      links: [
+        {
+          type: 'episode',
+          url:
+            'https://inside-remote.simplecast.com/episodes/episode-3-radoslav-stankov-on-how-to-approach-remote-work',
+        },
+      ],
+    },
+    {
+      date: '2019/06/10',
+      type: 'presentation',
+      name: 'Two+ Years GraphQL at ProductHunt',
+      event: {
+        name: 'DEVit - Thessaloniki 2019',
+        url: 'https://devitconf.org/',
+      },
+      links: [
+        {
+          type: 'slides',
+          url:
+            'https://speakerdeck.com/rstankov/two-plus-years-graphql-at-producthunt',
+        },
+      ],
+    },
+    {
+      date: '2019/05/16',
+      type: 'podcast-episode',
+      name: 'Episode 22 - Live at React.NotAConf',
+      event: {
+        name: 'Nadcast',
+        url: 'http://krasimirtsonev.com/blog/category/NADCAST',
+      },
+      language: '🇧🇬',
+      links: [
+        {
+          type: 'episode',
+          url:
+            'http://krasimirtsonev.com/blog/article/nadcast-22-react-not-a-conf-live',
+        },
+      ],
+    },
+    {
+      date: '2019/05/11',
+      type: 'presentation',
+      name: 'How not to hate your life when dealing with forms',
+      event: { name: 'React.NotAConf', url: 'http://react-not-a-conf.com/' },
+      links: [
+        {
+          type: 'slides',
+          url:
+            'https://speakerdeck.com/rstankov/how-not-to-hate-your-life-when-dealing-with-forms',
+        },
+        {
+          type: 'video',
+          url:
+            'https://github.com/RStankov/talks-code/blob/master/2019.05.11%20-%20Forms%20with%20React%202/',
+        },
+        {
+          type: 'code',
+          url:
+            'https://www.youtube.com/watch?v=kIi9OV338c4&list=PLOEJ0eNOcZeosJfuT0dRcRWvNz4pru7SD&index=7&t=0s',
+        },
+      ],
+    },
+    {
+      date: '2019/05/03',
+      type: 'podcast-episode',
+      name: 'Episode 21 - Pre-React.NotAConf',
+      event: {
+        name: 'Nadcast',
+        url: 'http://krasimirtsonev.com/blog/category/NADCAST',
+      },
+      language: '🇧🇬',
+      links: [
+        {
+          type: 'episode',
+          url:
+            'http://krasimirtsonev.com/blog/article/nadcast-21-react-not-a-conf',
+        },
+      ],
+    },
+    {
+      date: '2019/03/18',
+      type: 'presentation',
+      name: 'React Patterns in Product Hunt',
+      event: { name: 'CODEstantine', url: 'https://codestantine.com/' },
+      links: [
+        {
+          type: 'slides',
+          url: 'https://speakerdeck.com/rstankov/react-patterns-in-producthunt',
+        },
+        {
+          type: 'code',
+          url:
+            'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS',
+        },
+      ],
+    },
+    {
+      date: '2019/03/18',
+      type: 'presentation',
+      name: 'How you can shot your self in the server (twice) with SSR',
+      event: {
+        name: 'React.Sofia',
+        url: 'https://www.meetup.com/React-Sofia/events/259120407/',
+      },
+      links: [
+        {
+          type: 'slides',
+          url: 'https://speakerdeck.com/rstankov/product-hunt-ssr-history',
+        },
+      ],
+    },
+    {
+      date: '2019/02/13',
+      type: 'podcast-episode',
+      name: 'MRS 077: Radoslav Stankov',
+      event: {
+        name: 'My Ruby Story',
+        url: 'https://devchat.tv/my-ruby-story',
+      },
+      language: '🇺🇸',
+      links: [
+        {
+          type: 'episode',
+          url: 'https://devchat.tv/my-ruby-story/mrs-077-radoslav-stankov/',
+        },
+      ],
+    },
+    {
+      date: '2019/01/23',
+      type: 'podcast-episode',
+      name: 'RR 396: GraphQL at Product Hunt with Radoslav Stankov',
+      event: {
+        name: 'Ruby Rogues',
+        url: 'https://devchat.tv/ruby-rogues/',
+      },
+      language: '🇺🇸',
+      links: [
+        {
+          type: 'episode',
+          url:
+            'https://devchat.tv/ruby-rogues/rr-396-graphql-at-product-hunt-with-radoslav-stankov/',
+        },
+      ],
+    },
+    {
+      date: '2018/12/20',
+      type: 'podcast-episode',
+      name: 'Episode 19 - Guests Radoslav Stankov and Minko Gechev',
+      event: {
+        name: 'Nadcast',
+        url: 'http://krasimirtsonev.com/blog/category/NADCAST',
+      },
+      language: '🇧🇬',
+      links: [
+        {
+          type: 'episode',
+          url:
+            'http://krasimirtsonev.com/blog/article/nadcast-19-rado-stankov-minko-genchev',
+        },
+      ],
+    },
+    {
+      date: '2018/12/19',
+      type: 'podcast-episode',
+      name: 'RRU 042: React at Product Hunt with Radoslav Stankov',
+      event: {
+        name: 'React Round Up',
+        url: 'https://devchat.tv/react-round-up',
+      },
+      language: '🇺🇸',
+      links: [
+        {
+          type: 'episode',
+          url:
+            'https://devchat.tv/react-round-up/rru-042-react-at-product-hunt-with-radoslav-stankov/',
+        },
+      ],
+    },
+    {
       date: '2018/11/17',
       type: 'presentation',
       name: 'A Brief History of Everything About JavaScript',
-      event: { name: 'JStalks', url: 'JStalks.net/' },
+      event: { name: 'JStalks', url: 'http://jstalks.net/' },
       links: [
         {
           type: 'slides',
