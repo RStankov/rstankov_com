@@ -39,8 +39,8 @@ export default function Page() {
         contribute to{' '}
         <LinkExternal href="https://github.com/rstankov">
           open source
-        </LinkExternal>
-        , whenever I have time 😅
+        </LinkExternal>{' '}
+        projects, whenever I have time 😅
       </p>
       <p className={styles.paragraph}>
         You can ping me on{' '}
