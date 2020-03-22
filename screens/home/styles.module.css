@@ -22,3 +22,18 @@
     flex-flow: column;
   }
 }
+
+.paragraph {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: $spacing-medium;
+
+  > a {
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

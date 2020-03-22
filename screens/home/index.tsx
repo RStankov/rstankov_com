@@ -14,14 +14,15 @@ export default function Page() {
         />
         <h1>Hey, I'm Rado 👋</h1>
       </div>
-      <p>
+      <p className={styles.paragraph}>
         I'm head of engineering of{' '}
         <LinkExternal href="https://www.producthunt.com">
           Product Hunt
         </LinkExternal>{' '}
         (owned by <LinkExternal href="https://angel.co">AngelList</LinkExternal>
         ).
-        <br />
+      </p>
+      <p className={styles.paragraph}>
         In my spare time, I'm organizing{' '}
         <LinkExternal href="http://react-not-a-conf.com/">
           React.NotAConf
@@ -32,7 +33,7 @@ export default function Page() {
         </LinkExternal>
         .
       </p>
-      <p>
+      <p className={styles.paragraph}>
         I try to{' '}
         <LinkExternal href="http://blog.rstankov.com/">blog</LinkExternal> and
         contribute to{' '}
@@ -41,7 +42,7 @@ export default function Page() {
         </LinkExternal>
         , whenever I have time 😅
       </p>
-      <p>
+      <p className={styles.paragraph}>
         You can ping me on{' '}
         <LinkExternal href="https://twitter.com/rstankov">Twitter</LinkExternal>{' '}
         about anything related to GraphQL, React, JavaScript, Ruby, product
