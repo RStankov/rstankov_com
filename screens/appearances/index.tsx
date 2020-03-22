@@ -34,7 +34,7 @@ export default function Appearances() {
           onSelect={type => setFilters(toggleFilter(type, filters))}
         />
       </header>
-      {groupAppearances(filterAppearances(data.appearances, filters)).map(
+      {groupAppearances(filterAppearances(data, filters)).map(
         ([year, appearances]) => (
           <section key={year}>
             <header className={styles.sectionHeader}>
