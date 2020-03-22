@@ -51,3 +51,10 @@ export default function Page() {
     </>
   );
 }
+
+Page.meta = {
+  title: 'Radoslav Stankov',
+  description:
+    'Personal website of Radoslav Stankov, head of engineering of Product Hunt.',
+  image: paths.image.avatar,
+};

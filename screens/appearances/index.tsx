@@ -3,8 +3,9 @@ import IAppearance from '~/types/Appearance';
 import React from 'react';
 import Switch from './Switch';
 import data from './data';
-import { groupBy, sortBy } from 'lodash';
+import paths from '~/paths';
 import styles from './styles.module.css';
+import { groupBy, sortBy } from 'lodash';
 
 type IType = string;
 
@@ -21,7 +22,7 @@ const TYPES = [
 
 const initialFilters = TYPES.map(type => type.value);
 
-export default function Appearances() {
+export default function Page() {
   const [filters, setFilters] = React.useState<IType[]>(initialFilters);
 
   return (
@@ -51,6 +52,13 @@ export default function Appearances() {
     </>
   );
 }
+
+Page.meta = {
+  title: 'Appearances',
+  description:
+    'List of all appearances of Radoslav Stankov - presentations and podcasts.',
+  image: paths.image.cover,
+};
 
 function toggleFilter(type: IType, filters: IType[]) {
   if (filters.indexOf(type) === -1) {

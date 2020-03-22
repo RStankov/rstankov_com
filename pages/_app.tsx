@@ -15,7 +15,7 @@ export default class Application extends App<IProps> {
     const { Component, pageProps } = this.props;
 
     return (
-      <Layout>
+      <Layout meta={(Component as any).meta}>
         <Component {...pageProps} />
       </Layout>
     );

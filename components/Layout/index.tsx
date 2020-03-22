@@ -12,16 +12,17 @@ import LinkExternal from '~/components/LinkExternal';
 
 interface IProps {
   children: React.ReactNode;
-  title?: string;
-  description?: string;
-  url?: string;
-  image?: string;
+  meta?: {
+    title?: string;
+    description?: string;
+    image?: string;
+  };
 }
 
-export default function Layout({ children, ...headProps }: IProps) {
+export default function Layout({ children, meta }: IProps) {
   return (
     <>
-      <Head {...headProps} />
+      <Head meta={meta} />
       <header className={styles.header}>
         <Link href={paths.home} className={styles.name}>
           Radoslav Stankov
