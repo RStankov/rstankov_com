@@ -7,8 +7,6 @@ export default {
 
   about: '/about',
 
-  projects: '/projects',
-
   image: {
     cover: '/cover.jpg',
     avatar: '/avatar.jpg',

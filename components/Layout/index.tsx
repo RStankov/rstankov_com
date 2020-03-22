@@ -37,9 +37,6 @@ export default function Layout({ children, ...headProps }: IProps) {
             <NavLink href={paths.appearances} label="Appearances" />
           </li>
           <li>
-            <NavLink href={paths.projects} label="Projects" />
-          </li>
-          <li>
             <NavLink href={paths.about} label="About" />
           </li>
         </ul>
