@@ -131,7 +131,7 @@ export default function Page() {
         <i>This was a busy year</i> 🤩
       </Row>
       <div className={styles.continue}>
-        <i>...to be continue</i> 😅
+        <i>...to be continued</i> 😅
       </div>
     </>
   );
