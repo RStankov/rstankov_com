@@ -2,9 +2,25 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2020/03/26',
+    type: 'podcast-episode',
+    name: 'Episode 24 - Remote Work',
+    event: {
+      name: 'Nadcast',
+      url: 'http://krasimirtsonev.com/blog/category/NADCAST',
+    },
+    language: '🇧🇬',
+    links: [
+      {
+        type: 'episode',
+        url: 'https://krasimirtsonev.com/blog/article/nadcast-24-rado-stankov',
+      },
+    ],
+  },
+  {
     date: '2020/03/03',
     type: 'podcast-episode',
-    name: 'MJS 139: Radoslav Stankovm',
+    name: 'MJS 139: Radoslav Stankov',
     event: {
       name: 'My JavScript Story',
       url: 'https://devchat.tv/my-javascript-story/',
