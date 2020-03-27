@@ -61,6 +61,11 @@ export default [
         type: 'slides',
         url: 'https://speakerdeck.com/rstankov/3-years-graphql-at-product-hunt',
       },
+      {
+        type: 'video',
+        url:
+          'https://www.youtube.com/watch?v=0Bwg03f_3KQ&list=PLTRTpHrUcSB9jtvOwnq1yVwZl5k2DdBb2&index=23&t=0s',
+      },
     ],
   },
   {
