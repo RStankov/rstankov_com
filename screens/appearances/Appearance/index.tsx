@@ -35,7 +35,7 @@ export default function Appearance({ appearance }: IProps) {
     <div className={styles.item}>
       {TYPE_ICONS[appearance.type]}
       <div className={styles.content}>
-        <strong>{appearance.name}</strong>
+        <AppearanceName appearance={appearance} />
         <div>
           <LinkExternal href={appearance.event.url} className={styles.event}>
             {appearance.event.name}
@@ -61,4 +61,20 @@ export default function Appearance({ appearance }: IProps) {
       )}
     </div>
   );
+}
+
+function AppearanceName({ appearance }: IProps) {
+  const link = appearance.links[0];
+
+  if (link) {
+    return (
+      <strong>
+        <LinkExternal href={link.url} className={styles.nameLink}>
+          {appearance.name}
+        </LinkExternal>
+      </strong>
+    );
+  } else {
+    return <strong>{appearance.name}</strong>;
+  }
 }
