@@ -26,7 +26,7 @@
 .paragraph {
   font-size: 20px;
   line-height: 32px;
-  margin-bottom: $spacing-medium;
+  margin-bottom: $spacing-small;
 
   > a {
     font-weight: bold;
