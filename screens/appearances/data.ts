@@ -2,6 +2,28 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2020/07/04',
+    type: 'presentation',
+    name: 'Developing desktop apps with React & Electron',
+    event: {
+      name: 'HackConf Online Talks',
+      url:
+        'https://hopin.to/events/hackconf-online-talks-2-with-radoslav-stankov',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
+      },
+      {
+        type: 'code',
+        url: 'https://github.com/RStankov/FocusedTaskn',
+      },
+    ],
+  },
+  {
     date: '2020/03/26',
     type: 'podcast-episode',
     name: 'Episode 24 - Remote Work',
