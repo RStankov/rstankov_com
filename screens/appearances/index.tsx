@@ -18,6 +18,10 @@ const TYPES = [
     value: 'podcast-episode',
     label: 'Podcasts',
   },
+  {
+    value: 'interview',
+    label: 'Interview',
+  },
 ];
 
 const initialFilters = TYPES.map(type => type.value);

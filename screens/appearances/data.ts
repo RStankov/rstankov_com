@@ -24,6 +24,22 @@ export default [
     ],
   },
   {
+    date: '2020/07/01',
+    type: 'interview',
+    name: 'Meet Rado Stankov',
+    event: {
+      name: 'HackConf News',
+      url: 'https://www.hackconf.bg/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'link',
+        url: 'https://www.hackconf.bg/news/Meet-Rado-Stankov/',
+      },
+    ],
+  },
+  {
     date: '2020/03/26',
     type: 'podcast-episode',
     name: 'Episode 24 - Remote Work',
@@ -36,6 +52,23 @@ export default [
       {
         type: 'episode',
         url: 'https://krasimirtsonev.com/blog/article/nadcast-24-rado-stankov',
+      },
+    ],
+  },
+  {
+    date: '2020/03/25',
+    type: 'interview',
+    name: 'Remote Work: Tips & Tricks',
+    event: {
+      name: 'Trending Topics',
+      url: 'https://www.trendingtopics.eu/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'link',
+        url:
+          'https://www.trendingtopics.eu/remote-work-tips-tricks-from-startups-who-have-been-mastering-it-for-years/',
       },
     ],
   },
@@ -122,6 +155,23 @@ export default [
     ],
   },
   {
+    date: '2019/10/31',
+    type: 'interview',
+    name: 'Perspectives From Product Hunt’s Remote Engineering Team Lead',
+    event: {
+      name: 'Trending Topics',
+      url: 'https://www.trendingtopics.eu/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'link',
+        url:
+          'https://www.trendingtopics.eu/radoslav-stankov-product-hunt-remote-engineering/',
+      },
+    ],
+  },
+  {
     date: '2019/10/30',
     type: 'presentation',
     name: 'Dealing With Dependancies in JavaScript',
@@ -141,7 +191,7 @@ export default [
     date: '2019/10/22',
     type: 'podcast-episode',
     name:
-      'Building a World-Class Onboarding Process For Your Software Engineering Team',
+      'Building a World-Class Onboarding Process For Software Engineering Team',
     event: {
       name: 'Scaling Software Teams',
       url: 'https://software.fireside.fm/',
@@ -253,6 +303,23 @@ export default [
       {
         type: 'episode',
         url: 'https://software.fireside.fm/radoslav-stankov',
+      },
+    ],
+  },
+  {
+    date: '2019/07/05',
+    type: 'interview',
+    name: 'Trust your team',
+    event: {
+      name: 'DevStyleR',
+      url: 'https://devstyler.io/',
+    },
+    language: '🇧🇬',
+    links: [
+      {
+        type: 'link',
+        url:
+          'https://devstyler.io/blog/2019/07/05/radoslav-stankov-doveryavajte-se-na-ekipa-si/',
       },
     ],
   },

@@ -6,6 +6,8 @@ import IconPodcast from '~/icons/Podcast';
 import IconPresentaion from '~/icons/Presentation';
 import IconSlides from '~/icons/Slides';
 import IconYouTube from '~/icons/YouTube';
+import IconLink from '~/icons/Link';
+import IconInterview from '~/icons/Interview';
 import styles from './styles.module.css';
 import { parse, format } from 'date-fns';
 import LinkExternal from '~/components/LinkExternal';
@@ -19,6 +21,7 @@ const LINK_ICONS = {
   video: <IconYouTube className={styles.linkIcon} />,
   episode: <IconListen className={styles.linkIcon} />,
   code: <IconGithub className={styles.linkIcon} />,
+  link: <IconLink className={styles.linkIcon} />,
 };
 
 const TYPE_ICONS = {
@@ -28,6 +31,7 @@ const TYPE_ICONS = {
   'podcast-episode': (
     <IconPodcast className={styles.typeIcon} title="Podcast episode" />
   ),
+  interview: <IconInterview className={styles.typeIcon} title="Interview" />,
 };
 
 export default function Appearance({ appearance }: IProps) {
