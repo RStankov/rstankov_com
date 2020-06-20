@@ -18,6 +18,10 @@ export default [
           'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
       },
       {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=nGgaak8MEmg',
+      },
+      {
         type: 'code',
         url: 'https://github.com/RStankov/FocusedTaskn',
       },
