@@ -44,6 +44,23 @@ export default [
     ],
   },
   {
+    date: '2020/05/11',
+    type: 'podcast-episode',
+    name: 'Remote, Digital, Autonomous & Co. What’s the new black',
+    event: {
+      name: 'The Big Reset: From a Crisis Mode To Entrepreneurial Mindset',
+      url: 'https://www.facebook.com/events/545760402791659/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'video',
+        url:
+          'https://www.youtube.com/watch?v=k87MSZ67FsY&list=PLtEHXqY-xd3CG3zUp2_e3PpnUGBY9asSl&index=17&t=0s',
+      },
+    ],
+  },
+  {
     date: '2020/03/26',
     type: 'podcast-episode',
     name: 'Episode 24 - Remote Work',
