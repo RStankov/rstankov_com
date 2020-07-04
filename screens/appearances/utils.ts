@@ -13,22 +13,34 @@ export const TYPES = [
   },
   {
     value: 'interview',
-    label: 'Interview',
+    label: 'Interviews',
   },
 ];
 
-const initialFilters = TYPES.map(type => type.value);
+type IUseFilters = [
+  IType[],
+  (type: IType, options?: { include?: boolean }) => void,
+];
 
-export function useFilters(): [IType[], (type: IType) => void] {
-  const [filters, setFilters] = React.useState<IType[]>(initialFilters);
+export function useFilters(): IUseFilters {
+  const [filters, setFilters] = React.useState<IType[]>([]);
 
-  return [filters, (type: IType) => setFilters(toggleFilter(type, filters))];
+  return [
+    filters,
+    (type: IType, options = {}) => {
+      setFilters(toggleFilter(type, filters, options.include));
+    },
+  ];
 }
 
-function toggleFilter(type: IType, filters: IType[]) {
-  if (filters.indexOf(type) === -1) {
-    return [...filters, type];
-  } else {
+function toggleFilter(type: IType, filters: IType[], include?: boolean) {
+  if (filters.indexOf(type) !== -1) {
     return filters.filter(filter => filter !== type);
   }
+
+  if (include) {
+    return [...filters, type];
+  }
+
+  return [type];
 }

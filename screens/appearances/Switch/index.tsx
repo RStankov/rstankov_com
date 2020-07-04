@@ -5,7 +5,7 @@ import classNames from 'classnames';
 interface IProps {
   options: { value: string; label: string }[];
   selected: string[];
-  onSelect: (value: string) => void;
+  onSelect: (value: string, options?: { include?: boolean }) => void;
 }
 
 export default function Switch({ options, selected, onSelect }: IProps) {
@@ -14,9 +14,9 @@ export default function Switch({ options, selected, onSelect }: IProps) {
       {options.map(option => (
         <button
           key={option.value}
-          onClick={() => onSelect(option.value)}
+          onClick={e => onSelect(option.value, { include: e.metaKey })}
           className={classNames(styles.button, {})}>
-          {selected.indexOf(option.value) !== -1 ? '✅' : '🚫'} {option.label}
+          {selected.indexOf(option.value) !== -1 ? '✅' : ''} {option.label}
         </button>
       ))}
     </div>
