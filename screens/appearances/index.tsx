@@ -6,38 +6,16 @@ import data from './data';
 import paths from '~/paths';
 import styles from './styles.module.css';
 import { groupBy, sortBy } from 'lodash';
-
-type IType = string;
-
-const TYPES = [
-  {
-    value: 'presentation',
-    label: 'Presentations',
-  },
-  {
-    value: 'podcast-episode',
-    label: 'Podcasts',
-  },
-  {
-    value: 'interview',
-    label: 'Interview',
-  },
-];
-
-const initialFilters = TYPES.map(type => type.value);
+import { useFilters, TYPES } from './utils';
 
 export default function Page() {
-  const [filters, setFilters] = React.useState<IType[]>(initialFilters);
+  const [filters, setFilters] = useFilters();
 
   return (
     <>
       <header className={styles.header}>
         <h1>Appearances</h1>
-        <Switch
-          options={TYPES}
-          selected={filters}
-          onSelect={type => setFilters(toggleFilter(type, filters))}
-        />
+        <Switch options={TYPES} selected={filters} onSelect={setFilters} />
       </header>
       {groupAppearances(filterAppearances(data, filters)).map(
         ([year, appearances]) => (
@@ -63,14 +41,6 @@ Page.meta = {
     'List of all appearances of Radoslav Stankov - presentations and podcasts.',
   image: paths.image.cover,
 };
-
-function toggleFilter(type: IType, filters: IType[]) {
-  if (filters.indexOf(type) === -1) {
-    return [...filters, type];
-  } else {
-    return filters.filter(filter => filter !== type);
-  }
-}
 
 function filterAppearances(appearances: IAppearance[], types: any) {
   if (types.length === 0) {
