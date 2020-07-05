@@ -2,7 +2,28 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
-    date: '2020/07/04',
+    date: '2020/07/11',
+    type: 'presentation',
+    name: 'Developing desktop apps with React & Electron',
+    event: {
+      name: 'Tech Talks - Performant Modern JavaScript',
+      url: 'https://community-z.com/events/techtalksjs',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
+      },
+      {
+        type: 'code',
+        url: 'https://github.com/RStankov/FocusedTask',
+      },
+    ],
+  },
+  {
+    date: '2020/06/04',
     type: 'presentation',
     name: 'Developing desktop apps with React & Electron',
     event: {
@@ -23,12 +44,12 @@ export default [
       },
       {
         type: 'code',
-        url: 'https://github.com/RStankov/FocusedTaskn',
+        url: 'https://github.com/RStankov/FocusedTask',
       },
     ],
   },
   {
-    date: '2020/07/01',
+    date: '2020/06/01',
     type: 'interview',
     name: 'Meet Rado Stankov',
     event: {
