@@ -40,6 +40,10 @@ export default function Page() {
         projects, whenever I have time 😅
       </p>
       <p className={styles.paragraph}>
+        If you want me to speak on your event or podcast, reach out to at
+        rstankov at gmail.
+      </p>
+      <p className={styles.paragraph}>
         You can ping me on{' '}
         <LinkExternal href={paths.external.twitter}>Twitter</LinkExternal> about
         anything related to GraphQL, React, JavaScript, Ruby, product

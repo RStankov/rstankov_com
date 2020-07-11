@@ -7,6 +7,7 @@ import paths from '~/paths';
 import styles from './styles.module.css';
 import { groupBy, sortBy } from 'lodash';
 import { useFilters, TYPES } from './utils';
+import LinkExternal from '~/components/LinkExternal';
 
 export default function Page() {
   const [filters, setFilters] = useFilters();
@@ -17,6 +18,14 @@ export default function Page() {
         <h1>Appearances</h1>
         <Switch options={TYPES} selected={filters} onSelect={setFilters} />
       </header>
+      <p>
+        I love talking about technology, product, and process.
+        <br />
+        If you want me to speak on your event or podcast, reach out to at
+        rstankov at gmail or on{' '}
+        <LinkExternal href="https://twitter.com/rstankov">Twitter</LinkExternal>
+        .
+      </p>
       {groupAppearances(filterAppearances(data, filters)).map(
         ([year, appearances]) => (
           <section key={year}>
