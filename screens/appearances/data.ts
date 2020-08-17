@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2019/08/17',
+    type: 'podcast-episode',
+    name:
+      'Building Product Hunt, Lessons from Many Years of Remote Work, and Bulgaria for Nomads',
+    event: {
+      name: 'That Remote Life',
+      url: 'https://thatremotelife.com/podcast/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'episode',
+        url: 'https://share.transistor.fm/s/e1e4578f',
+      },
+    ],
+  },
+  {
     date: '2020/07/11',
     type: 'presentation',
     name: 'Developing desktop apps with React & Electron',
