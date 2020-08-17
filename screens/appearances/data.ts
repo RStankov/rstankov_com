@@ -2,7 +2,7 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
-    date: '2019/08/17',
+    date: '2020/08/17',
     type: 'podcast-episode',
     name:
       'Building Product Hunt, Lessons from Many Years of Remote Work, and Bulgaria for Nomads',
