@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2020/08/19',
+    type: 'presentation',
+    name: 'Answers to Common React Native Questions',
+    event: {
+      name: 'Beer.js Summit 2020',
+      url: 'https://www.facebook.com/events/703593630165488/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/answers-to-common-react-native-questions',
+      },
+    ],
+  },
+  {
     date: '2020/08/17',
     type: 'podcast-episode',
     name:
