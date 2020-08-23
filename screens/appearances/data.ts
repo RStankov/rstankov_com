@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2020/09/04',
+    type: 'presentation',
+    name: 'Scaling Product Hunt to millions of users',
+    event: {
+      name: 'UPPSTART Online 2020',
+      url: 'https://www.uppstart.com/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/scaling-product-hunt-from-1-to-millions-of-users',
+      },
+    ],
+  },
+  {
     date: '2020/08/19',
     type: 'presentation',
     name: 'Answers to Common React Native Questions',
