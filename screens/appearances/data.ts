@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2020/09/15',
+    type: 'presentation',
+    name: 'React Architecture at Product Hunt',
+    event: {
+      name: 'React Global Online Summit for Frontend Developers 2020',
+      url: 'https://react.geekle.us/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/react-architecture-at-product-hunt',
+      },
+    ],
+  },
+  {
     date: '2020/09/04',
     type: 'presentation',
     name: 'Scaling Product Hunt to millions of users',
