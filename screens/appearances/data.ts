@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2020/09/20',
+    type: 'interview',
+    name: 'Radoslav Stankov Workspace',
+    event: {
+      name: 'Workspaces',
+      url: 'https://workspaces.substack.com/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'link',
+        url:
+          'https://workspaces.substack.com/p/workspaces-025-radoslav-stankov',
+      },
+    ],
+  },
+  {
     date: '2020/09/15',
     type: 'presentation',
     name: 'React Architecture at Product Hunt',
