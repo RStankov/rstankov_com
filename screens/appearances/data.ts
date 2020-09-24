@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2020/09/24',
+    type: 'presentation',
+    name: 'React Architecture at Product Hunt',
+    event: {
+      name: 'Total Chaos Meetup - JavaScript Group',
+      url: 'https://www.facebook.com/events/923559694721403/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/react-architecture-at-product-hunt',
+      },
+    ],
+  },
+  {
     date: '2020/09/20',
     type: 'interview',
     name: 'Radoslav Stankov Workspace',
@@ -23,7 +40,7 @@ export default [
     type: 'presentation',
     name: 'React Architecture at Product Hunt',
     event: {
-      name: 'React Global Online Summit for Frontend Developers 2020',
+      name: 'React Global Online Summit 2020',
       url: 'https://react.geekle.us/',
     },
     language: '🇺🇸',
