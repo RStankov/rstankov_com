@@ -131,17 +131,23 @@ export default function Page() {
         <i>This was a busy year</i> 🤩
       </Row>
       <Row year={2020}>
+        New{' '}
+        <LinkExternal href="https://rstankov.com">rstankov.com</LinkExternal>
+        <br />
         Beta Testing{' '}
         <LinkExternal href="https://yourstack.com">
           Your Stack
-        </LinkExternal> at <LinkExternal href="https://www.producthunt.com/">
+        </LinkExternal> at{' '}
+        <LinkExternal href="https://www.producthunt.com/">
           Product Hunt
-        </LinkExternal> 🥞
+        </LinkExternal>{' '}
+        🥞
         <br />
         Launched{' '}
         <LinkExternal href="https://github.com/RStankov/FocusedTask">
           Focused Task
-        </LinkExternal> 🎯
+        </LinkExternal>{' '}
+        🎯
       </Row>
       <div className={styles.continue}>
         <i>...to be continued</i> 😅
