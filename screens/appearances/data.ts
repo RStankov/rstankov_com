@@ -16,6 +16,11 @@ export default [
         url:
           'https://speakerdeck.com/rstankov/react-architecture-at-product-hunt',
       },
+      {
+        type: 'video',
+        url:
+          'https://www.youtube.com/watch?v=n1SwPPfqLlI&ab_channel=ChaosGroupEvents',
+      },
     ],
   },
   {
