@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2020/10/15',
+    type: 'presentation',
+    name: 'React Native Architecture at Product Hunt',
+    event: {
+      name: '3 Hours of React Conference',
+      url: 'https://nimbella.com/webinars/3-hours-of-react-conference/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
+      },
+    ],
+  },
+  {
     date: '2020/09/24',
     type: 'presentation',
     name: 'React Architecture at Product Hunt',
