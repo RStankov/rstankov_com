@@ -2,6 +2,65 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2020/11/20',
+    type: 'presentation',
+    name: 'Developing desktop apps with React & Electron',
+    event: {
+      name: 'JSTalks',
+      url: 'http://jstalks.net/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
+      },
+      {
+        type: 'code',
+        url: 'https://github.com/RStankov/FocusedTask',
+      },
+    ],
+  },
+  {
+    date: '2020/11/13',
+    type: 'presentation',
+    name: 'React Native Architecture at Product Hunt',
+    event: {
+      name: "Cross-platform Development Summit'20",
+      url: 'https://crossplatform.geekle.us/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
+      },
+    ],
+  },
+  {
+    date: '2020/10/28',
+    type: 'presentation',
+    name: 'Developing desktop apps with React & Electron',
+    event: {
+      name: 'ReactVancouver: October’20 edition',
+      url: 'https://hopin.to/events/october-20',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
+      },
+      {
+        type: 'code',
+        url: 'https://github.com/RStankov/FocusedTask',
+      },
+    ],
+  },
+  {
     date: '2020/10/15',
     type: 'presentation',
     name: 'React Native Architecture at Product Hunt',
