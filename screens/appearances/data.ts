@@ -14,7 +14,7 @@ export default [
       {
         type: 'slides',
         url:
-          'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
+          'https://speakerdeck.com/rstankov/developing-apps-with-react-and-electron',
       },
       {
         type: 'code',
@@ -52,7 +52,7 @@ export default [
       {
         type: 'slides',
         url:
-          'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
+          'https://speakerdeck.com/rstankov/developing-apps-with-react-and-electron',
       },
       {
         type: 'code',
