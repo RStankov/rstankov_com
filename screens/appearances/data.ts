@@ -75,6 +75,10 @@ export default [
         url:
           'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
       },
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=REg_EVXStMo&ab_channel=Nimbella',
+      },
     ],
   },
   {
