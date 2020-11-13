@@ -54,6 +54,11 @@ export default [
         url:
           'https://speakerdeck.com/rstankov/developing-apps-with-react-and-electron',
       },
+
+      {
+        type: 'video',
+        url: 'https://youtu.be/Xs1tHPJVpj0?t=7220',
+      },
       {
         type: 'code',
         url: 'https://github.com/RStankov/FocusedTask',
@@ -77,7 +82,7 @@ export default [
       },
       {
         type: 'video',
-        url: 'https://www.youtube.com/watch?v=REg_EVXStMo&ab_channel=Nimbella',
+        url: 'https://youtu.be/REg_EVXStMo?t=5521',
       },
     ],
   },
