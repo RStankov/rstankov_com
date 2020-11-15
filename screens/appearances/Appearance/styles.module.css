@@ -1,34 +1,6 @@
-@import 'styles/media.css';
-
-.item {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-
-  & + & {
-    margin-top: $spacing-small;
-  }
-}
-
-.content {
-  flex: 1;
-}
-
-.event:hover {
-  text-decoration: none;
-}
-
-.links {
-  margin-left: $spacing-medium;
-}
-
 .typeIcon {
   width: 40px;
-  margin-right: $spacing-small;
-}
-
-.link + .link {
-  margin-left: $spacing-small;
+  height: 40px;
 }
 
 .linkIcon {
@@ -36,23 +8,5 @@
 
   &:hover path {
     fill: $active;
-  }
-}
-
-.nameLink {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-@media (--mobile) {
-  .time {
-    display: block;
-  }
-
-  .on {
-    display: none;
   }
 }

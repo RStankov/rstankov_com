@@ -11,6 +11,7 @@ import IconInterview from '~/icons/Interview';
 import styles from './styles.module.css';
 import { parse, format } from 'date-fns';
 import LinkExternal from '~/components/LinkExternal';
+import Stack from '~/components/Stack';
 
 interface IProps {
   appearance: IAppearance;
@@ -36,49 +37,49 @@ const TYPE_ICONS = {
 
 export default function Appearance({ appearance }: IProps) {
   return (
-    <div className={styles.item}>
+    <Stack.Row gap="s" align="start">
       {TYPE_ICONS[appearance.type]}
-      <div className={styles.content}>
-        <AppearanceName appearance={appearance} />
-        <div>
-          <LinkExternal href={appearance.event.url} className={styles.event}>
-            {appearance.event.name}
-          </LinkExternal>
-          <span className={styles.on}>{' on '}</span>
-          <time className={styles.time}>
-            {format(parse(appearance.date, 'yyyy/MM/dd', new Date()), 'd MMMM')}
-          </time>
-        </div>
-      </div>
-      {appearance.links.length > 0 && (
-        <div className={styles.links}>
-          {appearance.links.map((link, index) => (
-            <LinkExternal
-              key={index}
-              href={link.url}
-              className={styles.link}
-              title={link.type}>
-              {LINK_ICONS[link.type] || null}
+      <Stack.ResponsiveRow gap="s" align="start" expand={true}>
+        <Stack.Expand>
+          <AppearanceName appearance={appearance} />
+          <div>
+            <LinkExternal href={appearance.event.url}>
+              {appearance.event.name}
             </LinkExternal>
-          ))}
-        </div>
-      )}
-    </div>
+            <span className={styles.on}>{' on '}</span>
+            <time className={styles.time}>{formatDate(appearance.date)}</time>
+          </div>
+        </Stack.Expand>
+        {appearance.links.length > 0 && (
+          <Stack.Row gap="s">
+            {appearance.links.map((link, index) => (
+              <LinkExternal key={index} href={link.url} title={link.type}>
+                {LINK_ICONS[link.type] || null}
+              </LinkExternal>
+            ))}
+          </Stack.Row>
+        )}
+      </Stack.ResponsiveRow>
+    </Stack.Row>
   );
+}
+
+function formatDate(date: string) {
+  return format(parse(date, 'yyyy/MM/dd', new Date()), 'd MMMM');
 }
 
 function AppearanceName({ appearance }: IProps) {
   const link = appearance.links[0];
 
-  if (link) {
-    return (
-      <strong>
-        <LinkExternal href={link.url} className={styles.nameLink}>
+  return (
+    <strong>
+      {link ? (
+        <LinkExternal href={link.url} className={styles.link}>
           {appearance.name}
         </LinkExternal>
-      </strong>
-    );
-  } else {
-    return <strong>{appearance.name}</strong>;
-  }
+      ) : (
+        appearance.name
+      )}
+    </strong>
+  );
 }

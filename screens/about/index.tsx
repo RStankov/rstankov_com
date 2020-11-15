@@ -2,16 +2,17 @@ import * as React from 'react';
 import styles from './styles.module.css';
 import paths from '~/paths';
 import LinkExternal from '~/components/LinkExternal';
+import Stack from '~/components/Stack';
 
 export default function Page() {
   return (
-    <>
+    <Stack.Column gap="m">
       <img
         src={paths.image.cover}
         className={styles.cover}
         alt="Radoslav Stankov"
       />
-      <h1 className={styles.title}>A bit about me</h1>
+      <h1>About me</h1>
       <Row year={2002}>
         Started web development with{' '}
         <LinkExternal href="https://en.wikipedia.org/wiki/Adobe_Flash">
@@ -152,16 +153,16 @@ export default function Page() {
       <div className={styles.continue}>
         <i>...to be continued</i> 😅
       </div>
-    </>
+    </Stack.Column>
   );
 }
 
 function Row({ year, children }: { year: number; children: React.ReactNode }) {
   return (
-    <div className={styles.row}>
+    <Stack.ResponsiveRow align="center" gap="m">
       <div className={styles.year}>{year}</div>
       <div>{children}</div>
-    </div>
+    </Stack.ResponsiveRow>
   );
 }
 

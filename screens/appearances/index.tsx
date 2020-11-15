@@ -8,21 +8,21 @@ import styles from './styles.module.css';
 import { groupBy, sortBy } from 'lodash';
 import { useFilters, TYPES } from './utils';
 import LinkExternal from '~/components/LinkExternal';
+import Stack from '~/components/Stack';
 
 export default function Page() {
   const [filters, setFilters] = useFilters();
 
   return (
-    <>
-      <header className={styles.header}>
-        <h1>Appearances</h1>
+    <Stack.Column gap="m">
+      <Stack.ResponsiveRow tag="header" gap="m">
+        <h1 className={styles.h1}>Appearances</h1>
         <Switch options={TYPES} selected={filters} onSelect={setFilters} />
-      </header>
+      </Stack.ResponsiveRow>
       <p>
         I love talking about technology, product, and process.
         <br />
-        If you want me to speak on your event or podcast, reach out to at
-        rstankov at gmail or on{' '}
+        If you want me to speak on your event or podcast, reach out on{' '}
         <LinkExternal href="https://twitter.com/rstankov">Twitter</LinkExternal>
         .
       </p>
@@ -34,13 +34,15 @@ export default function Page() {
               <small>{appearances.length}</small>
               <hr />
             </header>
-            {appearances.map((appearance, index) => (
-              <Appearance key={index} appearance={appearance} />
-            ))}
+            <Stack.Column gap="s">
+              {appearances.map((appearance, index) => (
+                <Appearance key={index} appearance={appearance} />
+              ))}
+            </Stack.Column>
           </section>
         ),
       )}
-    </>
+    </Stack.Column>
   );
 }
 

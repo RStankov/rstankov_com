@@ -105,8 +105,7 @@
 }
 
 .footerGithub,
-.footerProductHunt,
-.footerLinkedIn {
+.footerProductHunt {
   svg {
     height: 30px;
   }

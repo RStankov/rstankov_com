@@ -1,39 +1,14 @@
-@import 'styles/media.css';
-
 .avatar {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  margin-right: $spacing-medium;
-
-  @media (--mobile) {
-    margin-right: 0;
-    margin-bottom: $spacing-medium;
-  }
-}
-
-.container {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  margin-bottom: $spacing-medium;
-
-  @media (--mobile) {
-    flex-flow: column;
-  }
 }
 
 .paragraph {
-  font-size: 20px;
-  line-height: 32px;
-  margin-bottom: $spacing-small;
+  font-size: 18px;
+  line-height: 24px;
 
   > a {
-    font-weight: bold;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    font-weight: 700;
   }
 }

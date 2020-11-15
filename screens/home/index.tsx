@@ -2,18 +2,19 @@ import * as React from 'react';
 import paths from '~/paths';
 import styles from './styles.module.css';
 import LinkExternal from '~/components/LinkExternal';
+import Stack from '~/components/Stack';
 
 export default function Page() {
   return (
-    <>
-      <div className={styles.container}>
+    <Stack.Column gap="m">
+      <Stack.ResponsiveRow gap="m">
         <img
           src={paths.image.avatar}
           className={styles.avatar}
           alt="Radoslav Stankov"
         />
         <h1>Hey, I'm Rado 👋</h1>
-      </div>
+      </Stack.ResponsiveRow>
       <p className={styles.paragraph}>
         I'm head of engineering of{' '}
         <LinkExternal href="https://www.producthunt.com">
@@ -34,8 +35,7 @@ export default function Page() {
         .
       </p>
       <p className={styles.paragraph}>
-        I try to <LinkExternal href={paths.blog}>blog</LinkExternal> and
-        contribute to{' '}
+        I <LinkExternal href={paths.blog}>blog</LinkExternal> and contribute to{' '}
         <LinkExternal href={paths.external.github}>open source</LinkExternal>{' '}
         projects, whenever I have time 😅
       </p>
@@ -49,7 +49,7 @@ export default function Page() {
         anything related to GraphQL, React, JavaScript, Ruby, product
         development, remote work, or software engineering in general.
       </p>
-    </>
+    </Stack.Column>
   );
 }
 

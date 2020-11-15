@@ -1,0 +1,118 @@
+@import 'styles/media.css';
+
+.expand {
+  flex: 1;
+}
+
+.stack {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.responsive-direction-column {
+  flex-direction: column;
+
+  @media (--mobile) {
+    flex-direction: row;
+  }
+}
+
+.responsive-direction-row {
+  flex-direction: row;
+
+  @media (--mobile) {
+    flex-direction: column;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-flex-start {
+  align-items: flex-start;
+}
+
+.align-flex-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap-row-s > * + * {
+  margin-left: $spacing-small;
+}
+
+.gap-row-m > * + * {
+  margin-left: $spacing-medium;
+}
+
+.gap-column-s > * + * {
+  margin-top: $spacing-small;
+}
+
+.gap-column-m > * + * {
+  margin-top: $spacing-medium;
+}
+
+.gap-responsive-row-s > * + * {
+  @media (--tablet-or-desktop) {
+    margin-left: $spacing-small;
+  }
+
+  @media (--mobile) {
+    margin-top: $spacing-small;
+  }
+}
+
+.gap-reponsive-row-m > * + * {
+  @media (--tablet-or-desktop) {
+    margin-left: $spacing-medium;
+  }
+
+  @media (--mobile) {
+    margin-top: $spacing-medium;
+  }
+}
+
+.gap-reponsive-column-s > * + * {
+  @media (--tablet-or-desktop) {
+    margin-top: $spacing-small;
+  }
+
+  @media (--mobile) {
+    margin-left: $spacing-small;
+  }
+}
+
+.gap-reponsive-column-m > * + * {
+  @media (--tablet-or-desktop) {
+    margin-top: $spacing-medium;
+  }
+
+  @media (--mobile) {
+    margin-left: $spacing-small;
+  }
+}
