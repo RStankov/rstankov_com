@@ -453,7 +453,7 @@ export default [
       },
       {
         type: 'video',
-        url: 'https://www.youtube.com/watch?v=JkIeWiO3M8I',
+        url: 'https://youtu.be/JkIeWiO3M8I?t=2461',
       },
     ],
   },
