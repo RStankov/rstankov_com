@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/03/01',
+    type: 'interview',
+    name: 'What is "Senior" developer?',
+    event: {
+      name: 'Noble Hire',
+      url: 'https://noblehire.io',
+    },
+    language: '🇧🇬',
+    links: [
+      {
+        type: 'link',
+        url: 'https://noblehire.io/bg/blog/2021/02/26/what-is-seniority/',
+      },
+    ],
+  },
+  {
     date: '2021/01/28',
     type: 'presentation',
     name: 'Testing React Hooks with Confidence',
@@ -17,7 +33,8 @@ export default [
       },
       {
         type: 'code',
-        url: 'https://github.com/RStankov/talks-code/tree/master/2021.01.29%20-%20Testing%20React%20Hooks%20with%20Confidence',
+        url:
+          'https://github.com/RStankov/talks-code/tree/master/2021.01.29%20-%20Testing%20React%20Hooks%20with%20Confidence',
       },
     ],
   },
