@@ -32,6 +32,11 @@ export default [
           'https://speakerdeck.com/rstankov/testing-react-hooks-with-confidence',
       },
       {
+        type: 'video',
+        url:
+          'https://www.youtube.com/watch?v=I9dorcro__s&t=1s&ab_channel=JavaScriptConferencesbyGitNation',
+      },
+      {
         type: 'code',
         url:
           'https://github.com/RStankov/talks-code/tree/master/2021.01.29%20-%20Testing%20React%20Hooks%20with%20Confidence',
