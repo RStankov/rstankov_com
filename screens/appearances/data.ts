@@ -2,6 +2,21 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/01/28',
+    type: 'presentation',
+    name: 'Domain Driven Design kinda',
+    event: {
+      name: 'Ruby Banitsat',
+      url: 'https://rubybanitsa.com/events/76',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/domain-driven-design-kinda',
+      },
+    ],
+  },
+  {
     date: '2021/03/01',
     type: 'interview',
     name: 'What is "Senior" developer?',
