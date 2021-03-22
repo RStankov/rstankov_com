@@ -16,7 +16,7 @@ export default function Page() {
         <h1>Hey, I'm Rado 👋</h1>
       </Stack.ResponsiveRow>
       <p className={styles.paragraph}>
-        I'm head of engineering of{' '}
+        I'm head of engineering at{' '}
         <LinkExternal href="https://www.producthunt.com">
           Product Hunt
         </LinkExternal>{' '}
@@ -24,13 +24,17 @@ export default function Page() {
         ).
       </p>
       <p className={styles.paragraph}>
-        In my spare time, I'm organizing{' '}
+        In my spare time, I'm building{' '}
+        <LinkExternal href="https://github.com/RStankov/FocusedTask">
+          🎯 Focused Task
+        </LinkExternal>
+        , organizing{' '}
         <LinkExternal href="http://react-not-a-conf.com/">
-          React.NotAConf
+          🚀 React.NotAConf
         </LinkExternal>{' '}
         conference and{' '}
         <LinkExternal href="https://www.meetup.com/React-Sofia">
-          React Sofia Meetup
+          ⚛️ React Sofia Meetup
         </LinkExternal>
         .
       </p>
@@ -40,7 +44,7 @@ export default function Page() {
         projects, whenever I have time 😅
       </p>
       <p className={styles.paragraph}>
-        If you want me to speak on your event or podcast, reach out to at
+        If you want me to speak at your event or podcast, reach out to at
         rstankov at gmail.
       </p>
       <p className={styles.paragraph}>
