@@ -8,7 +8,16 @@
   font-size: 18px;
   line-height: 24px;
 
-  > a {
+  a {
     font-weight: 700;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+
+    li {
+      margin-top: 8px;
+    }
   }
 }

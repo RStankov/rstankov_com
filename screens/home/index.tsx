@@ -24,35 +24,42 @@ export default function Page() {
         ).
       </p>
       <p className={styles.paragraph}>
-        In my spare time, I'm building{' '}
-        <LinkExternal href="https://github.com/RStankov/FocusedTask">
-          🎯 Focused Task
-        </LinkExternal>
-        , organizing{' '}
-        <LinkExternal href="http://react-not-a-conf.com/">
-          🚀 React.NotAConf
-        </LinkExternal>{' '}
-        conference and{' '}
-        <LinkExternal href="https://www.meetup.com/React-Sofia">
-          ⚛️ React Sofia Meetup
-        </LinkExternal>
-        .
+        In my spare time, I'm:
+        <ul>
+          <li>
+            blogging at{' '}
+            <LinkExternal href="https://blog.rstankov.com">
+              📝 blog.rstankov.com
+            </LinkExternal>
+          </li>
+          <li>
+            building{' '}
+            <LinkExternal href="https://github.com/RStankov/FocusedTask">
+              🎯 Focused Task{' '}
+            </LinkExternal>
+          </li>
+          <li>
+            organizing{' '}
+            <LinkExternal href="http://react-not-a-conf.com/">
+              🚀 React.NotAConf
+            </LinkExternal>{' '}
+            conference and{' '}
+            <LinkExternal href="https://www.meetup.com/React-Sofia">
+              ⚛️ React Sofia Meetup
+            </LinkExternal>
+          </li>
+        </ul>
       </p>
-      <p className={styles.paragraph}>
-        I <LinkExternal href={paths.blog}>blog</LinkExternal> and contribute to{' '}
-        <LinkExternal href={paths.external.github}>open source</LinkExternal>{' '}
-        projects, whenever I have time 😅
-      </p>
-      <p className={styles.paragraph}>
+      <div className={styles.paragraph}>
         If you want me to speak at your event or podcast, reach out to at
         rstankov at gmail.
-      </p>
-      <p className={styles.paragraph}>
+      </div>
+      <div className={styles.paragraph}>
         You can ping me on{' '}
         <LinkExternal href={paths.external.twitter}>Twitter</LinkExternal> about
         anything related to GraphQL, React, JavaScript, Ruby, product
         development, remote work, or software engineering in general.
-      </p>
+      </div>
     </Stack.Column>
   );
 }
