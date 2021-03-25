@@ -2,11 +2,11 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
-    date: '2021/01/28',
+    date: '2021/03/24',
     type: 'presentation',
     name: 'Domain Driven Design kinda',
     event: {
-      name: 'Ruby Banitsat',
+      name: 'Ruby Banitsa',
       url: 'https://rubybanitsa.com/events/76',
     },
     links: [
