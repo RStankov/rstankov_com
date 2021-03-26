@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/04/16',
+    type: 'presentation',
+    name: 'React Native Architecture at Product Hunt',
+    event: {
+      name: 'React Summit Remote Edition',
+      url: 'https://remote.reactsummit.com/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
+      },
+    ],
+  },
+  {
     date: '2021/03/24',
     type: 'presentation',
     name: 'Domain Driven Design kinda',
