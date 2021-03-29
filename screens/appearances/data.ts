@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/04/27',
+    type: 'presentation',
+    name: 'React Native Architecture at Product Hunt',
+    event: {
+      name: 'React JS Case Study Festival',
+      url: 'https://react.geekle.us/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
+      },
+    ],
+  },
+  {
     date: '2021/04/16',
     type: 'presentation',
     name: 'React Native Architecture at Product Hunt',
