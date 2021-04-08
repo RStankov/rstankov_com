@@ -48,6 +48,10 @@ export default [
         type: 'slides',
         url: 'https://speakerdeck.com/rstankov/domain-driven-design-kinda',
       },
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=SPtj_eaYRMs',
+      },
     ],
   },
   {
