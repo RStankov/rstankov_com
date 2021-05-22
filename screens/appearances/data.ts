@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/05/20',
+    type: 'presentation',
+    name: 'How to effective developer',
+    event: {
+      name: 'Career Show',
+      url: 'https://careershow.bg/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/how-to-effective-developer',
+      },
+    ],
+  },
+  {
     date: '2021/04/27',
     type: 'presentation',
     name: 'React Native Architecture at Product Hunt',
