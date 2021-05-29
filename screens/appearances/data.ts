@@ -3,6 +3,23 @@ import IAppearance from '~/types/Appearance';
 export default [
   {
     date: '2021/05/20',
+    type: 'podcast-episode',
+    name: 'The Art of Productive Coding with Radoslav Stankov',
+    event: {
+      name: 'Codecast by HackerEarth',
+      url: 'https://open.spotify.com/show/31XPVWgmGl1ZkdOCW243Az',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'episode',
+        url:
+          'https://open.spotify.com/episode/27TC4eVnAcntcFqlTrvkNG?si=3hQ1EsmlSu2J76iiguUfhg&nd=1',
+      },
+    ],
+  },
+  {
+    date: '2021/05/20',
     type: 'presentation',
     name: 'How to effective developer',
     event: {
