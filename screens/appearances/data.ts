@@ -21,7 +21,7 @@ export default [
   {
     date: '2021/05/20',
     type: 'presentation',
-    name: 'How to effective developer',
+    name: 'How to an effective developer',
     event: {
       name: 'Career Show',
       url: 'https://careershow.bg/',
@@ -30,7 +30,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url: 'https://speakerdeck.com/rstankov/how-to-effective-developer',
+        url: 'https://speakerdeck.com/rstankov/how-to-an-effective-developer',
       },
     ],
   },
