@@ -69,6 +69,28 @@ export default [
     ],
   },
   {
+    date: '2021/04/15',
+    type: 'presentation',
+    name: 'React Native Architecture at Product Hunt',
+    event: {
+      name: 'Drive-in Conf: Plovdiv',
+      url: 'https://community-z.com/events/drive-in-conf-plovdiv',
+    },
+    language: '🇧🇬',
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
+      },
+      {
+        type: 'video',
+        url:
+          'https://www.youtube.com/watch?v=5doo9Mjg7yk&ab_channel=EPAMBulgaria',
+      },
+    ],
+  },
+  {
     date: '2021/03/24',
     type: 'presentation',
     name: 'Domain Driven Design kinda',
