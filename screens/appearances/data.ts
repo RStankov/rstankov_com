@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/06/08',
+    type: 'presentation',
+    name: 'React Component Anti-Patterns',
+    event: {
+      name: 'DevDays Europe',
+      url: 'https://devdays.lt/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/react-component-anti-patterns',
+      },
+    ],
+  },
+  {
     date: '2021/05/20',
     type: 'podcast-episode',
     name: 'The Art of Productive Coding with Radoslav Stankov',
