@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/06/03',
+    type: 'interview',
+    name: 'Lessons In Productivity',
+    event: {
+      name: 'HackerEarth',
+      url: 'https://www.hackerearth.com/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'link',
+        url:
+          'https://www.hackerearth.com/blog/developers/lessons-in-prodictivity',
+      },
+    ],
+  },
+  {
     date: '2021/06/08',
     type: 'presentation',
     name: 'React Component Anti-Patterns',
