@@ -2,6 +2,23 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/07/08',
+    type: 'podcast',
+    name: 'Product Hunt Architecture',
+    event: {
+      name: 'Math.random',
+      url: 'https://www.youtube.com/channel/UCqz_fCqg4hIPatWg1gxAAjA',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'video',
+        url:
+          'https://www.youtube.com/watch?v=9rRvR74rbM4&ab_channel=Math.random%3Ajavascriptcommunity',
+      },
+    ],
+  },
+  {
     date: '2021/06/03',
     type: 'interview',
     name: 'Lessons In Productivity',
