@@ -3,7 +3,7 @@ import IAppearance from '~/types/Appearance';
 export default [
   {
     date: '2021/07/08',
-    type: 'podcast',
+    type: 'podcast-episode',
     name: 'Product Hunt Architecture',
     event: {
       name: 'Math.random',
