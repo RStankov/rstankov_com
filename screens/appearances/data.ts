@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/08/18',
+    type: 'presentation',
+    name: 'React Component Anti-Patterns',
+    event: {
+      name: 'BeerJS Summit 2021',
+      url: 'https://www.facebook.com/events/2818616615078860?ref=newsfeed',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/react-component-anti-patterns',
+      },
+    ],
+  },
+  {
     date: '2021/07/08',
     type: 'podcast-episode',
     name: 'Product Hunt Architecture',
