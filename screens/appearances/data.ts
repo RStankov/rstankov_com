@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/09/08',
+    type: 'podcast-episode',
+    name: 'Scaling Your Team and Product: Leadership Stories from Product Hunt',
+    event: {
+      name: 'Level-up Engineering Stories',
+      url: 'https://codingsans.com/engineering-management-podcast',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'episode',
+        url: 'https://codingsans.com/blog/leadership-stories',
+      },
+    ],
+  },
+  {
     date: '2021/08/18',
     type: 'presentation',
     name: 'React Component Anti-Patterns',
