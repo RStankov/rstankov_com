@@ -4,6 +4,28 @@ export default [
   {
     date: '2021/09/08',
     type: 'podcast-episode',
+    name: 'How to develop product thinking with Rаdo Stankov',
+    event: {
+      name: 'The Recursive',
+      url: 'https://therecursive.com/channel/podcasts/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'episode',
+        url:
+          'https://therecursive.com/how-to-develop-product-thinking-with-rado-stankov/',
+      },
+      {
+        type: 'video',
+        url:
+          'https://www.youtube.com/watch?v=5u2gahnmPQY&t=11s&ab_channel=TheRecursive',
+      },
+    ],
+  },
+  {
+    date: '2021/09/08',
+    type: 'podcast-episode',
     name: 'Scaling Your Team and Product: Leadership Stories from Product Hunt',
     event: {
       name: 'Level-up Engineering Stories',
