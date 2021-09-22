@@ -2,7 +2,7 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
-    date: '2021/09/08',
+    date: '2021/09/14',
     type: 'podcast-episode',
     name: 'How to develop product thinking with Rаdo Stankov',
     event: {
