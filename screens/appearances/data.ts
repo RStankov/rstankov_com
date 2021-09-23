@@ -2,6 +2,28 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/09/21',
+    type: 'podcast-episode',
+    name: 'Episode 259 - Radoslav Stankov',
+    event: {
+      name: 'Свръхчовекът с Георги Ненов',
+      url: 'https://www.thesuperhumanpodcast.net/',
+    },
+    language: '🇧🇬',
+    links: [
+      {
+        type: 'episode',
+        url:
+          'https://www.thesuperhumanpodcast.net/episode/259-radoslav-stankov/',
+      },
+      {
+        type: 'video',
+        url:
+          'https://www.youtube.com/watch?v=IgoI9W0tm0M',
+      },
+    ],
+  },
+  {
     date: '2021/09/14',
     type: 'podcast-episode',
     name: 'How to develop product thinking with Rаdo Stankov',
