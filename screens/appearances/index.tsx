@@ -23,8 +23,7 @@ export default function Page() {
         I love talking about technology, product, and process.
         <br />
         If you want me to speak on your event or podcast, reach out on{' '}
-        <LinkExternal href="https://twitter.com/rstankov">Twitter</LinkExternal>
-        .
+        <LinkExternal href={paths.external.twitter}>Twitter</LinkExternal>.
       </p>
       {groupAppearances(filterAppearances(data, filters)).map(
         ([year, appearances]) => (
