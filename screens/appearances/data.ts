@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/10/15',
+    type: 'presentation',
+    name: 'React Component Anti-Patterns',
+    event: {
+      name: 'React Brussels',
+      url: 'https://www.react.brussels/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/react-component-anti-patterns',
+      },
+    ],
+  },
+  {
     date: '2021/09/21',
     type: 'podcast-episode',
     name: 'Episode 259 - Radoslav Stankov',
@@ -18,8 +34,7 @@ export default [
       },
       {
         type: 'video',
-        url:
-          'https://www.youtube.com/watch?v=IgoI9W0tm0M',
+        url: 'https://www.youtube.com/watch?v=IgoI9W0tm0M',
       },
     ],
   },
