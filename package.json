@@ -3,7 +3,7 @@
   "private": true,
   "license": "private",
   "engines": {
-    "node": "14.17.6"
+    "node": "14.18.0"
   },
   "scripts": {
     "dev": "next",
