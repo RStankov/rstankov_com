@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/10/21',
+    type: 'presentation',
+    name: 'Eliminating noise from your code',
+    event: {
+      name: 'HackConf',
+      url: 'https://www.hackconf.bg/en/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/eliminating-noice-from-your-code',
+      },
+    ],
+  },
+  {
     date: '2021/10/15',
     type: 'presentation',
     name: 'React Component Anti-Patterns',
