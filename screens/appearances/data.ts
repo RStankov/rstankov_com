@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/11/12',
+    type: 'presentation',
+    name: 'React architecture in Product Hunt',
+    event: {
+      name: 'React India',
+      url: 'https://www.reactindia.io/conferences/2021',
+    },
+    links: [
+      {
+        type: 'slides',
+        url:
+          'https://speakerdeck.com/rstankov/react-architecture-at-product-hunt-52c87133-5b5c-4090-b1aa-2bc22f2aab71',
+      },
+    ],
+  },
+  {
     date: '2021/10/21',
     type: 'presentation',
     name: 'Eliminating noise from your code',
