@@ -31,6 +31,10 @@ export default [
         url:
           'https://speakerdeck.com/rstankov/eliminating-noice-from-your-code',
       },
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=LuYMpomq64w',
+      },
     ],
   },
   {
