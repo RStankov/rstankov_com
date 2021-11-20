@@ -2,6 +2,19 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/11/20',
+    type: 'presentation',
+    name: 'React Component Anti-Patterns',
+    event: { name: 'JStalks', url: 'http://jstalks.net/' },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/react-component-anti-patterns',
+      },
+    ],
+  },
+  {
     date: '2021/11/12',
     type: 'presentation',
     name: 'React architecture in Product Hunt',
