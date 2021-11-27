@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/11/25',
+    type: 'podcast-episode',
+    name: 'Episode 65 - Expanding teams',
+    event: {
+      name: 'Nadcast',
+      url: 'https://nadcast.krasimirtsonev.com/',
+    },
+    language: '🇧🇬',
+    links: [
+      {
+        type: 'episode',
+        url: 'https://nadcast.krasimirtsonev.com/episode/ra8eHTMEd8vjwavvF5kV',
+      },
+    ],
+  },
+  {
     date: '2021/11/20',
     type: 'presentation',
     name: 'React Component Anti-Patterns',
