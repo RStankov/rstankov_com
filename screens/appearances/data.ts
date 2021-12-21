@@ -2,6 +2,28 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2021/12/20',
+    type: 'interview',
+    name: 'Radoslav Stankov',
+    event: {
+      name: 'Dobrudzha Radio',
+      url: 'http://dobrudjabg.com/',
+    },
+    language: '🇧🇬',
+    links: [
+      {
+        type: 'link',
+        url:
+          'http://dobrudjabg.com/novina/md-radoslav-stankov-staraq-se-da-se-fokusiram-vyrhu-hubavite-neshta-v-bylgariq-video-/74916',
+      },
+      {
+        type: 'video',
+        url:
+          'http://dobrudjatv.net/novina/md-radoslav-stankov-staraq-se-da-se-fokusiram-vyrhu-hubavite-neshta-v-bylgariq/8895',
+      },
+    ],
+  },
+  {
     date: '2021/11/25',
     type: 'podcast-episode',
     name: 'Episode 65 - Expanding teams',
