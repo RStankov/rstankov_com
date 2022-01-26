@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import NextLink from 'next/link';
 
 interface IProps {
   href: string;
@@ -7,10 +7,13 @@ interface IProps {
   [name: string]: any;
 }
 
-export default React.forwardRef(({ href, ...props }: IProps, ref: any) => {
+export default React.forwardRef(function Link(
+  { href, ...props }: IProps,
+  ref: any,
+) {
   return (
-    <Link href={href}>
+    <NextLink href={href}>
       <a {...props} ref={ref} />
-    </Link>
+    </NextLink>
   );
 });
