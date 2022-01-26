@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2022/01/26',
+    type: 'interview',
+    name: 'React Best Practices 2021',
+    event: {
+      name: 'CopyCat Blog',
+      url: 'https://www.copycat.dev/blog/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'link',
+        url: 'https://www.copycat.dev/blog/react-best-practices/',
+      },
+    ],
+  },
+  {
     date: '2021/12/20',
     type: 'interview',
     name: 'Radoslav Stankov',
