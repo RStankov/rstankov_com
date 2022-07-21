@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2022/07/20',
+    type: 'presentation',
+    name: 'Building tools on top of Apollo',
+    event: {
+      name: 'dxTechTalk Frontend Day',
+      url: 'https://www.eventbrite.com/e/dxtechtalk-frontend-day-tickets-373195597077',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'link',
+        url: 'https://speakerdeck.com/rstankov/building-tools-on-top-of-apollo',
+      },
+    ],
+  },
+  {
     date: '2022/01/26',
     type: 'interview',
     name: 'React Best Practices 2021',
@@ -29,13 +45,11 @@ export default [
     links: [
       {
         type: 'link',
-        url:
-          'http://dobrudjabg.com/novina/md-radoslav-stankov-staraq-se-da-se-fokusiram-vyrhu-hubavite-neshta-v-bylgariq-video-/74916',
+        url: 'http://dobrudjabg.com/novina/md-radoslav-stankov-staraq-se-da-se-fokusiram-vyrhu-hubavite-neshta-v-bylgariq-video-/74916',
       },
       {
         type: 'video',
-        url:
-          'http://dobrudjatv.net/novina/md-radoslav-stankov-staraq-se-da-se-fokusiram-vyrhu-hubavite-neshta-v-bylgariq/8895',
+        url: 'http://dobrudjatv.net/novina/md-radoslav-stankov-staraq-se-da-se-fokusiram-vyrhu-hubavite-neshta-v-bylgariq/8895',
       },
     ],
   },
@@ -79,8 +93,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/react-architecture-at-product-hunt-52c87133-5b5c-4090-b1aa-2bc22f2aab71',
+        url: 'https://speakerdeck.com/rstankov/react-architecture-at-product-hunt-52c87133-5b5c-4090-b1aa-2bc22f2aab71',
       },
     ],
   },
@@ -95,8 +108,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/eliminating-noice-from-your-code',
+        url: 'https://speakerdeck.com/rstankov/eliminating-noice-from-your-code',
       },
       {
         type: 'video',
@@ -132,8 +144,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'https://www.thesuperhumanpodcast.net/episode/259-radoslav-stankov/',
+        url: 'https://www.thesuperhumanpodcast.net/episode/259-radoslav-stankov/',
       },
       {
         type: 'video',
@@ -153,13 +164,11 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'https://therecursive.com/how-to-develop-product-thinking-with-rado-stankov/',
+        url: 'https://therecursive.com/how-to-develop-product-thinking-with-rado-stankov/',
       },
       {
         type: 'video',
-        url:
-          'https://www.youtube.com/watch?v=5u2gahnmPQY&t=11s&ab_channel=TheRecursive',
+        url: 'https://www.youtube.com/watch?v=5u2gahnmPQY&t=11s&ab_channel=TheRecursive',
       },
     ],
   },
@@ -207,8 +216,7 @@ export default [
     links: [
       {
         type: 'video',
-        url:
-          'https://www.youtube.com/watch?v=9rRvR74rbM4&ab_channel=Math.random%3Ajavascriptcommunity',
+        url: 'https://www.youtube.com/watch?v=9rRvR74rbM4&ab_channel=Math.random%3Ajavascriptcommunity',
       },
     ],
   },
@@ -224,8 +232,7 @@ export default [
     links: [
       {
         type: 'link',
-        url:
-          'https://www.hackerearth.com/blog/developers/lessons-in-prodictivity',
+        url: 'https://www.hackerearth.com/blog/developers/lessons-in-prodictivity',
       },
     ],
   },
@@ -257,8 +264,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'https://open.spotify.com/episode/27TC4eVnAcntcFqlTrvkNG?si=3hQ1EsmlSu2J76iiguUfhg&nd=1',
+        url: 'https://open.spotify.com/episode/27TC4eVnAcntcFqlTrvkNG?si=3hQ1EsmlSu2J76iiguUfhg&nd=1',
       },
     ],
   },
@@ -290,8 +296,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
+        url: 'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
       },
     ],
   },
@@ -307,8 +312,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
+        url: 'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
       },
     ],
   },
@@ -324,13 +328,11 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
+        url: 'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
       },
       {
         type: 'video',
-        url:
-          'https://www.youtube.com/watch?v=5doo9Mjg7yk&ab_channel=EPAMBulgaria',
+        url: 'https://www.youtube.com/watch?v=5doo9Mjg7yk&ab_channel=EPAMBulgaria',
       },
     ],
   },
@@ -380,18 +382,15 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/testing-react-hooks-with-confidence',
+        url: 'https://speakerdeck.com/rstankov/testing-react-hooks-with-confidence',
       },
       {
         type: 'video',
-        url:
-          'https://www.youtube.com/watch?v=I9dorcro__s&t=1s&ab_channel=JavaScriptConferencesbyGitNation',
+        url: 'https://www.youtube.com/watch?v=I9dorcro__s&t=1s&ab_channel=JavaScriptConferencesbyGitNation',
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2021.01.29%20-%20Testing%20React%20Hooks%20with%20Confidence',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2021.01.29%20-%20Testing%20React%20Hooks%20with%20Confidence',
       },
     ],
   },
@@ -406,8 +405,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/product-development-df425dd0-1c87-48ae-bdb9-ca91c829770f',
+        url: 'https://speakerdeck.com/rstankov/product-development-df425dd0-1c87-48ae-bdb9-ca91c829770f',
       },
     ],
   },
@@ -423,8 +421,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/developing-apps-with-react-and-electron',
+        url: 'https://speakerdeck.com/rstankov/developing-apps-with-react-and-electron',
       },
       {
         type: 'code',
@@ -444,8 +441,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
+        url: 'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
       },
     ],
   },
@@ -461,8 +457,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/developing-apps-with-react-and-electron',
+        url: 'https://speakerdeck.com/rstankov/developing-apps-with-react-and-electron',
       },
 
       {
@@ -487,8 +482,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
+        url: 'https://speakerdeck.com/rstankov/react-native-architecture-at-product-hunt',
       },
       {
         type: 'video',
@@ -508,13 +502,11 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/react-architecture-at-product-hunt',
+        url: 'https://speakerdeck.com/rstankov/react-architecture-at-product-hunt',
       },
       {
         type: 'video',
-        url:
-          'https://www.youtube.com/watch?v=n1SwPPfqLlI&ab_channel=ChaosGroupEvents',
+        url: 'https://www.youtube.com/watch?v=n1SwPPfqLlI&ab_channel=ChaosGroupEvents',
       },
     ],
   },
@@ -530,8 +522,7 @@ export default [
     links: [
       {
         type: 'link',
-        url:
-          'https://workspaces.substack.com/p/workspaces-025-radoslav-stankov',
+        url: 'https://workspaces.substack.com/p/workspaces-025-radoslav-stankov',
       },
     ],
   },
@@ -547,8 +538,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/react-architecture-at-product-hunt',
+        url: 'https://speakerdeck.com/rstankov/react-architecture-at-product-hunt',
       },
     ],
   },
@@ -564,8 +554,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/scaling-product-hunt-from-1-to-millions-of-users',
+        url: 'https://speakerdeck.com/rstankov/scaling-product-hunt-from-1-to-millions-of-users',
       },
     ],
   },
@@ -581,16 +570,14 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/answers-to-common-react-native-questions',
+        url: 'https://speakerdeck.com/rstankov/answers-to-common-react-native-questions',
       },
     ],
   },
   {
     date: '2020/08/17',
     type: 'podcast-episode',
-    name:
-      'Building Product Hunt, Lessons from Many Years of Remote Work, and Bulgaria for Nomads',
+    name: 'Building Product Hunt, Lessons from Many Years of Remote Work, and Bulgaria for Nomads',
     event: {
       name: 'That Remote Life',
       url: 'https://thatremotelife.com/podcast/',
@@ -615,8 +602,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
+        url: 'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
       },
       {
         type: 'code',
@@ -630,15 +616,13 @@ export default [
     name: 'Developing desktop apps with React & Electron',
     event: {
       name: 'HackConf Online Talks',
-      url:
-        'https://hopin.to/events/hackconf-online-talks-2-with-radoslav-stankov',
+      url: 'https://hopin.to/events/hackconf-online-talks-2-with-radoslav-stankov',
     },
     language: '🇺🇸',
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
+        url: 'https://speakerdeck.com/rstankov/developing-desktop-apps-with-react-and-electron',
       },
       {
         type: 'video',
@@ -678,8 +662,7 @@ export default [
     links: [
       {
         type: 'video',
-        url:
-          'https://www.youtube.com/watch?v=k87MSZ67FsY&list=PLtEHXqY-xd3CG3zUp2_e3PpnUGBY9asSl&index=17&t=0s',
+        url: 'https://www.youtube.com/watch?v=k87MSZ67FsY&list=PLtEHXqY-xd3CG3zUp2_e3PpnUGBY9asSl&index=17&t=0s',
       },
     ],
   },
@@ -711,8 +694,7 @@ export default [
     links: [
       {
         type: 'link',
-        url:
-          'https://www.trendingtopics.eu/remote-work-tips-tricks-from-startups-who-have-been-mastering-it-for-years/',
+        url: 'https://www.trendingtopics.eu/remote-work-tips-tricks-from-startups-who-have-been-mastering-it-for-years/',
       },
     ],
   },
@@ -762,8 +744,7 @@ export default [
       },
       {
         type: 'video',
-        url:
-          'https://www.youtube.com/watch?v=0Bwg03f_3KQ&list=PLTRTpHrUcSB9jtvOwnq1yVwZl5k2DdBb2&index=23&t=0s',
+        url: 'https://www.youtube.com/watch?v=0Bwg03f_3KQ&list=PLTRTpHrUcSB9jtvOwnq1yVwZl5k2DdBb2&index=23&t=0s',
       },
     ],
   },
@@ -793,8 +774,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/eliminating-noice-from-your-code',
+        url: 'https://speakerdeck.com/rstankov/eliminating-noice-from-your-code',
       },
     ],
   },
@@ -810,8 +790,7 @@ export default [
     links: [
       {
         type: 'link',
-        url:
-          'https://www.trendingtopics.eu/radoslav-stankov-product-hunt-remote-engineering/',
+        url: 'https://www.trendingtopics.eu/radoslav-stankov-product-hunt-remote-engineering/',
       },
     ],
   },
@@ -826,16 +805,14 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/dealing-with-dependancies-in-javascript',
+        url: 'https://speakerdeck.com/rstankov/dealing-with-dependancies-in-javascript',
       },
     ],
   },
   {
     date: '2019/10/22',
     type: 'podcast-episode',
-    name:
-      'Building a World-Class Onboarding Process For Software Engineering Team',
+    name: 'Building a World-Class Onboarding Process For Software Engineering Team',
     event: {
       name: 'Scaling Software Teams',
       url: 'https://software.fireside.fm/',
@@ -878,8 +855,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/react-architecture-in-product-hunt-8c56efb1-aeef-43b3-8cda-62ae02461143',
+        url: 'https://speakerdeck.com/rstankov/react-architecture-in-product-hunt-8c56efb1-aeef-43b3-8cda-62ae02461143',
       },
       {
         type: 'video',
@@ -898,8 +874,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/how-to-get-to-zero-unhandled-exceptions-in-production',
+        url: 'https://speakerdeck.com/rstankov/how-to-get-to-zero-unhandled-exceptions-in-production',
       },
       {
         type: 'video',
@@ -913,8 +888,7 @@ export default [
     name: 'How to be productive with React',
     event: {
       name: 'SoftUni Seminar',
-      url:
-        'https://softuni.bg/trainings/2466/tech-stage-how-to-be-productive-with-react',
+      url: 'https://softuni.bg/trainings/2466/tech-stage-how-to-be-productive-with-react',
     },
     links: [],
   },
@@ -929,8 +903,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/making-good-decisions-about-javascript-dependencies',
+        url: 'https://speakerdeck.com/rstankov/making-good-decisions-about-javascript-dependencies',
       },
     ],
   },
@@ -962,16 +935,14 @@ export default [
     links: [
       {
         type: 'link',
-        url:
-          'https://devstyler.io/blog/2019/07/05/radoslav-stankov-doveryavajte-se-na-ekipa-si/',
+        url: 'https://devstyler.io/blog/2019/07/05/radoslav-stankov-doveryavajte-se-na-ekipa-si/',
       },
     ],
   },
   {
     date: '2019/07/01',
     type: 'podcast-episode',
-    name:
-      'Episode 3 - Episode 3: Radoslav Stankov on how to approach Remote Work',
+    name: 'Episode 3 - Episode 3: Radoslav Stankov on how to approach Remote Work',
     event: {
       name: 'Inside Remote',
       url: 'https://inside-remote.simplecast.com/',
@@ -980,8 +951,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'https://inside-remote.simplecast.com/episodes/episode-3-radoslav-stankov-on-how-to-approach-remote-work',
+        url: 'https://inside-remote.simplecast.com/episodes/episode-3-radoslav-stankov-on-how-to-approach-remote-work',
       },
     ],
   },
@@ -996,8 +966,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/two-plus-years-graphql-at-producthunt',
+        url: 'https://speakerdeck.com/rstankov/two-plus-years-graphql-at-producthunt',
       },
     ],
   },
@@ -1013,8 +982,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'http://krasimirtsonev.com/blog/article/nadcast-22-react-not-a-conf-live',
+        url: 'http://krasimirtsonev.com/blog/article/nadcast-22-react-not-a-conf-live',
       },
     ],
   },
@@ -1026,18 +994,15 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/how-not-to-hate-your-life-when-dealing-with-forms',
+        url: 'https://speakerdeck.com/rstankov/how-not-to-hate-your-life-when-dealing-with-forms',
       },
       {
         type: 'video',
-        url:
-          'https://github.com/RStankov/talks-code/blob/master/2019.05.11%20-%20Forms%20with%20React%202/',
+        url: 'https://github.com/RStankov/talks-code/blob/master/2019.05.11%20-%20Forms%20with%20React%202/',
       },
       {
         type: 'code',
-        url:
-          'https://www.youtube.com/watch?v=kIi9OV338c4&list=PLOEJ0eNOcZeosJfuT0dRcRWvNz4pru7SD&index=7&t=0s',
+        url: 'https://www.youtube.com/watch?v=kIi9OV338c4&list=PLOEJ0eNOcZeosJfuT0dRcRWvNz4pru7SD&index=7&t=0s',
       },
     ],
   },
@@ -1053,8 +1018,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'http://krasimirtsonev.com/blog/article/nadcast-21-react-not-a-conf',
+        url: 'http://krasimirtsonev.com/blog/article/nadcast-21-react-not-a-conf',
       },
     ],
   },
@@ -1070,8 +1034,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS',
       },
     ],
   },
@@ -1118,8 +1081,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'https://devchat.tv/ruby-rogues/rr-396-graphql-at-product-hunt-with-radoslav-stankov/',
+        url: 'https://devchat.tv/ruby-rogues/rr-396-graphql-at-product-hunt-with-radoslav-stankov/',
       },
     ],
   },
@@ -1135,8 +1097,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'http://krasimirtsonev.com/blog/article/nadcast-19-rado-stankov-minko-genchev',
+        url: 'http://krasimirtsonev.com/blog/article/nadcast-19-rado-stankov-minko-genchev',
       },
     ],
   },
@@ -1152,8 +1113,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'https://devchat.tv/react-round-up/rru-042-react-at-product-hunt-with-radoslav-stankov/',
+        url: 'https://devchat.tv/react-round-up/rru-042-react-at-product-hunt-with-radoslav-stankov/',
       },
     ],
   },
@@ -1184,8 +1144,7 @@ export default [
       },
       {
         type: 'video',
-        url:
-          'https://www.youtube.com/watch?v=bohJQ_rsLio&t=0s&list=PLzUxAJX9n5voQDjpJOYHqJjzWjgKzrcpj&index=10\n',
+        url: 'https://www.youtube.com/watch?v=bohJQ_rsLio&t=0s&list=PLzUxAJX9n5voQDjpJOYHqJjzWjgKzrcpj&index=10\n',
       },
     ],
   },
@@ -1236,8 +1195,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS\n',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS\n',
       },
     ],
   },
@@ -1256,8 +1214,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS\n',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS\n',
       },
     ],
   },
@@ -1304,8 +1261,7 @@ export default [
       { type: 'video', url: 'https://www.youtube.com/watch?v=bb9Qbybcr64' },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS\n',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS\n',
       },
     ],
   },
@@ -1324,8 +1280,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2018.06.05%20-%20Phoenix%20Lecture\n',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2018.06.05%20-%20Phoenix%20Lecture\n',
       },
     ],
   },
@@ -1349,8 +1304,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/one-year-graphql-in-production\n',
+        url: 'https://speakerdeck.com/rstankov/one-year-graphql-in-production\n',
       },
     ],
   },
@@ -1366,8 +1320,7 @@ export default [
       { type: 'slides', url: 'https://speakerdeck.com/rstankov/notakeynote' },
       {
         type: 'video',
-        url:
-          'https://www.youtube.com/watch?v=IXYTiJRzebQ&index=4&t=0s&list=PLOEJ0eNOcZeqYZCTipkAra8g-ZHYjAijK\n',
+        url: 'https://www.youtube.com/watch?v=IXYTiJRzebQ&index=4&t=0s&list=PLOEJ0eNOcZeqYZCTipkAra8g-ZHYjAijK\n',
       },
     ],
   },
@@ -1455,8 +1408,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2017.08.27%20-%20Testing%20in%20JavaScript',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2017.08.27%20-%20Testing%20in%20JavaScript',
       },
     ],
   },
@@ -1521,8 +1473,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2017.03.07%20-%20Forms%20with%20React',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2017.03.07%20-%20Forms%20with%20React',
       },
     ],
   },
@@ -1618,8 +1569,7 @@ export default [
       { type: 'video', url: 'https://www.youtube.com/watch?v=3x6qGs1_aoU' },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2016.07.18%20-%20Integrating%20Redux%20with%20React',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2016.07.18%20-%20Integrating%20Redux%20with%20React',
       },
     ],
   },
@@ -1631,8 +1581,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/rebuilding-of-product-hunt-for-ios',
+        url: 'https://speakerdeck.com/rstankov/rebuilding-of-product-hunt-for-ios',
       },
     ],
   },
@@ -1652,8 +1601,7 @@ export default [
       { type: 'video', url: 'https://www.youtube.com/watch?v=zdY1YqjjT6s' },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2016.03.27%20-%20React%20and%20Redux',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2016.03.27%20-%20React%20and%20Redux',
       },
     ],
   },
@@ -1669,8 +1617,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          '<a href="https://github.com/RStankov/talks-code/tree/master/2015.10.21%20-%20Introduction%20to%20GraphQL%20(JavaScript">View</a>',
+        url: '<a href="https://github.com/RStankov/talks-code/tree/master/2015.10.21%20-%20Introduction%20to%20GraphQL%20(JavaScript">View</a>',
       },
     ],
   },
@@ -1690,8 +1637,7 @@ export default [
       { type: 'video', url: 'https://www.youtube.com/watch?v=-dAI5tSSPGA' },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2015.10.08%20-%20Introduction%20to%20GraphQL',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2015.10.08%20-%20Introduction%20to%20GraphQL',
       },
     ],
   },
@@ -1720,8 +1666,7 @@ export default [
       { type: 'video', url: 'https://www.youtube.com/watch?v=T2cucknCd6M' },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2015.08.15%20-%20GraphQL',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2015.08.15%20-%20GraphQL',
       },
     ],
   },
@@ -1740,8 +1685,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2015.05.21%20-%20Starving%20ActiveRecord',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2015.05.21%20-%20Starving%20ActiveRecord',
       },
     ],
   },
@@ -1757,8 +1701,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2015.05.20%20-%20React%20Tips%20and%20Tricks',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2015.05.20%20-%20React%20Tips%20and%20Tricks',
       },
     ],
   },
@@ -1777,8 +1720,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2014.12.04%20-%20Testing%20Ruby',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2014.12.04%20-%20Testing%20Ruby',
       },
     ],
   },
@@ -1794,8 +1736,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2014.11.23%20-%20Javascript%20Testing',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2014.11.23%20-%20Javascript%20Testing',
       },
     ],
   },
@@ -1814,8 +1755,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2014.09.27%20-%20AngularJs',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2014.09.27%20-%20AngularJs',
       },
     ],
   },
@@ -1834,8 +1774,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2014.08.27%20-%20AngularJs%20Tips%20and%20Tricks',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2014.08.27%20-%20AngularJs%20Tips%20and%20Tricks',
       },
     ],
   },
@@ -1845,15 +1784,13 @@ export default [
     name: 'Angular JS',
     event: {
       name: 'PlovdivConf (2014)',
-      url:
-        'https://github.com/RStankov/talks-code/tree/master/2014.05.07%20-%20AngularJs',
+      url: 'https://github.com/RStankov/talks-code/tree/master/2014.05.07%20-%20AngularJs',
     },
     links: [
       { type: 'slides', url: 'https://speakerdeck.com/rstankov/angular-js' },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2014.05.07%20-%20AngularJs',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2014.05.07%20-%20AngularJs',
       },
     ],
   },
@@ -1889,8 +1826,7 @@ export default [
       { type: 'video', url: 'https://www.youtube.com/watch?v=MHMWJkGS7sY' },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2013.07.20%20-%20Code%20Smells%20and%20Refactoring',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2013.07.20%20-%20Code%20Smells%20and%20Refactoring',
       },
     ],
   },
@@ -1902,8 +1838,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://speakerdeck.com/rstankov/5-things-you-should-steal-from-ruby-on-rails',
+        url: 'https://speakerdeck.com/rstankov/5-things-you-should-steal-from-ruby-on-rails',
       },
     ],
   },
@@ -1923,8 +1858,7 @@ export default [
       { type: 'video', url: 'https://www.youtube.com/watch?v=avhljVTlHZE' },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2012.08.11%20-%20How%20to%20write%20good%20code',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2012.08.11%20-%20How%20to%20write%20good%20code',
       },
     ],
   },
@@ -1940,8 +1874,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2012.06.23%20-%20Backbone.js',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2012.06.23%20-%20Backbone.js',
       },
     ],
   },
@@ -1957,8 +1890,7 @@ export default [
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2012.02.17%20-%20Backbone.js',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2012.02.17%20-%20Backbone.js',
       },
     ],
   },
@@ -2006,13 +1938,11 @@ export default [
     links: [
       {
         type: 'slides',
-        url:
-          'https://www.slideshare.net/rstankov/javascript-eventdriven-architecture',
+        url: 'https://www.slideshare.net/rstankov/javascript-eventdriven-architecture',
       },
       {
         type: 'code',
-        url:
-          'https://github.com/RStankov/talks-code/tree/master/2010.11.24%20-%20JavaScript%20Event-Driven%20Architecture',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2010.11.24%20-%20JavaScript%20Event-Driven%20Architecture',
       },
     ],
   },
@@ -2044,8 +1974,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'https://devchat.tv/react-native-radio/react-native-at-product-hunt-feat-radoslav-stankov-and-vlad-vladimirov/',
+        url: 'https://devchat.tv/react-native-radio/react-native-at-product-hunt-feat-radoslav-stankov-and-vlad-vladimirov/',
       },
     ],
   },
@@ -2077,8 +2006,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'http://krasimirtsonev.com/blog/article/nadcast-15-react-not-a-conf',
+        url: 'http://krasimirtsonev.com/blog/article/nadcast-15-react-not-a-conf',
       },
     ],
   },
@@ -2118,8 +2046,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'http://krasimirtsonev.com/blog/article/nadcast-10-minko-gechev-radio-stankov',
+        url: 'http://krasimirtsonev.com/blog/article/nadcast-10-minko-gechev-radio-stankov',
       },
     ],
   },
@@ -2151,8 +2078,7 @@ export default [
     links: [
       {
         type: 'episode',
-        url:
-          'http://krasimirtsonev.com/blog/article/nadcast-01-with-rado-stankov',
+        url: 'http://krasimirtsonev.com/blog/article/nadcast-01-with-rado-stankov',
       },
     ],
   },
