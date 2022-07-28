@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2022/07/27',
+    type: 'presentation',
+    name: 'Dealing  with Dependencies in JavaScript',
+    event: {
+      name: 'Beer.js Summit 2022',
+      url: 'https://www.eventbrite.com/e/beerjs-summit-2022-tickets-234670354347',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'link',
+        url: 'https://speakerdeck.com/rstankov/dealing-with-javascript-dependancies-6712b328-8b59-476b-b7c8-fcb67b43af83',
+      },
+    ],
+  },
+  {
     date: '2022/07/20',
     type: 'presentation',
     name: 'Building tools on top of Apollo',
