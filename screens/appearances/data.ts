@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2022/08/04',
+    type: 'podcast-episode',
+    name: 'Episode 3 - GraphQL',
+    event: {
+      name: 'Tilde Slash',
+      url: 'hhttps://www.tilde-slash.fm/',
+    },
+    language: '🇧🇬',
+    links: [
+      {
+        type: 'episode',
+        url: 'https://www.tilde-slash.fm/3',
+      },
+    ],
+  },
+  {
     date: '2022/07/27',
     type: 'presentation',
     name: 'Dealing  with Dependencies in JavaScript',
