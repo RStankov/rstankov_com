@@ -2,6 +2,19 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2022/11/12',
+    type: 'presentation',
+    name: 'How to an effective JavaScript developer',
+    event: { name: 'JStalks', url: 'http://jstalks.net/' },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/how-to-be-effective-javascript-developer',
+      },
+    ],
+  },
+  {
     date: '2022/08/04',
     type: 'podcast-episode',
     name: 'Episode 3 - GraphQL',
