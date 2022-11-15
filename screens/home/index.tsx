@@ -2,6 +2,7 @@ import * as React from 'react';
 import paths from '~/paths';
 import styles from './styles.module.css';
 import LinkExternal from '~/components/LinkExternal';
+import Link from '~/components/Link';
 import Stack from '~/components/Stack';
 
 export default function Page() {
@@ -20,32 +21,41 @@ export default function Page() {
         <LinkExternal href="https://www.producthunt.com">
           Product Hunt
         </LinkExternal>{' '}
-        (owned by <LinkExternal href="https://angel.co">AngelList</LinkExternal>
+        (part of{' '}
+        <LinkExternal href="https://prologue.xyz">Prologue</LinkExternal>
         ).
       </p>
       <p className={styles.paragraph}>
         In my spare time, I'm:
         <ul>
           <li>
-            blogging at{' '}
+            Blogging at{' '}
             <LinkExternal href="https://blog.rstankov.com">
               📝 blog.rstankov.com
             </LinkExternal>
           </li>
           <li>
-            building{' '}
+            Building{' '}
             <LinkExternal href="https://github.com/RStankov/FocusedTask">
               🎯 Focused Task{' '}
             </LinkExternal>
           </li>
           <li>
-            organizing{' '}
-            <LinkExternal href="http://react-not-a-conf.com/">
-              🚀 React.NotAConf
+            Speaking at various <Link href={paths.appearances}>📅 events</Link>{' '}
+            and <Link href={paths.appearances}>🎤 podcasts</Link>.
+          </li>
+          <li>
+            Supporting couple of{' '}
+            <LinkExternal href="https://github.com/RStankov">
+              💻 open source
             </LinkExternal>{' '}
-            conference and{' '}
-            <LinkExternal href="https://www.meetup.com/React-Sofia">
-              ⚛️ React Sofia Meetup
+            projects like{' '}
+            <LinkExternal href="https://github.com/RStankov/SearchObject">
+              🔎 SearchObject
+            </LinkExternal>{' '}
+            and{' '}
+            <LinkExternal href="https://github.com/producthunt/kitty-policy">
+              😸 KittyPolicy
             </LinkExternal>
           </li>
         </ul>
@@ -67,6 +77,6 @@ export default function Page() {
 Page.meta = {
   title: 'Radoslav Stankov',
   description:
-    'Personal website of Radoslav Stankov, head of engineering of Product Hunt.',
+    'Personal website of Radoslav Stankov, Head of Engineering of Product Hunt.',
   image: paths.image.avatar,
 };
