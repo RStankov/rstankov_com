@@ -111,7 +111,7 @@ export default function Page() {
         <LinkExternal href="https://angel.co/">AngelList</LinkExternal>.
       </Row>
       <Row year={2018}>
-        Became head of engineering at{' '}
+        Became Head of Engineering at{' '}
         <LinkExternal href="https://www.producthunt.com/">
           Product Hunt
         </LinkExternal>

@@ -17,7 +17,7 @@ export default function Page() {
         <h1>Hey, I'm Rado 👋</h1>
       </Stack.ResponsiveRow>
       <p className={styles.paragraph}>
-        I'm head of engineering at{' '}
+        I'm Head of Engineering at{' '}
         <LinkExternal href="https://www.producthunt.com">
           Product Hunt
         </LinkExternal>{' '}
