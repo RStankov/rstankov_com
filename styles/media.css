@@ -1,5 +1,0 @@
-@custom-media --mobile (width <= $small-screen-breakpoint);
-@custom-media --mobile-or-tablet (width < $large-screen-breakpoint);
-@custom-media --tablet (width >= $small-screen-breakpoint) and (width =< $large-screen-breakpoint);
-@custom-media --tablet-or-desktop (width > $small-screen-breakpoint);
-@custom-media --desktop (width >= $large-screen-breakpoint);

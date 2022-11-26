@@ -8,40 +8,45 @@ import IconSlides from '~/icons/Slides';
 import IconYouTube from '~/icons/YouTube';
 import IconLink from '~/icons/Link';
 import IconInterview from '~/icons/Interview';
-import styles from './styles.module.css';
 import { parse, format } from 'date-fns';
 import Link from '~/components/Link';
-import Stack from '~/components/Stack';
+import tw from '~/types/tailwind';
 
 interface IProps {
   appearance: IAppearance;
 }
 
 const LINK_ICONS = {
-  slides: <IconSlides className={styles.linkIcon} />,
-  video: <IconYouTube className={styles.linkIcon} />,
-  episode: <IconListen className={styles.linkIcon} />,
-  code: <IconGithub className={styles.linkIcon} />,
-  link: <IconLink className={styles.linkIcon} />,
+  slides: <IconSlides className={tw('h-5 hover:text-brand')} />,
+  video: <IconYouTube className={tw('h-5 hover:text-brand')} />,
+  episode: <IconListen className={tw('h-5 hover:text-brand')} />,
+  code: <IconGithub className={tw('h-5 hover:text-brand')} />,
+  link: <IconLink className={tw('h-4 hover:text-brand')} />,
 };
 
 const TYPE_ICONS = {
   presentation: (
-    <IconPresentaion className={styles.typeIcon} title="Presentation" />
+    <IconPresentaion className={tw('h-12 w-12')} title="Presentation" />
   ),
   'podcast-episode': (
-    <IconPodcast className={styles.typeIcon} title="Podcast episode" />
+    <IconPodcast className={tw('h-12 w-12')} title="Podcast episode" />
   ),
-  interview: <IconInterview className={styles.typeIcon} title="Interview" />,
+  interview: <IconInterview className={tw('h-12 w-12')} title="Interview" />,
 };
 
 export default function Appearance({ appearance }: IProps) {
   return (
-    <Stack.Row gap="s" align="start">
+    <div className={tw('flex gap-4 items-start')}>
       {TYPE_ICONS[appearance.type]}
-      <Stack.ResponsiveRow gap="s" align="start" expand={true}>
-        <Stack.Expand>
-          <AppearanceName appearance={appearance} />
+      <div className={tw('flex flex-col sm:flex-row gap-4 items-start flex-1')}>
+        <div className={tw('flex-1')}>
+          <strong>
+            {appearance.links[0] ? (
+              <Link href={appearance.links[0].url}>{appearance.name}</Link>
+            ) : (
+              appearance.name
+            )}
+          </strong>
           <div>
             {appearance.event.name &&
               (appearance.event.url ? (
@@ -49,40 +54,24 @@ export default function Appearance({ appearance }: IProps) {
               ) : (
                 appearance.event.name
               ))}
-            <span className={styles.on}>{' on '}</span>
-            <time className={styles.time}>{formatDate(appearance.date)}</time>
+            {' on '}
+            <time>{formatDate(appearance.date)}</time>
           </div>
-        </Stack.Expand>
+        </div>
         {appearance.links.length > 0 && (
-          <Stack.Row gap="s">
+          <div className={tw('flex gap-2 items-center')}>
             {appearance.links.map((link, index) => (
               <Link key={index} href={link.url} title={link.type}>
                 {LINK_ICONS[link.type] || null}
               </Link>
             ))}
-          </Stack.Row>
+          </div>
         )}
-      </Stack.ResponsiveRow>
-    </Stack.Row>
+      </div>
+    </div>
   );
 }
 
 function formatDate(date: string) {
   return format(parse(date, 'yyyy/MM/dd', new Date()), 'd MMMM');
-}
-
-function AppearanceName({ appearance }: IProps) {
-  const link = appearance.links[0];
-
-  return (
-    <strong>
-      {link ? (
-        <Link href={link.url} className={styles.link}>
-          {appearance.name}
-        </Link>
-      ) : (
-        appearance.name
-      )}
-    </strong>
-  );
 }

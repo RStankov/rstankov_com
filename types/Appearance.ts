@@ -3,11 +3,9 @@ interface ILink {
   url: string;
 }
 
-type IType = 'presentation' | 'podcast-episode';
-
 export default interface IAppearance {
   date: string;
-  type: IType;
+  type: 'presentation' | 'podcast-episode';
   name: string;
   event: {
     name: string | null;

@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import tw from '~/types/tailwind';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
@@ -8,9 +9,12 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" className={tw('h-full')}>
         <Head />
-        <body>
+        <body
+          className={tw(
+            'antialiased bg-gray-50 text-gray-900 border-t-brand border-t-8 h-full',
+          )}>
           <Main />
           <NextScript />
         </body>

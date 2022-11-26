@@ -1,19 +1,18 @@
 import * as React from 'react';
-import styles from './styles.module.css';
 import paths from '~/paths';
 import Link from '~/components/Link';
-import Stack from '~/components/Stack';
+import tw from '~/types/tailwind';
 
 export default function Page() {
   return (
-    <Stack.Column gap="m">
+    <div className={tw('flex flex-col gap-4')}>
       <img
         src={paths.image.cover}
-        className={styles.cover}
+        className={tw('w-full rounded-md')}
         alt="Radoslav Stankov"
       />
-      <h1>About me</h1>
-      <Row year={2002}>
+      <h1 className={tw('text-lg font-bold')}>About me</h1>
+      <Year year={2002}>
         Started web development with{' '}
         <Link href="https://en.wikipedia.org/wiki/Adobe_Flash">Flash</Link> in
         an agency in my home town of{' '}
@@ -22,12 +21,12 @@ export default function Page() {
         </Link>
         . I quickly switched to PHP and JavaScript. Then moved to Ruby on Rails.
         👨‍💻
-      </Row>
-      <Row year={2009}>
+      </Year>
+      <Year year={2009}>
         First contribution to major open source project -
         <Link href="http://prototypejs.org/">Prototype.js</Link>.
-      </Row>
-      <Row year={2010}>
+      </Year>
+      <Year year={2010}>
         Finished my bachelor in computer science from{' '}
         <Link href="http://fs.tu-varna.bg/">Technical University Varna</Link>
         .<br />
@@ -38,8 +37,8 @@ export default function Page() {
         <Link href="https://www.crunchbase.com/organization/lookk">
           LOOKK
         </Link>. <i>I became its CTO in 2012.</i> 🎓
-      </Row>
-      <Row year={2012}>
+      </Year>
+      <Year year={2012}>
         Started a conference named{' '}
         <Link href="http://varnaconf.com/">VarnaConf</Link>.{' '}
         <i>
@@ -47,8 +46,8 @@ export default function Page() {
           <Link href="http://it-tour.bg/">IT Tour</Link> conferences.
         </i>{' '}
         🎬
-      </Row>
-      <Row year={2013}>
+      </Year>
+      <Year year={2013}>
         Created, together with{' '}
         <Link href="https://twitter.com/DeVladinci">Vladimir Vladimir</Link>, a
         music creation iOS app -{' '}
@@ -62,21 +61,21 @@ export default function Page() {
           Search Object
         </Link>
         💎
-      </Row>
-      <Row year={2014}>
+      </Year>
+      <Year year={2014}>
         Joined <Link href="https://www.producthunt.com/">Product Hunt</Link>. 😸
-      </Row>
-      <Row year={2015}>
+      </Year>
+      <Year year={2015}>
         Started to blogging at <Link href={paths.blog}>blog.rstankov.com</Link>.
-      </Row>
-      <Row year={2016}>
+      </Year>
+      <Year year={2016}>
         Started to organize{' '}
         <Link href="https://www.meetup.com/React-Sofia">
           React Sofia Meetup
         </Link>
         . ⚛️
-      </Row>
-      <Row year={2017}>
+      </Year>
+      <Year year={2017}>
         Started using <Link href="https://graphql.org/">GraphQL</Link> at{' '}
         <Link href="https://www.producthunt.com/">Product Hunt</Link>
         .
@@ -87,8 +86,8 @@ export default function Page() {
         <br />
         <Link href="https://www.producthunt.com/">Product Hunt</Link> got
         acquired by <Link href="https://angel.co/">AngelList</Link>.
-      </Row>
-      <Row year={2018}>
+      </Year>
+      <Year year={2018}>
         Became Head of Engineering at{' '}
         <Link href="https://www.producthunt.com/">Product Hunt</Link>
         .<br />
@@ -103,8 +102,8 @@ export default function Page() {
         .
         <br />
         <i>This was a busy year</i> 🤩
-      </Row>
-      <Row year={2020}>
+      </Year>
+      <Year year={2020}>
         New <Link href="https://rstankov.com">rstankov.com</Link>
         <br />
         Beta Testing Your Stack at{' '}
@@ -115,20 +114,25 @@ export default function Page() {
           Focused Task
         </Link>{' '}
         🎯
-      </Row>
-      <div className={styles.continue}>
+      </Year>
+      <div className={tw('text-center')}>
         <i>...to be continued</i> 😅
       </div>
-    </Stack.Column>
+    </div>
   );
 }
 
-function Row({ year, children }: { year: number; children: React.ReactNode }) {
+function Year({ year, children }: { year: number; children: React.ReactNode }) {
   return (
-    <Stack.ResponsiveRow align="center" gap="m">
-      <div className={styles.year}>{year}</div>
+    <div className={tw('flex flex-col sm:flex-row gap-4 items-center')}>
+      <div
+        className={tw(
+          'inline-flex justify-center items-center bg-gray-900 w-16 h-16 rounded-full font-bold text-gray-50',
+        )}>
+        {year}
+      </div>
       <div>{children}</div>
-    </Stack.ResponsiveRow>
+    </div>
   );
 }
 

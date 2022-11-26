@@ -2,9 +2,9 @@ import React from 'react';
 import NextLink from 'next/link';
 
 interface IProps {
-  replace?: boolean;
   href: string;
   children: React.ReactNode;
+  replace?: boolean;
   className?: string;
   title?: string;
 }
@@ -14,7 +14,7 @@ export default React.forwardRef(function Link(
   ref: any,
 ) {
   if (href.startsWith('http')) {
-    return <a {...props} ref={ref} rel="noopener" target="_blank" />;
+    return <a {...props} href={href} rel="noopener" ref={ref} />;
   }
 
   return (

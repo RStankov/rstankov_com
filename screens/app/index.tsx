@@ -1,9 +1,6 @@
 import App from 'next/app';
 import React from 'react';
-import Layout from '~/components/Layout';
-
-import '~/styles/reset.css';
-import '~/styles/layout.css';
+import Layout from './Layout';
 
 interface IProps {
   Component: React.ComponentType;

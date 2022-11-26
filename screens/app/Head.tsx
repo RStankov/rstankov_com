@@ -1,7 +1,7 @@
 import NextHead from 'next/head';
 import React from 'react';
 import paths from '~/paths';
-import useCurrentPath from '~/hooks/useCurrentPath';
+import useCurrentPath from './useCurrentPath';
 
 interface IProps {
   meta?: {

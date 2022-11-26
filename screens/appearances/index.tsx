@@ -1,47 +1,45 @@
 import Appearance from './Appearance';
-import IAppearance from '~/types/Appearance';
 import React from 'react';
 import Switch from './Switch';
 import data from './data';
 import paths from '~/paths';
-import styles from './styles.module.css';
-import { groupBy, sortBy } from 'lodash';
 import { useFilters, TYPES } from './utils';
 import Link from '~/components/Link';
-import Stack from '~/components/Stack';
+import tw from '~/types/tailwind';
 
 export default function Page() {
-  const [filters, setFilters] = useFilters();
+  const [filters, setFilters, gropedAppearances] = useFilters(data);
 
   return (
-    <Stack.Column gap="m">
-      <Stack.ResponsiveRow tag="header" gap="m">
-        <h1 className={styles.h1}>Appearances</h1>
+    <div className={tw('flex flex-col gap-2')}>
+      <header className={tw('flex flex-col md:flex-row gap-4')}>
+        <h1 className={tw('text-lg font-bold flex-1')}>Appearances</h1>
         <Switch options={TYPES} selected={filters} onSelect={setFilters} />
-      </Stack.ResponsiveRow>
+      </header>
       <p>
         I love talking about technology, product, and process.
         <br />
         If you want me to speak on your event or podcast, reach out on{' '}
         <Link href={paths.external.twitter}>Twitter</Link>.
       </p>
-      {groupAppearances(filterAppearances(data, filters)).map(
-        ([year, appearances]) => (
-          <section key={year}>
-            <header className={styles.sectionHeader}>
-              <h2>{year}</h2>
-              <small>{appearances.length}</small>
-              <hr />
-            </header>
-            <Stack.Column gap="s">
-              {appearances.map((appearance, index) => (
-                <Appearance key={index} appearance={appearance} />
-              ))}
-            </Stack.Column>
-          </section>
-        ),
-      )}
-    </Stack.Column>
+      {gropedAppearances.map(({ year, appearances }) => (
+        <section key={year}>
+          <header className={tw('flex items-center justify-center')}>
+            <h2 className={tw('font-bold text-xl')}>{year}</h2>
+            <small
+              className={tw('rounded-full bg-gray-400 text-white px-2 ml-2')}>
+              {appearances.length}
+            </small>
+            <hr className={tw('flex-1 border-gray-400')} />
+          </header>
+          <div className={tw('flex flex-col gap-4')}>
+            {appearances.map((appearance, index) => (
+              <Appearance key={index} appearance={appearance} />
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
   );
 }
 
@@ -51,22 +49,3 @@ Page.meta = {
     'List of all appearances of Radoslav Stankov - presentations and podcasts.',
   image: paths.image.cover,
 };
-
-function filterAppearances(appearances: IAppearance[], types: any) {
-  if (types.length === 0) {
-    return appearances;
-  }
-  return appearances.filter(({ type }) => types.indexOf(type) !== -1);
-}
-
-function groupAppearances(appearances: IAppearance[]) {
-  return sortBy(
-    Object.entries(
-      groupBy(
-        sortBy(appearances, 'date').reverse(),
-        ({ date }) => date.split('/')[0],
-      ),
-    ),
-    0,
-  ).reverse();
-}

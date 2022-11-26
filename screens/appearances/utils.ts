@@ -1,4 +1,6 @@
 import * as React from 'react';
+import IAppearance from '~/types/Appearance';
+import { groupBy, sortBy } from 'lodash';
 
 type IType = string;
 
@@ -17,12 +19,18 @@ export const TYPES = [
   },
 ];
 
+interface IAppearancesOfYear {
+  year: string;
+  appearances: IAppearance[];
+}
+
 type IUseFilters = [
   IType[],
   (type: IType, options?: { include?: boolean }) => void,
+  IAppearancesOfYear[],
 ];
 
-export function useFilters(): IUseFilters {
+export function useFilters(data: IAppearance[]): IUseFilters {
   const [filters, setFilters] = React.useState<IType[]>([]);
 
   return [
@@ -30,12 +38,13 @@ export function useFilters(): IUseFilters {
     (type: IType, options = {}) => {
       setFilters(toggleFilter(type, filters, options.include));
     },
+    groupAppearances(filterAppearances(data, filters)),
   ];
 }
 
 function toggleFilter(type: IType, filters: IType[], include?: boolean) {
   if (filters.indexOf(type) !== -1) {
-    return filters.filter(filter => filter !== type);
+    return filters.filter((filter) => filter !== type);
   }
 
   if (include) {
@@ -43,4 +52,28 @@ function toggleFilter(type: IType, filters: IType[], include?: boolean) {
   }
 
   return [type];
+}
+
+function filterAppearances(
+  appearances: IAppearance[],
+  types: any,
+): IAppearance[] {
+  if (types.length === 0) {
+    return appearances;
+  }
+  return appearances.filter(({ type }) => types.indexOf(type) !== -1);
+}
+
+function groupAppearances(appearances: IAppearance[]): IAppearancesOfYear[] {
+  return sortBy(
+    Object.entries(
+      groupBy(
+        sortBy(appearances, 'date').reverse(),
+        ({ date }) => date.split('/')[0],
+      ),
+    ),
+    0,
+  )
+    .reverse()
+    .map(([year, appearances]) => ({ year, appearances }));
 }
