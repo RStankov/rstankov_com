@@ -30,6 +30,9 @@ body {
   padding-left: $spacing-medium;
   padding-right: $spacing-medium;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 a {
   text-decoration: none;

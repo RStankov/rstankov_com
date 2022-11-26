@@ -4,6 +4,8 @@ const javascripts = join(__dirname, '.');
 
 module.exports = {
   plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
     'postcss-import': {
       path: [javascripts],
     },
@@ -15,10 +17,6 @@ module.exports = {
     'postcss-custom-media': {},
     'postcss-nested': {},
     'postcss-media-minmax': {},
-    autoprefixer: {
-      browserlist: ['last 2 versions'],
-      remove: false,
-    },
     'postcss-reporter': {},
   },
 };
