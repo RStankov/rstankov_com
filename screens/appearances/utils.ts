@@ -1,6 +1,7 @@
 import * as React from 'react';
 import IAppearance from '~/types/Appearance';
-import { groupBy, sortBy } from 'lodash';
+import groupBy from 'lodash/groupBy';
+import sortBy from 'lodash/sortBy';
 
 type IType = string;
 
