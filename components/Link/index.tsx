@@ -1,8 +1,9 @@
 import React from 'react';
 import NextLink from 'next/link';
+import IPaths from '~/types/paths';
 
 interface IProps {
-  href: string;
+  href: IPaths;
   children: React.ReactNode;
   replace?: boolean;
   className?: string;

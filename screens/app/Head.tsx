@@ -1,6 +1,5 @@
 import NextHead from 'next/head';
 import React from 'react';
-import paths from '~/paths';
 import useCurrentPath from './useCurrentPath';
 
 interface IProps {
@@ -13,7 +12,7 @@ interface IProps {
 
 export default function Head({ meta }: IProps) {
   const title = meta ? meta.title : 'Radoslav Stankov';
-  const url = paths.url + useCurrentPath();
+  const url = `https://rstankov.com/${useCurrentPath()}`;
 
   return (
     <NextHead>

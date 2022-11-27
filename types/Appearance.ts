@@ -1,6 +1,8 @@
+type IUrl = `http://${string}` | `https://${string}`;
+
 interface ILink {
   type: 'slides' | 'video' | 'episode';
-  url: string;
+  url: IUrl;
 }
 
 export default interface IAppearance {
@@ -9,7 +11,7 @@ export default interface IAppearance {
   name: string;
   event: {
     name: string | null;
-    url?: string;
+    url?: IUrl;
   };
   links: ILink[];
   language?: string;

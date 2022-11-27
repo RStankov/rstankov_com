@@ -1,14 +1,15 @@
 import * as React from 'react';
-import paths from '~/paths';
 import Link from '~/components/Link';
 import tw from '~/types/tailwind';
+
+const AVATAR_IMAGE = '/avatar.jpg';
 
 export default function Page() {
   return (
     <>
       <div className={tw('flex flex-col sm:flex-row gap-4 items-center')}>
         <img
-          src={paths.image.avatar}
+          src={AVATAR_IMAGE}
           className={tw('rounded-full w-16 h-16')}
           alt="Radoslav Stankov"
         />
@@ -49,11 +50,11 @@ export default function Page() {
             </li>
             <li>
               Speaking at various{' '}
-              <Link href={paths.appearances} className={tw('font-semibold')}>
+              <Link href="/appearances" className={tw('font-semibold')}>
                 📅 events
               </Link>{' '}
               and{' '}
-              <Link href={paths.appearances} className={tw('font-semibold')}>
+              <Link href="/appearances" className={tw('font-semibold')}>
                 🎤 podcasts
               </Link>
               .
@@ -86,7 +87,9 @@ export default function Page() {
         </div>
         <div>
           You can ping me on{' '}
-          <Link href={paths.external.twitter} className={tw('font-semibold')}>
+          <Link
+            href="https://twitter.com/rstankov"
+            className={tw('font-semibold')}>
             Twitter
           </Link>{' '}
           about anything related to GraphQL, React, JavaScript, Ruby, product
@@ -101,5 +104,5 @@ Page.meta = {
   title: 'Radoslav Stankov',
   description:
     'Personal website of Radoslav Stankov, Head of Engineering of Product Hunt.',
-  image: paths.image.avatar,
+  image: AVATAR_IMAGE,
 };

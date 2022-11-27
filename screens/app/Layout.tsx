@@ -5,7 +5,7 @@ import IconTwitter from '~/icons/Twitter';
 import Link from '~/components/Link';
 import React from 'react';
 import classNames from 'classnames';
-import paths from '~/paths';
+import IPaths from '~/types/paths';
 import tw from '~/types/tailwind';
 import useCurrentPath from './useCurrentPath';
 
@@ -24,22 +24,22 @@ export default function Layout({ children, meta }: IProps) {
       <Head meta={meta} />
       <header className={tw('flex items-center my-4')}>
         <Link
-          href={paths.home}
+          href="/"
           className={tw('text-lg font-bold hover:text-brand hidden sm:inline')}>
           Radoslav Stankov
         </Link>
         <ul className={tw('flex flex-1 justify-center sm:justify-end gap-2')}>
           <li>
-            <NavLink href={paths.home} label="Home" />
+            <NavLink href="/" label="Home" />
           </li>
           <li>
-            <NavLink href={paths.blog} label="Blog" />
+            <NavLink href="http://blog.rstankov.com" label="Blog" />
           </li>
           <li>
-            <NavLink href={paths.appearances} label="Appearances" />
+            <NavLink href="/appearances" label="Appearances" />
           </li>
           <li>
-            <NavLink href={paths.about} label="About" />
+            <NavLink href="/about" label="About" />
           </li>
         </ul>
       </header>
@@ -50,7 +50,7 @@ export default function Layout({ children, meta }: IProps) {
         )}>
         <div className={tw('flex gap-4 justify-center')}>
           <Link
-            href={paths.external.twitter}
+            href="https://twitter.com/rstankov"
             title="Twitter"
             className={tw(
               'rounded-full p-1.5 w-8 h-8 inline-block bg-gray-900 hover:bg-brand',
@@ -58,13 +58,13 @@ export default function Layout({ children, meta }: IProps) {
             <IconTwitter className={tw('w-full h-full text-gray-50')} />
           </Link>
           <Link
-            href={paths.external.github}
+            href="https://github.com/rstankov"
             title="GitHub"
             className={tw('text-gray-900 hover:text-brand')}>
             <IconGithub className={tw('w-8 h-8')} />
           </Link>
           <Link
-            href={paths.external.productHunt}
+            href="https://producthunt.com/@rstankov"
             title="Product Hunt"
             className={tw('text-gray-900 hover:text-brand')}>
             <IconProductHunt className={tw('w-8 h-8')} />
@@ -76,7 +76,7 @@ export default function Layout({ children, meta }: IProps) {
   );
 }
 
-function NavLink({ label, href }: { label: string; href: string }) {
+function NavLink({ label, href }: { label: string; href: IPaths }) {
   const currentPath = useCurrentPath();
 
   return (

@@ -2,7 +2,6 @@ import Appearance from './Appearance';
 import React from 'react';
 import Switch from './Switch';
 import data from './data';
-import paths from '~/paths';
 import { useFilters, TYPES } from './utils';
 import Link from '~/components/Link';
 import tw from '~/types/tailwind';
@@ -20,7 +19,7 @@ export default function Page() {
         I love talking about technology, product, and process.
         <br />
         If you want me to speak on your event or podcast, reach out on{' '}
-        <Link href={paths.external.twitter}>Twitter</Link>.
+        <Link href="https://twitter.com/rstankov">Twitter</Link>.
       </p>
       {gropedAppearances.map(({ year, appearances }) => (
         <section key={year}>
@@ -47,5 +46,5 @@ Page.meta = {
   title: 'Appearances',
   description:
     'List of all appearances of Radoslav Stankov - presentations and podcasts.',
-  image: paths.image.cover,
+  image: '/avatar.jpg',
 };

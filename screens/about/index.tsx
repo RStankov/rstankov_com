@@ -1,13 +1,14 @@
 import * as React from 'react';
-import paths from '~/paths';
 import Link from '~/components/Link';
 import tw from '~/types/tailwind';
+
+const COVER_IMAGE = '/cover.jpg';
 
 export default function Page() {
   return (
     <div className={tw('flex flex-col gap-4')}>
       <img
-        src={paths.image.cover}
+        src={COVER_IMAGE}
         className={tw('w-full rounded-md')}
         alt="Radoslav Stankov"
       />
@@ -66,7 +67,8 @@ export default function Page() {
         Joined <Link href="https://www.producthunt.com/">Product Hunt</Link>. 😸
       </Year>
       <Year year={2015}>
-        Started to blogging at <Link href={paths.blog}>blog.rstankov.com</Link>.
+        Started to blogging at{' '}
+        <Link href="http://blog.rstankov.com">blog.rstankov.com</Link>.
       </Year>
       <Year year={2016}>
         Started to organize{' '}
@@ -95,7 +97,9 @@ export default function Page() {
         <Link href="https://www.howtographql.com/graphql-ruby/0-introduction/">
           Ruby
         </Link>{' '}
-        section on <Link href="howtographql.com">HowToGraphQL.com</Link>.
+        section on{' '}
+        <Link href="https://www.howtographql.com">HowToGraphQL.com</Link>
+        .
         <br />
         Started organizing{' '}
         <Link href="http://react-not-a-conf.com/">React.NotAConf</Link>
@@ -139,5 +143,5 @@ function Year({ year, children }: { year: number; children: React.ReactNode }) {
 Page.meta = {
   title: 'About',
   description: 'A bit information about Radoslav Stankov.',
-  image: paths.image.cover,
+  image: COVER_IMAGE,
 };
