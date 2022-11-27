@@ -1,14 +1,13 @@
 import * as React from 'react';
 import Link from '~/components/Link';
 import tw from '~/types/tailwind';
-
-const COVER_IMAGE = '/cover.jpg';
+import coverImage from './cover.jpg';
 
 export default function Page() {
   return (
     <div className={tw('flex flex-col gap-4')}>
       <img
-        src={COVER_IMAGE}
+        src={coverImage.src}
         className={tw('w-full rounded-md')}
         alt="Radoslav Stankov"
       />
@@ -143,5 +142,5 @@ function Year({ year, children }: { year: number; children: React.ReactNode }) {
 Page.meta = {
   title: 'About',
   description: 'A bit information about Radoslav Stankov.',
-  image: COVER_IMAGE,
+  image: coverImage.src,
 };
