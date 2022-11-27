@@ -7,7 +7,7 @@ import paths from '~/paths';
 import styles from './styles.module.css';
 import { groupBy, sortBy } from 'lodash';
 import { useFilters, TYPES } from './utils';
-import LinkExternal from '~/components/LinkExternal';
+import Link from '~/components/Link';
 import Stack from '~/components/Stack';
 
 export default function Page() {
@@ -23,7 +23,7 @@ export default function Page() {
         I love talking about technology, product, and process.
         <br />
         If you want me to speak on your event or podcast, reach out on{' '}
-        <LinkExternal href={paths.external.twitter}>Twitter</LinkExternal>.
+        <Link href={paths.external.twitter}>Twitter</Link>.
       </p>
       {groupAppearances(filterAppearances(data, filters)).map(
         ([year, appearances]) => (

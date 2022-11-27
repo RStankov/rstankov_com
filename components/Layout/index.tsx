@@ -3,7 +3,6 @@ import IconGithub from '~/icons/Github';
 import IconProductHunt from '~/icons/ProductHunt';
 import IconTwitter from '~/icons/Twitter';
 import Link from '~/components/Link';
-import LinkExternal from '~/components/LinkExternal';
 import React from 'react';
 import classNames from 'classnames';
 import paths from '~/paths';
@@ -32,7 +31,7 @@ export default function Layout({ children, meta }: IProps) {
             <NavLink href={paths.home} label="Home" />
           </li>
           <li>
-            <LinkExternal href={paths.blog}>Blog</LinkExternal>
+            <Link href={paths.blog}>Blog</Link>
           </li>
           <li>
             <NavLink href={paths.appearances} label="Appearances" />
@@ -46,28 +45,28 @@ export default function Layout({ children, meta }: IProps) {
       <footer className={styles.footer}>
         <ul>
           <li>
-            <LinkExternal
+            <Link
               href={paths.external.twitter}
               title="Twitter"
               className={styles.footerTwitter}>
               <IconTwitter />
-            </LinkExternal>
+            </Link>
           </li>
           <li>
-            <LinkExternal
+            <Link
               href={paths.external.github}
               title="GitHub"
               className={styles.footerGithub}>
               <IconGithub />
-            </LinkExternal>
+            </Link>
           </li>
           <li>
-            <LinkExternal
+            <Link
               href={paths.external.productHunt}
               title="Product Hunt"
               className={styles.footerProductHunt}>
               <IconProductHunt />
-            </LinkExternal>
+            </Link>
           </li>
         </ul>
         <small>© Radoslav Stankov {new Date().getFullYear()} </small>

@@ -10,8 +10,8 @@ export default interface IAppearance {
   type: IType;
   name: string;
   event: {
-    name: string;
-    url: string;
+    name: string | null;
+    url?: string;
   };
   links: ILink[];
   language?: string;

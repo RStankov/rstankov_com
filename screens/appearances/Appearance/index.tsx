@@ -10,7 +10,7 @@ import IconLink from '~/icons/Link';
 import IconInterview from '~/icons/Interview';
 import styles from './styles.module.css';
 import { parse, format } from 'date-fns';
-import LinkExternal from '~/components/LinkExternal';
+import Link from '~/components/Link';
 import Stack from '~/components/Stack';
 
 interface IProps {
@@ -43,9 +43,12 @@ export default function Appearance({ appearance }: IProps) {
         <Stack.Expand>
           <AppearanceName appearance={appearance} />
           <div>
-            <LinkExternal href={appearance.event.url}>
-              {appearance.event.name}
-            </LinkExternal>
+            {appearance.event.name &&
+              (appearance.event.url ? (
+                <Link href={appearance.event.url}>{appearance.event.name}</Link>
+              ) : (
+                appearance.event.name
+              ))}
             <span className={styles.on}>{' on '}</span>
             <time className={styles.time}>{formatDate(appearance.date)}</time>
           </div>
@@ -53,9 +56,9 @@ export default function Appearance({ appearance }: IProps) {
         {appearance.links.length > 0 && (
           <Stack.Row gap="s">
             {appearance.links.map((link, index) => (
-              <LinkExternal key={index} href={link.url} title={link.type}>
+              <Link key={index} href={link.url} title={link.type}>
                 {LINK_ICONS[link.type] || null}
-              </LinkExternal>
+              </Link>
             ))}
           </Stack.Row>
         )}
@@ -74,9 +77,9 @@ function AppearanceName({ appearance }: IProps) {
   return (
     <strong>
       {link ? (
-        <LinkExternal href={link.url} className={styles.link}>
+        <Link href={link.url} className={styles.link}>
           {appearance.name}
-        </LinkExternal>
+        </Link>
       ) : (
         appearance.name
       )}

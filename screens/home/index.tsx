@@ -1,7 +1,6 @@
 import * as React from 'react';
 import paths from '~/paths';
 import styles from './styles.module.css';
-import LinkExternal from '~/components/LinkExternal';
 import Link from '~/components/Link';
 import Stack from '~/components/Stack';
 
@@ -18,11 +17,8 @@ export default function Page() {
       </Stack.ResponsiveRow>
       <p className={styles.paragraph}>
         I'm Head of Engineering at{' '}
-        <LinkExternal href="https://www.producthunt.com">
-          Product Hunt
-        </LinkExternal>{' '}
-        (part of{' '}
-        <LinkExternal href="https://prologue.xyz">Prologue</LinkExternal>
+        <Link href="https://www.producthunt.com">Product Hunt</Link> (part of{' '}
+        <Link href="https://prologue.xyz">Prologue</Link>
         ).
       </p>
       <p className={styles.paragraph}>
@@ -30,15 +26,13 @@ export default function Page() {
         <ul>
           <li>
             Blogging at{' '}
-            <LinkExternal href="https://blog.rstankov.com">
-              📝 blog.rstankov.com
-            </LinkExternal>
+            <Link href="https://blog.rstankov.com">📝 blog.rstankov.com</Link>
           </li>
           <li>
             Building{' '}
-            <LinkExternal href="https://github.com/RStankov/FocusedTask">
+            <Link href="https://github.com/RStankov/FocusedTask">
               🎯 Focused Task{' '}
-            </LinkExternal>
+            </Link>
           </li>
           <li>
             Speaking at various <Link href={paths.appearances}>📅 events</Link>{' '}
@@ -46,17 +40,15 @@ export default function Page() {
           </li>
           <li>
             Supporting couple of{' '}
-            <LinkExternal href="https://github.com/RStankov">
-              💻 open source
-            </LinkExternal>{' '}
+            <Link href="https://github.com/RStankov">💻 open source</Link>{' '}
             projects like{' '}
-            <LinkExternal href="https://github.com/RStankov/SearchObject">
+            <Link href="https://github.com/RStankov/SearchObject">
               🔎 SearchObject
-            </LinkExternal>{' '}
+            </Link>{' '}
             and{' '}
-            <LinkExternal href="https://github.com/producthunt/kitty-policy">
+            <Link href="https://github.com/producthunt/kitty-policy">
               😸 KittyPolicy
-            </LinkExternal>
+            </Link>
           </li>
         </ul>
       </p>
@@ -65,9 +57,8 @@ export default function Page() {
         rstankov at gmail.
       </div>
       <div className={styles.paragraph}>
-        You can ping me on{' '}
-        <LinkExternal href={paths.external.twitter}>Twitter</LinkExternal> about
-        anything related to GraphQL, React, JavaScript, Ruby, product
+        You can ping me on <Link href={paths.external.twitter}>Twitter</Link>{' '}
+        about anything related to GraphQL, React, JavaScript, Ruby, product
         development, remote work, or software engineering in general.
       </div>
     </Stack.Column>

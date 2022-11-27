@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from './styles.module.css';
 import paths from '~/paths';
-import LinkExternal from '~/components/LinkExternal';
+import Link from '~/components/Link';
 import Stack from '~/components/Stack';
 
 export default function Page() {
@@ -15,139 +15,107 @@ export default function Page() {
       <h1>About me</h1>
       <Row year={2002}>
         Started web development with{' '}
-        <LinkExternal href="https://en.wikipedia.org/wiki/Adobe_Flash">
-          Flash
-        </LinkExternal>{' '}
-        in an agency in my home town of{' '}
-        <LinkExternal href="https://www.google.com/maps?q=Dobrich+Bulgaria">
+        <Link href="https://en.wikipedia.org/wiki/Adobe_Flash">Flash</Link> in
+        an agency in my home town of{' '}
+        <Link href="https://www.google.com/maps?q=Dobrich+Bulgaria">
           Dobrich, Bulgaria
-        </LinkExternal>
+        </Link>
         . I quickly switched to PHP and JavaScript. Then moved to Ruby on Rails.
         👨‍💻
       </Row>
       <Row year={2009}>
         First contribution to major open source project -
-        <LinkExternal href="http://prototypejs.org/">Prototype.js</LinkExternal>
-        .
+        <Link href="http://prototypejs.org/">Prototype.js</Link>.
       </Row>
       <Row year={2010}>
         Finished my bachelor in computer science from{' '}
-        <LinkExternal href="http://fs.tu-varna.bg/">
-          Technical University Varna
-        </LinkExternal>
+        <Link href="http://fs.tu-varna.bg/">Technical University Varna</Link>
         .<br />
         First talk at conference -{' '}
-        <LinkExternal href="https://www.openfest.org/">OpenFest</LinkExternal>
+        <Link href="https://www.openfest.org/">OpenFest</Link>
         <br />
         Joined a startup named{' '}
-        <LinkExternal href="https://www.crunchbase.com/organization/lookk">
+        <Link href="https://www.crunchbase.com/organization/lookk">
           LOOKK
-        </LinkExternal>
-        . <i>I became its CTO in 2012.</i> 🎓
+        </Link>. <i>I became its CTO in 2012.</i> 🎓
       </Row>
       <Row year={2012}>
         Started a conference named{' '}
-        <LinkExternal href="http://varnaconf.com/">VarnaConf</LinkExternal>.{' '}
+        <Link href="http://varnaconf.com/">VarnaConf</Link>.{' '}
         <i>
           It is still going to this day as part of{' '}
-          <LinkExternal href="http://it-tour.bg/">IT Tour</LinkExternal>{' '}
-          conferences.
+          <Link href="http://it-tour.bg/">IT Tour</Link> conferences.
         </i>{' '}
         🎬
       </Row>
       <Row year={2013}>
         Created, together with{' '}
-        <LinkExternal href="https://twitter.com/DeVladinci">
-          Vladimir Vladimir
-        </LinkExternal>
-        , a music creation iOS app -{' '}
-        <LinkExternal href="https://www.producthunt.com/posts/4beats-music-creator">
+        <Link href="https://twitter.com/DeVladinci">Vladimir Vladimir</Link>, a
+        music creation iOS app -{' '}
+        <Link href="https://www.producthunt.com/posts/4beats-music-creator">
           4Beats
-        </LinkExternal>
+        </Link>
         . 🎶 📲
         <br />
         Open sourced{' '}
-        <LinkExternal href="https://github.com/RStankov/SearchObject">
+        <Link href="https://github.com/RStankov/SearchObject">
           Search Object
-        </LinkExternal>
+        </Link>
         💎
       </Row>
       <Row year={2014}>
-        Joined{' '}
-        <LinkExternal href="https://www.producthunt.com/">
-          Product Hunt
-        </LinkExternal>
-        . 😸
+        Joined <Link href="https://www.producthunt.com/">Product Hunt</Link>. 😸
       </Row>
       <Row year={2015}>
-        Started to blogging at{' '}
-        <LinkExternal href={paths.blog}>blog.rstankov.com</LinkExternal>.
+        Started to blogging at <Link href={paths.blog}>blog.rstankov.com</Link>.
       </Row>
       <Row year={2016}>
         Started to organize{' '}
-        <LinkExternal href="https://www.meetup.com/React-Sofia">
+        <Link href="https://www.meetup.com/React-Sofia">
           React Sofia Meetup
-        </LinkExternal>
+        </Link>
         . ⚛️
       </Row>
       <Row year={2017}>
-        Started using{' '}
-        <LinkExternal href="https://graphql.org/">GraphQL</LinkExternal> at{' '}
-        <LinkExternal href="https://www.producthunt.com/">
-          Product Hunt
-        </LinkExternal>
+        Started using <Link href="https://graphql.org/">GraphQL</Link> at{' '}
+        <Link href="https://www.producthunt.com/">Product Hunt</Link>
         .
         <br />
         First talk at international conference{' '}
-        <LinkExternal href="https://www.wearedevelopers.com/">
-          WeAreDevelopers
-        </LinkExternal>
+        <Link href="https://www.wearedevelopers.com/">WeAreDevelopers</Link>
         . 🎤
         <br />
-        <LinkExternal href="https://www.producthunt.com/">
-          Product Hunt
-        </LinkExternal>{' '}
-        got acquired by{' '}
-        <LinkExternal href="https://angel.co/">AngelList</LinkExternal>.
+        <Link href="https://www.producthunt.com/">Product Hunt</Link> got
+        acquired by <Link href="https://angel.co/">AngelList</Link>.
       </Row>
       <Row year={2018}>
         Became Head of Engineering at{' '}
-        <LinkExternal href="https://www.producthunt.com/">
-          Product Hunt
-        </LinkExternal>
+        <Link href="https://www.producthunt.com/">Product Hunt</Link>
         .<br />
         Wrote the{' '}
-        <LinkExternal href="https://www.howtographql.com/graphql-ruby/0-introduction/">
+        <Link href="https://www.howtographql.com/graphql-ruby/0-introduction/">
           Ruby
-        </LinkExternal>{' '}
-        section on{' '}
-        <LinkExternal href="howtographql.com">HowToGraphQL.com</LinkExternal>.
+        </Link>{' '}
+        section on <Link href="howtographql.com">HowToGraphQL.com</Link>.
         <br />
         Started organizing{' '}
-        <LinkExternal href="http://react-not-a-conf.com/">
-          React.NotAConf
-        </LinkExternal>
+        <Link href="http://react-not-a-conf.com/">React.NotAConf</Link>
         .
         <br />
         <i>This was a busy year</i> 🤩
       </Row>
       <Row year={2020}>
-        New{' '}
-        <LinkExternal href="https://rstankov.com">rstankov.com</LinkExternal>
+        New <Link href="https://rstankov.com">rstankov.com</Link>
         <br />
-        Beta Testing{' '}
-        <LinkExternal href="https://yourstack.com">
+        Beta Testing <Link href="https://yourstack.com">
           Your Stack
-        </LinkExternal> at{' '}
-        <LinkExternal href="https://www.producthunt.com/">
-          Product Hunt
-        </LinkExternal>{' '}
+        </Link> at <Link href="https://www.producthunt.com/">Product Hunt</Link>{' '}
         🥞
         <br />
         Launched{' '}
-        <LinkExternal href="https://github.com/RStankov/FocusedTask">
+        <Link href="https://github.com/RStankov/FocusedTask">
           Focused Task
-        </LinkExternal>{' '}
+        </Link>{' '}
         🎯
       </Row>
       <div className={styles.continue}>
