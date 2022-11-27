@@ -107,10 +107,8 @@ export default function Page() {
       <Row year={2020}>
         New <Link href="https://rstankov.com">rstankov.com</Link>
         <br />
-        Beta Testing <Link href="https://yourstack.com">
-          Your Stack
-        </Link> at <Link href="https://www.producthunt.com/">Product Hunt</Link>{' '}
-        🥞
+        Beta Testing Your Stack at{' '}
+        <Link href="https://www.producthunt.com/">Product Hunt</Link> 🥞
         <br />
         Launched{' '}
         <Link href="https://github.com/RStankov/FocusedTask">
