@@ -2,7 +2,7 @@ type IPaths =
   | '/'
   | '/about'
   | '/appearances'
-  | 'http://blog.rstankov.com'
+  | 'https://blog.rstankov.com'
   | 'https://github.com/rstankov'
   | 'https://producthunt.com/@rstankov'
   | 'https://rstankov.com'

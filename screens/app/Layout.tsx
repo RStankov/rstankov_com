@@ -33,7 +33,7 @@ export default function Layout({ children, meta }: IProps) {
             <NavLink href="/" label="Home" />
           </li>
           <li>
-            <NavLink href="http://blog.rstankov.com" label="Blog" />
+            <NavLink href="https://blog.rstankov.com" label="Blog" />
           </li>
           <li>
             <NavLink href="/appearances" label="Appearances" />

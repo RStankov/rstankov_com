@@ -67,7 +67,7 @@ export default function Page() {
       </Year>
       <Year year={2015}>
         Started to blogging at{' '}
-        <Link href="http://blog.rstankov.com">blog.rstankov.com</Link>.
+        <Link href="https://blog.rstankov.com">blog.rstankov.com</Link>.
       </Year>
       <Year year={2016}>
         Started to organize{' '}
