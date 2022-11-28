@@ -134,7 +134,7 @@ function Year({ year, children }: { year: number; children: React.ReactNode }) {
         )}>
         {year}
       </div>
-      <div>{children}</div>
+      <div className={tw('flex-1')}>{children}</div>
     </div>
   );
 }
