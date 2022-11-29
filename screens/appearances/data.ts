@@ -2,6 +2,21 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2022/11/29',
+    type: 'presentation',
+    name: 'Product Development',
+    event: {
+      name: 'Founder Institute Chapter Sofia',
+      url: 'https://fi.co/mentors/sofia',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/product-development-df425dd0-1c87-48ae-bdb9-ca91c829770f',
+      },
+    ],
+  },
+  {
     date: '2022/11/12',
     type: 'presentation',
     name: 'How to an effective JavaScript developer',
