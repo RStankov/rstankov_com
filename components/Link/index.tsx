@@ -18,9 +18,5 @@ export default React.forwardRef(function Link(
     return <a {...props} href={href} rel="noopener" ref={ref} />;
   }
 
-  return (
-    <NextLink href={href}>
-      <a {...props} ref={ref} />
-    </NextLink>
-  );
+  return <NextLink href={href} {...props} ref={ref} />;
 });
