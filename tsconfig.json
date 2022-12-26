@@ -39,10 +39,16 @@
     ],
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
-    "./**/*"
+    "./**/*",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     ".next/**/*",
