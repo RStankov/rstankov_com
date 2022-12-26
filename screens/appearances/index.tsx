@@ -41,10 +41,3 @@ export default function Page() {
     </div>
   );
 }
-
-Page.meta = {
-  title: 'Appearances',
-  description:
-    'List of all appearances of Radoslav Stankov - presentations and podcasts.',
-  image: '/avatar.jpg',
-};

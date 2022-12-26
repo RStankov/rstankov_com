@@ -33,10 +33,12 @@ type ITailwindClassNames =
   | `hover:bg-${IColors}`
   | `hover:border-${IColors}`
   | `hover:text-${IColors}`
-  | `m${IDirection}-${IDistance}`
-  | `m-${IDistance}`
-  | `p${IDirection}-${IDistance}`
-  | `p-${IDistance}`
+  | `m${IDirection}-${IDistanceWithAuto}`
+  | `m-${IDistanceWithAuto}`
+  | `max-h-${IDistanceWithFull}`
+  | `max-w-${IDistanceWithFull}`
+  | `p${IDirection}-${IDistanceWithAuto}`
+  | `p-${IDistanceWithAuto}`
   | `rounded-${IDirection}-md`
   | `space-y-${IDistance}`
   | `text-${IColors}`
@@ -48,7 +50,8 @@ type IColors = 'brand' | 'gray-50' | 'gray-400' | 'gray-900' | 'white';
 type IDirection = 'x' | 'y' | 't' | 'r' | 'b' | 'l';
 
 type IDistance = 0 | 1 | '1.5' | 2 | 4 | 5 | 6 | 8 | 12 | 16 | 40;
-type IDistanceWithFull = 'full' | IDistance;
+type IDistanceWithFull = 'full' | IDistance | '3xl';
+type IDistanceWithAuto = 'auto' | IDistance;
 
 type ISize = 'lg' | 'xl' | '4xl';
 

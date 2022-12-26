@@ -1,21 +1,20 @@
-import NextHead from 'next/head';
-import React from 'react';
-import useCurrentPath from './useCurrentPath';
+import { usePathname } from 'next/navigation';
 
 interface IProps {
-  meta?: {
-    title?: string;
-    description?: string;
-    image?: string;
-  };
+  title?: string;
+  description?: string;
+  image?: string;
 }
 
-export default function Head({ meta }: IProps) {
-  const title = meta ? meta.title : 'Radoslav Stankov';
-  const url = `https://rstankov.com/${useCurrentPath()}`;
+export default function Head({
+  title = 'rstankov',
+  image = '/avatar.jpg',
+  description,
+}: IProps) {
+  const url = `https://rstankov.com/${usePathname()}`;
 
   return (
-    <NextHead>
+    <>
       <meta charSet="UTF-8" />
 
       <title>{title}</title>
@@ -25,21 +24,21 @@ export default function Head({ meta }: IProps) {
       <link rel="apple-touch-icon" href="/apple-icon.png" />
       <link rel="icon" href="/favicon.ico" />
 
-      {meta && meta.description && (
+      {description && (
         <>
-          <meta name="description" content={meta.description} />
-          <meta property="og:description" content={meta.description} />
+          <meta name="description" content={description} />
+          <meta property="og:description" content={description} />
         </>
       )}
 
       <meta property="og:url" content={url} />
       <meta name="twitter:site" content={url} />
 
-      {meta && meta.image && (
+      {image && (
         <>
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:image" content={meta.image} />
-          <meta property="og:image" content={meta.image} />
+          <meta name="twitter:image" content={image} />
+          <meta property="og:image" content={image} />
         </>
       )}
 
@@ -49,6 +48,6 @@ export default function Head({ meta }: IProps) {
         property="copyright"
         content={`(c) ${new Date().getFullYear()} Copyright: Radoslav Stankov`}
       />
-    </NextHead>
+    </>
   );
 }

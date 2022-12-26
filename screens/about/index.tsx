@@ -138,9 +138,3 @@ function Year({ year, children }: { year: number; children: React.ReactNode }) {
     </div>
   );
 }
-
-Page.meta = {
-  title: 'About',
-  description: 'A bit information about Radoslav Stankov.',
-  image: coverImage.src,
-};
