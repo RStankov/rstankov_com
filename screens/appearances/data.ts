@@ -2,6 +2,22 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2023/02/01',
+    type: 'interview',
+    name: 'Forecasting Tech Hiring Trends For 2023 With 6 Experts',
+    event: {
+      name: 'HackerEarth',
+      url: 'https://www.hackerearth.com/blog/talent-assessment/2023-recruiting-trends/',
+    },
+    language: '🇺🇸',
+    links: [
+      {
+        type: 'link',
+        url: 'https://www.copycat.dev/blog/react-best-practices/',
+      },
+    ],
+  },
+  {
     date: '2022/11/29',
     type: 'presentation',
     name: 'Product Development',
