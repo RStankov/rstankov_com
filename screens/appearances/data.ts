@@ -2,6 +2,21 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2023/05/30',
+    type: 'presentation',
+    name: 'Product Development',
+    event: {
+      name: 'Founder Institute Chapter Sofia',
+      url: 'https://fi.co/mentors/sofia',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/product-development-8752065f-84c3-4c64-8646-781dcd27b610',
+      },
+    ],
+  },
+  {
     date: '2023/02/01',
     type: 'interview',
     name: 'Forecasting Tech Hiring Trends For 2023 With 6 Experts',
