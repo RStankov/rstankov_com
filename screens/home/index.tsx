@@ -17,17 +17,20 @@ export default function Page() {
       </div>
       <div className={tw('flex flex-col gap-4 text-lg mt-4')}>
         <div>
-          I'm Head of Engineering at{' '}
+          I'm CTO and Co-Founder at{' '}
+          <Link
+            href="https://angrybuilding.com/"
+            className={tw('font-semibold')}>
+            Angry Building
+          </Link>
+          .<br />
+          Previously, I was the Engineering at{' '}
           <Link
             href="https://www.producthunt.com"
             className={tw('font-semibold')}>
             Product Hunt
-          </Link>{' '}
-          (part of{' '}
-          <Link href="https://prologue.xyz" className={tw('font-semibold')}>
-            Prologue
           </Link>
-          ).
+          .
         </div>
         <div>
           In my spare time, I'm:

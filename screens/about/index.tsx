@@ -118,6 +118,15 @@ export default function Page() {
         </Link>{' '}
         🎯
       </Year>
+      <Year year={2021}>
+        Started a side project called{' '}
+        <Link href="https://angrybuilding.com">Angry Building</Link> 🔥 📱
+      </Year>
+      <Year year={2023}>
+        Left <Link href="https://www.producthunt.com">Product Hunt</Link> to
+        work full-time on{' '}
+        <Link href="https://angrybuilding.com">Angry Building</Link> 🔥 🚀
+      </Year>
       <div className={tw('text-center')}>
         <i>...to be continued</i> 😅
       </div>
