@@ -24,7 +24,7 @@ export default function Page() {
             Angry Building
           </Link>
           .<br />
-          Previously, I was the Engineering at{' '}
+          Previously, I was the Head of Engineering at{' '}
           <Link
             href="https://www.producthunt.com"
             className={tw('font-semibold')}>
