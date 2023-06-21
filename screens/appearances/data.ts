@@ -65,7 +65,7 @@ export default [
   {
     date: '2022/11/12',
     type: 'presentation',
-    name: 'How to an effective JavaScript developer',
+    name: 'How to an Effective Javascript Developer',
     event: { name: 'JStalks', url: 'http://jstalks.net/' },
     language: '🇺🇸',
     links: [
@@ -94,7 +94,7 @@ export default [
   {
     date: '2022/07/27',
     type: 'presentation',
-    name: 'Dealing  with Dependencies in JavaScript',
+    name: 'Dealing with Dependencies in JavaScript',
     event: {
       name: 'Beer.js Summit 2022',
       url: 'https://www.eventbrite.com/e/beerjs-summit-2022-tickets-234670354347',
@@ -110,7 +110,7 @@ export default [
   {
     date: '2022/07/20',
     type: 'presentation',
-    name: 'Building tools on top of Apollo',
+    name: 'Building Tools on Top of Apollo',
     event: {
       name: 'dxTechTalk Frontend Day',
       url: 'https://www.eventbrite.com/e/dxtechtalk-frontend-day-tickets-373195597077',
@@ -162,7 +162,7 @@ export default [
   {
     date: '2021/11/25',
     type: 'podcast-episode',
-    name: 'Episode 65 - Expanding teams',
+    name: 'Episode 65 - Expanding Teams',
     event: {
       name: 'Nadcast',
       url: 'https://nadcast.krasimirtsonev.com/',
@@ -191,7 +191,7 @@ export default [
   {
     date: '2021/11/12',
     type: 'presentation',
-    name: 'React architecture in Product Hunt',
+    name: 'React Architecture in Product Hunt',
     event: {
       name: 'React India',
       url: 'https://www.reactindia.io/conferences/2021',
@@ -206,7 +206,7 @@ export default [
   {
     date: '2021/10/21',
     type: 'presentation',
-    name: 'Eliminating noise from your code',
+    name: 'Eliminating Noise From Your Code',
     event: {
       name: 'HackConf',
       url: 'https://www.hackconf.bg/en/',
@@ -261,7 +261,7 @@ export default [
   {
     date: '2021/09/14',
     type: 'podcast-episode',
-    name: 'How to develop product thinking with Rаdo Stankov',
+    name: 'How to Develop Product Thinking with Rаdo Stankov',
     event: {
       name: 'The Recursive',
       url: 'https://therecursive.com/channel/podcasts/',
@@ -377,7 +377,7 @@ export default [
   {
     date: '2021/05/20',
     type: 'presentation',
-    name: 'How to an effective developer',
+    name: 'How to an Effective Developer',
     event: {
       name: 'Career Show',
       url: 'https://careershow.bg/',
@@ -518,7 +518,7 @@ export default [
   {
     date: '2020/11/20',
     type: 'presentation',
-    name: 'Developing desktop apps with React & Electron',
+    name: 'Developing Desktop Apps with React & Electron',
     event: {
       name: 'JSTalks',
       url: 'http://jstalks.net/',
@@ -554,7 +554,7 @@ export default [
   {
     date: '2020/10/28',
     type: 'presentation',
-    name: 'Developing desktop apps with React & Electron',
+    name: 'Developing Desktop Apps with React & Electron',
     event: {
       name: 'ReactVancouver: October’20 edition',
       url: 'https://hopin.to/events/october-20',
@@ -651,7 +651,7 @@ export default [
   {
     date: '2020/09/04',
     type: 'presentation',
-    name: 'Scaling Product Hunt to millions of users',
+    name: 'Scaling Product Hunt to Millions of Users',
     event: {
       name: 'UPPSTART Online 2020',
       url: 'https://www.uppstart.com/',
@@ -699,7 +699,7 @@ export default [
   {
     date: '2020/07/11',
     type: 'presentation',
-    name: 'Developing desktop apps with React & Electron',
+    name: 'Developing Desktop Apps with React & Electron',
     event: {
       name: 'Tech Talks - Performant Modern JavaScript',
       url: 'https://community-z.com/events/techtalksjs',
@@ -719,7 +719,7 @@ export default [
   {
     date: '2020/06/04',
     type: 'presentation',
-    name: 'Developing desktop apps with React & Electron',
+    name: 'Developing Desktop Apps with React & Electron',
     event: {
       name: 'HackConf Online Talks',
       url: 'https://hopin.to/events/hackconf-online-talks-2-with-radoslav-stankov',
@@ -872,7 +872,7 @@ export default [
   {
     date: '2019/11/23',
     type: 'presentation',
-    name: 'Eliminating noise from your code',
+    name: 'Eliminating Noise from Your Code',
     event: {
       name: 'JSTalks',
       url: 'http://jstalks.net/',
@@ -903,7 +903,7 @@ export default [
   {
     date: '2019/10/30',
     type: 'presentation',
-    name: 'Dealing With Dependancies in JavaScript',
+    name: 'Dealing With Dependencies in JavaScript',
     event: {
       name: 'Beer.js Meetup',
       url: 'https://www.facebook.com/events/419697515386637/',
@@ -972,7 +972,7 @@ export default [
   {
     date: '2019/09/06',
     type: 'presentation',
-    name: 'How to get to zero unhandled exceptions in production',
+    name: 'How to Get to Zero Unhandled Exceptions in Production',
     event: {
       name: 'Ruby Conf Thailand',
       url: 'https://rubyconfth.com/',
@@ -991,7 +991,7 @@ export default [
   {
     date: '2019/08/09',
     type: 'presentation',
-    name: 'How to be productive with React',
+    name: 'How to be Productive with React',
     event: {
       name: 'SoftUni Seminar',
       url: 'https://softuni.bg/trainings/2466/tech-stage-how-to-be-productive-with-react',
@@ -1095,7 +1095,7 @@ export default [
   {
     date: '2019/05/11',
     type: 'presentation',
-    name: 'How not to hate your life when dealing with forms',
+    name: 'How Not to Hate Your Life When Dealing with Forms',
     event: { name: 'React.NotAConf', url: 'http://react-not-a-conf.com/' },
     links: [
       {
@@ -1147,7 +1147,7 @@ export default [
   {
     date: '2019/03/18',
     type: 'presentation',
-    name: 'How you can shot your self in the server (twice) with SSR',
+    name: 'How You Can Shoot Yourself in the Server (Twice) With SSR',
     event: {
       name: 'React.Sofia',
       url: 'https://www.meetup.com/React-Sofia/events/259120407/',
