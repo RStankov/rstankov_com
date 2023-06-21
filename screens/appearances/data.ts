@@ -2,6 +2,21 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2023/06/21',
+    type: 'presentation',
+    name: 'The Effective Developer',
+    event: {
+      name: 'WordPress Sofia June Meetup',
+      url: 'https://www.facebook.com/events/3026591134316092',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/how-to-be-effective-developer-2',
+      },
+    ],
+  },
+  {
     date: '2023/05/30',
     type: 'presentation',
     name: 'Product Development',
