@@ -2,6 +2,36 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2023/07/08',
+    type: 'presentation',
+    name: 'How to Plan a Feature (Short Version)',
+    event: {
+      name: 'BurgasConf',
+      url: 'https://burgasconf.com/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/how-to-plan-a-feature-short-version',
+      },
+    ],
+  },
+  {
+    date: '2023/06/27',
+    type: 'presentation',
+    name: 'How to Plan a Feature (Long Version)',
+    event: {
+      name: 'June Beer.js Мeetup - JS Experts',
+      url: 'https://www.facebook.com/events/213878174814541',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/how-to-plan-a-feature-long-version',
+      },
+    ],
+  },
+  {
     date: '2023/06/21',
     type: 'presentation',
     name: 'The Effective Developer',
