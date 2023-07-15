@@ -7,6 +7,7 @@ import React from 'react';
 import classNames from 'classnames';
 import tw from '~/types/tailwind';
 import { usePathname } from 'next/navigation';
+import { Analytics } from '@vercel/analytics/react';
 
 interface IProps {
   children: React.ReactNode;
@@ -74,6 +75,7 @@ export default function Layout({ children }: IProps) {
             <small>© Radoslav Stankov {new Date().getFullYear()} </small>
           </footer>
         </div>
+        <Analytics />
       </body>
     </html>
   );
