@@ -51,7 +51,7 @@ export default function Layout({ children }: IProps) {
             className={tw(
               'text-center border-t-gray-400 border-t mt-6 pt-6 pb-8 mx-40',
             )}>
-            <div className={tw('flex gap-4 justify-center')}>
+            <div className={tw('flex gap-4 justify-center mb-2')}>
               <Link
                 href="https://twitter.com/rstankov"
                 title="Twitter"
