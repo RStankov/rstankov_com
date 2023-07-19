@@ -8,14 +8,15 @@ interface IProps {
   replace?: boolean;
   className?: string;
   title?: string;
+  rel?: string;
 }
 
 export default React.forwardRef(function Link(
-  { href, ...props }: IProps,
+  { href, rel, ...props }: IProps,
   ref: any,
 ) {
   if (href.startsWith('http')) {
-    return <a {...props} href={href} rel="noopener" ref={ref} />;
+    return <a {...props} href={href} rel={rel || 'noopener'} ref={ref} />;
   }
 
   return <NextLink href={href} {...props} ref={ref} />;

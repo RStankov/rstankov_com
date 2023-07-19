@@ -1,5 +1,6 @@
 import IPaths from '~/types/paths';
 import IconGithub from '~/icons/Github';
+import IconMastodon from '~/icons/Mastodon';
 import IconProductHunt from '~/icons/ProductHunt';
 import IconTwitter from '~/icons/Twitter';
 import Link from '~/components/Link';
@@ -70,6 +71,13 @@ export default function Layout({ children }: IProps) {
                 title="Product Hunt"
                 className={tw('text-gray-900 hover:text-brand')}>
                 <IconProductHunt className={tw('w-8 h-8')} />
+              </Link>
+              <Link
+                rel="me"
+                href="https://mastodon.social/@rstankov"
+                title="Mastodon"
+                className={tw('text-gray-900 hover:text-brand')}>
+                <IconMastodon className={tw('w-8 h-8')} />
               </Link>
             </div>
             <small>© Radoslav Stankov {new Date().getFullYear()} </small>
