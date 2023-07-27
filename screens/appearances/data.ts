@@ -2,6 +2,21 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2023/07/27',
+    type: 'presentation',
+    name: 'Best JavaScript Is No JavaScript',
+    event: {
+      name: 'Beer.js Summit',
+      url: 'https://www.facebook.com/events/3383835178536918',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/best-javascript-is-no-javascript',
+      },
+    ],
+  },
+  {
     date: '2023/07/08',
     type: 'presentation',
     name: 'How to Plan a Feature (Short Version)',
