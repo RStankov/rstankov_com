@@ -11,7 +11,7 @@ export default function Head({
   image = '/avatar.jpg',
   description,
 }: IProps) {
-  const url = `https://rstankov.com/${usePathname()}`;
+  const url = `https://rstankov.com/${usePathname() || ''}`;
 
   return (
     <>
