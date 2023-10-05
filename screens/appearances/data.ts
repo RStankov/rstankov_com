@@ -2,6 +2,21 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2023/10/06',
+    type: 'presentation',
+    name: 'Component-Driven UI with ViewComponent Gem',
+    event: {
+      name: 'RubyConf TH 2023',
+      url: 'https://rubyconfth.com/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/component-driven-ui-with-viewcomponent-gem',
+      },
+    ],
+  },
+  {
     date: '2023/07/27',
     type: 'presentation',
     name: 'Best JavaScript Is No JavaScript',
