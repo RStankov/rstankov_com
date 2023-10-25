@@ -2,6 +2,36 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2023/10/26',
+    type: 'presentation',
+    name: 'React Native Midgame',
+    event: {
+      name: 'polyglot4web',
+      url: 'https://polyglot4dev.com/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/react-mid-game',
+      },
+    ],
+  },
+  {
+    date: '2023/10/18',
+    type: 'presentation',
+    name: 'React Native for Better or Worst',
+    event: {
+      name: 'DEV.BG',
+      url: 'https://dev.bg/event/javascript-react-native-for-better-or-worst/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/react-native-for-better-or-worst',
+      },
+    ],
+  },
+  {
     date: '2023/10/18',
     type: 'presentation',
     name: 'React Native for Better or Worst',
