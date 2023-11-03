@@ -2,6 +2,37 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2023/11/02',
+    type: 'presentation',
+    name: 'Component-Driven UI with ViewComponent Gem',
+    event: {
+      name: 'Ruby Banitsa Meetup',
+      url: 'https://rubybanitsa.com/events/93',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/component-driven-ui-with-viewcomponent-gem',
+      },
+    ],
+  },
+  {
+    date: '2023/11/02',
+    type: 'podcast-episode',
+    language: '🇧🇬',
+    name: 'Tech Stack of Product Hunt and Angry Building',
+    event: {
+      name: 'Tilda Slash Episode 34',
+      url: 'https://www.tilde-slash.fm/',
+    },
+    links: [
+      {
+        type: 'episode',
+        url: 'https://www.tilde-slash.fm/34',
+      },
+    ],
+  },
+  {
     date: '2023/10/26',
     type: 'presentation',
     name: 'React Native Midgame',
@@ -13,21 +44,6 @@ export default [
       {
         type: 'slides',
         url: 'https://speakerdeck.com/rstankov/react-mid-game',
-      },
-    ],
-  },
-  {
-    date: '2023/10/18',
-    type: 'presentation',
-    name: 'React Native for Better or Worst',
-    event: {
-      name: 'DEV.BG',
-      url: 'https://dev.bg/event/javascript-react-native-for-better-or-worst/',
-    },
-    links: [
-      {
-        type: 'slides',
-        url: 'https://speakerdeck.com/rstankov/react-native-for-better-or-worst',
       },
     ],
   },
