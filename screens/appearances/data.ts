@@ -14,6 +14,10 @@ export default [
         type: 'slides',
         url: 'https://speakerdeck.com/rstankov/component-driven-ui-with-viewcomponent-gem',
       },
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=V61ITjlJE1A',
+      },
     ],
   },
   {
