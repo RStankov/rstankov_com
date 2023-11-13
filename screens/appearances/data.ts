@@ -2,6 +2,21 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2023/11/18',
+    type: 'presentation',
+    name: 'Best Javascript Is No Javascript',
+    event: {
+      name: 'JSTalks',
+      url: 'https://www.jstalks.net/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/best-javascript-is-no-javascript-65d7fe26-91b6-40bf-8cef-b428e30291a0',
+      },
+    ],
+  },
+  {
     date: '2023/11/02',
     type: 'presentation',
     name: 'Component-Driven UI with ViewComponent Gem',
@@ -88,7 +103,7 @@ export default [
   {
     date: '2023/07/27',
     type: 'presentation',
-    name: 'Best JavaScript Is No JavaScript',
+    name: 'Best JavaScript Is No JavaScript (Short Version)',
     event: {
       name: 'Beer.js Summit',
       url: 'https://www.facebook.com/events/3383835178536918',
@@ -195,7 +210,7 @@ export default [
     date: '2022/11/12',
     type: 'presentation',
     name: 'How to an Effective Javascript Developer',
-    event: { name: 'JStalks', url: 'http://jstalks.net/' },
+    event: { name: 'JSTalks', url: 'http://jstalks.net/' },
     language: '🇺🇸',
     links: [
       {
@@ -308,7 +323,7 @@ export default [
     date: '2021/11/20',
     type: 'presentation',
     name: 'React Component Anti-Patterns',
-    event: { name: 'JStalks', url: 'http://jstalks.net/' },
+    event: { name: 'JSTalks', url: 'http://jstalks.net/' },
     language: '🇺🇸',
     links: [
       {
@@ -1356,7 +1371,7 @@ export default [
     date: '2018/11/17',
     type: 'presentation',
     name: 'A Brief History of Everything About JavaScript',
-    event: { name: 'JStalks', url: 'http://jstalks.net/' },
+    event: { name: 'JSTalks', url: 'http://jstalks.net/' },
     links: [
       {
         type: 'slides',
