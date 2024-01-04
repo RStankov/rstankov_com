@@ -1324,13 +1324,13 @@ export default [
     name: 'MRS 077: Radoslav Stankov',
     event: {
       name: 'My Ruby Story',
-      url: 'https://devchat.tv/my-ruby-story',
+      url: 'https://topenddevs.com/podcasts/my-ruby-story',
     },
     language: '🇺🇸',
     links: [
       {
         type: 'episode',
-        url: 'https://devchat.tv/my-ruby-story/mrs-077-radoslav-stankov/',
+        url: 'https://topenddevs.com/podcasts/my-ruby-story/episodes/mrs-077-radoslav-stankov',
       },
     ],
   },
