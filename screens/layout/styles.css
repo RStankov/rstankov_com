@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 a {
+  cursor: pointer;
   text-decoration: none;
 }
 

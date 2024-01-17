@@ -4,12 +4,14 @@
 type ITailwindClassNames =
   | 'antialiased'
   | 'border'
+  | 'cursor-pointer'
   | 'flex'
   | 'flex-1'
   | 'flex-col'
   | 'font-bold'
   | 'font-semibold'
   | 'hidden'
+  | 'hover:no-underline'
   | 'inline-block'
   | 'inline-flex'
   | 'items-center'
@@ -19,6 +21,7 @@ type ITailwindClassNames =
   | 'rounded-full'
   | 'rounded-md'
   | 'text-center'
+  | 'underline'
   | `${IBreakpoints}:flex-row`
   | `${IBreakpoints}:inline`
   | `${IBreakpoints}:justify-end`

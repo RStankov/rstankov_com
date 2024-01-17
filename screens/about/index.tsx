@@ -2,6 +2,7 @@ import * as React from 'react';
 import Link from '~/components/Link';
 import tw from '~/types/tailwind';
 import coverImage from './cover.jpg';
+import IPaths from '~/types/paths';
 
 export default function Page() {
   return (
@@ -14,123 +15,167 @@ export default function Page() {
       <h1 className={tw('text-lg font-bold')}>About me</h1>
       <Year year={2002}>
         Started web development with{' '}
-        <Link href="https://en.wikipedia.org/wiki/Adobe_Flash">Flash</Link> in
-        an agency in my home town of{' '}
-        <Link href="https://www.google.com/maps?q=Dobrich+Bulgaria">
+        <HoverLink href="https://en.wikipedia.org/wiki/Adobe_Flash">
+          Flash
+        </HoverLink>{' '}
+        in an agency in my home town of{' '}
+        <HoverLink href="https://www.google.com/maps?q=Dobrich+Bulgaria">
           Dobrich, Bulgaria
-        </Link>
+        </HoverLink>
         . I quickly switched to PHP and JavaScript. Then moved to Ruby on Rails.
         👨‍💻
       </Year>
       <Year year={2009}>
         First contribution to major open source project -
-        <Link href="http://prototypejs.org/">Prototype.js</Link>.
+        <HoverLink href="http://prototypejs.org/">Prototype.js</HoverLink>.
       </Year>
       <Year year={2010}>
         Finished my bachelor in computer science from{' '}
-        <Link href="http://fs.tu-varna.bg/">Technical University Varna</Link>
+        <HoverLink href="http://fs.tu-varna.bg/">
+          Technical University Varna
+        </HoverLink>
         .<br />
         First talk at conference -{' '}
-        <Link href="https://www.openfest.org/">OpenFest</Link>
+        <HoverLink href="https://www.openfest.org/">OpenFest</HoverLink>
         <br />
         Joined a startup named{' '}
-        <Link href="https://www.crunchbase.com/organization/lookk">
+        <HoverLink href="https://www.crunchbase.com/organization/lookk">
           LOOKK
-        </Link>. <i>I became its CTO in 2012.</i> 🎓
+        </HoverLink>
+        . <i>I became its CTO in 2012.</i> 🎓
       </Year>
       <Year year={2012}>
         Started a conference named{' '}
-        <Link href="http://varnaconf.com/">VarnaConf</Link>.{' '}
+        <HoverLink href="http://varnaconf.com/">VarnaConf</HoverLink>.{' '}
         <i>
           It is still going to this day as part of{' '}
-          <Link href="http://it-tour.bg/">IT Tour</Link> conferences.
+          <HoverLink href="http://it-tour.bg/">IT Tour</HoverLink> conferences.
         </i>{' '}
         🎬
       </Year>
       <Year year={2013}>
         Created, together with{' '}
-        <Link href="https://twitter.com/DeVladinci">Vladimir Vladimir</Link>, a
-        music creation iOS app -{' '}
-        <Link href="https://www.producthunt.com/posts/4beats-music-creator">
+        <HoverLink href="https://twitter.com/DeVladinci">
+          Vladimir Vladimir
+        </HoverLink>
+        , a music creation iOS app -{' '}
+        <HoverLink href="https://www.producthunt.com/posts/4beats-music-creator">
           4Beats
-        </Link>
+        </HoverLink>
         . 🎶 📲
         <br />
         Open sourced{' '}
-        <Link href="https://github.com/RStankov/SearchObject">
+        <HoverLink href="https://github.com/RStankov/SearchObject">
           Search Object
-        </Link>
+        </HoverLink>
         💎
       </Year>
       <Year year={2014}>
-        Joined <Link href="https://www.producthunt.com/">Product Hunt</Link>. 😸
+        Joined{' '}
+        <HoverLink href="https://www.producthunt.com/">Product Hunt</HoverLink>.
+        😸
       </Year>
       <Year year={2015}>
         Started to blogging at{' '}
-        <Link href="https://blog.rstankov.com">blog.rstankov.com</Link>.
+        <HoverLink href="https://blog.rstankov.com">
+          blog.rstankov.com
+        </HoverLink>
+        .
       </Year>
       <Year year={2016}>
         Started to organize{' '}
-        <Link href="https://www.meetup.com/React-Sofia">
+        <HoverLink href="https://www.meetup.com/React-Sofia">
           React Sofia Meetup
-        </Link>
+        </HoverLink>
         . ⚛️
       </Year>
       <Year year={2017}>
-        Started using <Link href="https://graphql.org/">GraphQL</Link> at{' '}
-        <Link href="https://www.producthunt.com/">Product Hunt</Link>
+        Started using <HoverLink href="https://graphql.org/">GraphQL</HoverLink>{' '}
+        at{' '}
+        <HoverLink href="https://www.producthunt.com/">Product Hunt</HoverLink>
         .
         <br />
         First talk at international conference{' '}
-        <Link href="https://www.wearedevelopers.com/">WeAreDevelopers</Link>
+        <HoverLink href="https://www.wearedevelopers.com/">
+          WeAreDevelopers
+        </HoverLink>
         . 🎤
         <br />
-        <Link href="https://www.producthunt.com/">Product Hunt</Link> got
-        acquired by <Link href="https://angel.co/">AngelList</Link>.
+        <HoverLink href="https://www.producthunt.com/">
+          Product Hunt
+        </HoverLink>{' '}
+        got acquired by{' '}
+        <HoverLink href="https://angel.co/">AngelList</HoverLink>.
       </Year>
       <Year year={2018}>
         Became Head of Engineering at{' '}
-        <Link href="https://www.producthunt.com/">Product Hunt</Link>
+        <HoverLink href="https://www.producthunt.com/">Product Hunt</HoverLink>
         .<br />
         Wrote the{' '}
-        <Link href="https://www.howtographql.com/graphql-ruby/0-introduction/">
+        <HoverLink href="https://www.howtographql.com/graphql-ruby/0-introduction/">
           Ruby
-        </Link>{' '}
+        </HoverLink>{' '}
         section on{' '}
-        <Link href="https://www.howtographql.com">HowToGraphQL.com</Link>
+        <HoverLink href="https://www.howtographql.com">
+          HowToGraphQL.com
+        </HoverLink>
         .
         <br />
         Started organizing{' '}
-        <Link href="http://react-not-a-conf.com/">React.NotAConf</Link>
+        <HoverLink href="http://react-not-a-conf.com/">
+          React.NotAConf
+        </HoverLink>
         .
         <br />
         <i>This was a busy year</i> 🤩
       </Year>
       <Year year={2020}>
-        New <Link href="https://rstankov.com">rstankov.com</Link>
+        New <HoverLink href="https://rstankov.com">rstankov.com</HoverLink>
         <br />
         Beta Testing Your Stack at{' '}
-        <Link href="https://www.producthunt.com/">Product Hunt</Link> 🥞
+        <HoverLink href="https://www.producthunt.com/">
+          Product Hunt
+        </HoverLink>{' '}
+        🥞
         <br />
         Launched{' '}
-        <Link href="https://github.com/RStankov/FocusedTask">
+        <HoverLink href="https://github.com/RStankov/FocusedTask">
           Focused Task
-        </Link>{' '}
+        </HoverLink>{' '}
         🎯
       </Year>
       <Year year={2021}>
         Started a side project called{' '}
-        <Link href="https://angrybuilding.com">Angry Building</Link> 🔥 📱
+        <HoverLink href="https://angrybuilding.com">Angry Building</HoverLink>{' '}
+        🔥 📱
       </Year>
       <Year year={2023}>
-        Left <Link href="https://www.producthunt.com">Product Hunt</Link> to
-        work full-time on{' '}
-        <Link href="https://angrybuilding.com">Angry Building</Link> 🔥 🚀
+        Left{' '}
+        <HoverLink href="https://www.producthunt.com">Product Hunt</HoverLink>{' '}
+        to become CTO of{' '}
+        <HoverLink href="https://angrybuilding.com">Angry Building</HoverLink>{' '}
+        🔥 🚀
+      </Year>
+      <Year year={2024}>
+        Started a newsletter called{' '}
+        <HoverLink href="https://tips.rstankov.com">Rado's tips</HoverLink> ✏️
+        📭
       </Year>
       <div className={tw('text-center')}>
         <i>...to be continued</i> 😅
       </div>
     </div>
+  );
+}
+
+function HoverLink({ href, children }: { href: IPaths; children: string }) {
+  return (
+    <Link
+      target={href.startsWith('http') ? '_blank' : undefined}
+      href={href}
+      className={tw('underline hover:no-underline')}>
+      {children}
+    </Link>
   );
 }
 

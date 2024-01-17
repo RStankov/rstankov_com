@@ -22,15 +22,25 @@ export default function Page() {
             href="https://angrybuilding.com/"
             className={tw('font-semibold')}>
             Angry Building
-          </Link>
-          .<br />
+          </Link>{' '}
+          🔥.
+          <br />
           Previously, I was the Head of Engineering at{' '}
           <Link
             href="https://www.producthunt.com"
             className={tw('font-semibold')}>
             Product Hunt
-          </Link>
-          .
+          </Link>{' '}
+          😺.
+        </div>
+        <div>
+          I'm writing a newsletter called{' '}
+          <Link
+            href="https://tips.rstankov.com"
+            className={tw('font-semibold')}>
+            Rado's tips
+          </Link>{' '}
+          ✏️ 📭.
         </div>
         <div>
           In my spare time, I'm:
@@ -41,14 +51,6 @@ export default function Page() {
                 href="https://blog.rstankov.com"
                 className={tw('font-semibold')}>
                 📝 blog.rstankov.com
-              </Link>
-            </li>
-            <li>
-              Building{' '}
-              <Link
-                href="https://github.com/RStankov/FocusedTask"
-                className={tw('font-semibold')}>
-                🎯 Focused Task{' '}
               </Link>
             </li>
             <li>
@@ -85,19 +87,39 @@ export default function Page() {
           </ul>
         </div>
         <div>
-          If you want me to speak at your event or podcast, reach out to at
-          rstankov at gmail.
-        </div>
-        <div>
           You can ping me on{' '}
           <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/radoslavstankov/"
+            className={tw('font-semibold')}>
+            LinkedIn
+          </Link>
+          ,{' '}
+          <Link
+            target="_blank"
+            href="https://mastodon.social/@rstankov"
+            className={tw('font-semibold')}>
+            Mastodon
+          </Link>
+          ,{' '}
+          <Link
+            target="_blank"
+            href="https://www.threads.net/@rstankov"
+            className={tw('font-semibold')}>
+            Threads
+          </Link>{' '}
+          or{' '}
+          <Link
+            target="_blank"
             href="https://twitter.com/rstankov"
             className={tw('font-semibold')}>
             Twitter
           </Link>{' '}
-          about anything related to GraphQL, React, JavaScript, Ruby, product
-          development, remote work, or software engineering in general.
+          about anything related to GraphQL, React, JavaScript, Ruby,
+          management, product development, remote work, or software engineering
+          in general.
         </div>
+        <div>I'm always glad to help 🙌</div>
       </div>
     </>
   );

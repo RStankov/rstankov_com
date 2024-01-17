@@ -9,6 +9,7 @@ interface IProps {
   className?: string;
   title?: string;
   rel?: string;
+  target?: '_blank';
 }
 
 export default React.forwardRef(function Link(
