@@ -1,6 +1,7 @@
 import IPaths from '~/types/paths';
 import IconGithub from '~/icons/Github';
 import IconMastodon from '~/icons/Mastodon';
+import IconLinkedIn from '~/icons/LinkedIn';
 import IconProductHunt from '~/icons/ProductHunt';
 import IconTwitter from '~/icons/Twitter';
 import Link from '~/components/Link';
@@ -56,29 +57,41 @@ export default function Layout({ children }: IProps) {
             )}>
             <div className={tw('flex gap-4 justify-center mb-2')}>
               <Link
-                href="https://twitter.com/rstankov"
-                title="Twitter"
-                className={tw(
-                  'rounded-full p-1.5 w-8 h-8 inline-block bg-gray-900 hover:bg-brand',
-                )}>
-                <IconTwitter className={tw('w-full h-full text-gray-50')} />
-              </Link>
-              <Link
                 href="https://github.com/rstankov"
                 title="GitHub"
+                target="_blank"
                 className={tw('text-gray-900 hover:text-brand')}>
                 <IconGithub className={tw('w-8 h-8')} />
               </Link>
               <Link
                 href="https://producthunt.com/@rstankov"
                 title="Product Hunt"
+                target="_blank"
                 className={tw('text-gray-900 hover:text-brand')}>
                 <IconProductHunt className={tw('w-8 h-8')} />
               </Link>
               <Link
                 rel="me"
+                href="https://www.linkedin.com/in/radoslavstankov/"
+                title="Mastodon"
+                target="_blank"
+                className={tw('text-gray-900 hover:text-brand')}>
+                <IconLinkedIn className={tw('w-8 h-8')} />
+              </Link>
+              <Link
+                href="https://twitter.com/rstankov"
+                title="Twitter"
+                target="_blank"
+                className={tw(
+                  'rounded-full p-1.5 w-8 h-8 inline-block bg-gray-900 hover:bg-brand',
+                )}>
+                <IconTwitter className={tw('w-full h-full text-gray-50')} />
+              </Link>
+              <Link
+                rel="me"
                 href="https://mastodon.social/@rstankov"
                 title="Mastodon"
+                target="_blank"
                 className={tw('text-gray-900 hover:text-brand')}>
                 <IconMastodon className={tw('w-8 h-8')} />
               </Link>
