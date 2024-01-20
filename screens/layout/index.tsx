@@ -10,6 +10,7 @@ import classNames from 'classnames';
 import tw from '~/types/tailwind';
 import { usePathname } from 'next/navigation';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 interface IProps {
   children: React.ReactNode;
@@ -100,6 +101,7 @@ export default function Layout({ children }: IProps) {
           </footer>
         </div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
