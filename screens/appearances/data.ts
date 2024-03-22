@@ -2,6 +2,21 @@ import IAppearance from '~/types/Appearance';
 
 export default [
   {
+    date: '2024/03/27',
+    type: 'presentation',
+    name: 'Eliminating Noise From Your Code',
+    event: {
+      name: 'JS Experts 2024',
+      url: 'https://jsexperts.eu/jsexperts/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/eliminating-noise-in-your-code-c6128081-dab0-4610-bc07-4eb821ddc86c',
+      },
+    ],
+  },
+  {
     date: '2023/12/15',
     type: 'presentation',
     name: 'Component-Driven UI with ViewComponent Gem',
