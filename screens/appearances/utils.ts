@@ -1,5 +1,5 @@
 import * as React from 'react';
-import IAppearance from '~/types/Appearance';
+import { IAppearance } from './types';
 import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
 

@@ -1,4 +1,4 @@
-import IAppearance from '~/types/Appearance';
+import { IAppearance } from './types';
 
 export default [
   {

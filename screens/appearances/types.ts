@@ -5,7 +5,7 @@ interface ILink {
   url: IUrl;
 }
 
-export default interface IAppearance {
+export interface IAppearance {
   date: string;
   type: 'presentation' | 'podcast-episode';
   name: string;

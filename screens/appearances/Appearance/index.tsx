@@ -1,5 +1,4 @@
 import * as React from 'react';
-import IAppearance from '~/types/Appearance';
 import IconGithub from '~/icons/Github';
 import IconListen from '~/icons/Listen';
 import IconPodcast from '~/icons/Podcast';
@@ -8,6 +7,7 @@ import IconSlides from '~/icons/Slides';
 import IconYouTube from '~/icons/YouTube';
 import IconLink from '~/icons/Link';
 import IconInterview from '~/icons/Interview';
+import { IAppearance } from '../types';
 import { parse, format } from 'date-fns';
 import Link from '~/components/Link';
 import tw from '~/types/tailwind';
