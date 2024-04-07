@@ -1,3 +1,5 @@
+'use client';
+
 import Appearance from './Appearance';
 import React from 'react';
 import Switch from './Switch';

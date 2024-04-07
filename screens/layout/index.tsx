@@ -1,14 +1,12 @@
-import IPaths from '~/types/paths';
 import IconGithub from '~/icons/Github';
-import IconMastodon from '~/icons/Mastodon';
 import IconLinkedIn from '~/icons/LinkedIn';
+import IconMastodon from '~/icons/Mastodon';
 import IconProductHunt from '~/icons/ProductHunt';
 import IconTwitter from '~/icons/Twitter';
 import Link from '~/components/Link';
+import NavLink from './NavLink';
 import React from 'react';
-import classNames from 'classnames';
 import tw from '~/types/tailwind';
-import { usePathname } from 'next/navigation';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
@@ -104,20 +102,5 @@ export default function Layout({ children }: IProps) {
         <SpeedInsights />
       </body>
     </html>
-  );
-}
-
-function NavLink({ label, href }: { label: string; href: IPaths }) {
-  const currentPath = usePathname();
-
-  return (
-    <Link
-      href={href}
-      className={classNames(
-        tw('hover:text-brand'),
-        currentPath === href && tw('text-brand'),
-      )}>
-      {label}
-    </Link>
   );
 }
