@@ -1,6 +1,6 @@
 'use client';
 
-import classNames from 'classnames';
+import cn from 'classnames';
 import { usePathname } from 'next/navigation';
 import Link from '~/components/Link';
 import IPaths from '~/types/paths';
@@ -18,7 +18,7 @@ export default function NavLink({
   return (
     <Link
       href={href}
-      className={classNames(
+      className={cn(
         tw('hover:text-brand'),
         currentPath === href && tw('text-brand'),
       )}>

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import cn from 'classnames';
 import tw from '~/types/tailwind';
 
 interface IProps {
@@ -15,7 +15,7 @@ export default function Switch({ options, selected, onSelect }: IProps) {
         <button
           key={option.value}
           onClick={(e) => onSelect(option.value, { include: e.metaKey })}
-          className={classNames(
+          className={cn(
             tw(
               `bg-gray-50 py-1 px-2 border border-gray-400 hover:bg-brand hover:border-brand hover:text-white`,
             ),
