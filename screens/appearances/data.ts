@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2024/04/13',
+    type: 'presentation',
+    name: 'Component-Driven UI with ViewComponent Gem',
+    event: {
+      name: 'wroclove.rb 2024',
+      url: 'https://wrocloverb.com/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/component-driven-ui-with-viewcomponent-gem',
+      },
+    ],
+  },
+  {
     date: '2024/03/27',
     type: 'presentation',
     name: 'Eliminating Noise From Your Code',
