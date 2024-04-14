@@ -7,7 +7,7 @@ export default [
     name: 'Component-Driven UI with ViewComponent Gem',
     event: {
       name: 'wroclove.rb 2024',
-      url: 'https://wrocloverb.com/',
+      url: 'https://2024.wrocloverb.com/',
     },
     links: [
       {
