@@ -2,6 +2,18 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2024/04/27',
+    type: 'presentation',
+    name: 'One engineer company with Ruby on Rails',
+    event: { name: 'Balkan Ruby 2024', url: 'https://balkanruby.com/' },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/one-engineer-company-with-ruby-on-rails',
+      },
+    ],
+  },
+  {
     date: '2024/04/13',
     type: 'presentation',
     name: 'Component-Driven UI with ViewComponent Gem',
@@ -1443,7 +1455,7 @@ export default [
       },
       {
         type: 'video',
-        url: 'https://www.youtube.com/watch?v=bohJQ_rsLio&t=0s&list=PLzUxAJX9n5voQDjpJOYHqJjzWjgKzrcpj&index=10\n',
+        url: 'https://www.youtube.com/watch?v=bohJQ_rsLio&t=0s&list=PLzUxAJX9n5voQDjpJOYHqJjzWjgKzrcpj&index=10',
       },
     ],
   },
@@ -1459,7 +1471,7 @@ export default [
       },
       {
         type: 'video',
-        url: 'https://www.youtube.com/watch?v=HC5QpG6ebgk \n',
+        url: 'https://www.youtube.com/watch?v=HC5QpG6ebgk',
       },
     ],
   },
@@ -1475,7 +1487,7 @@ export default [
       },
       {
         type: 'video',
-        url: 'https://www.youtube.com/watch?v=be5LSvhKfZ8 \n',
+        url: 'https://www.youtube.com/watch?v=be5LSvhKfZ8',
       },
     ],
   },
@@ -1494,7 +1506,7 @@ export default [
       },
       {
         type: 'code',
-        url: 'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS\n',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS',
       },
     ],
   },
@@ -1513,7 +1525,7 @@ export default [
       },
       {
         type: 'code',
-        url: 'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS\n',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS',
       },
     ],
   },
@@ -1560,7 +1572,7 @@ export default [
       { type: 'video', url: 'https://www.youtube.com/watch?v=bb9Qbybcr64' },
       {
         type: 'code',
-        url: 'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS\n',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2018.07.08%20-%20OdessaJS',
       },
     ],
   },
@@ -1579,7 +1591,7 @@ export default [
       },
       {
         type: 'code',
-        url: 'https://github.com/RStankov/talks-code/tree/master/2018.06.05%20-%20Phoenix%20Lecture\n',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2018.06.05%20-%20Phoenix%20Lecture',
       },
     ],
   },
@@ -1591,7 +1603,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url: 'https://speakerdeck.com/rstankov/zero-exceptions-in-production\n',
+        url: 'https://speakerdeck.com/rstankov/zero-exceptions-in-production',
       },
     ],
   },
@@ -1603,7 +1615,7 @@ export default [
     links: [
       {
         type: 'slides',
-        url: 'https://speakerdeck.com/rstankov/one-year-graphql-in-production\n',
+        url: 'https://speakerdeck.com/rstankov/one-year-graphql-in-production',
       },
     ],
   },
@@ -1619,7 +1631,7 @@ export default [
       { type: 'slides', url: 'https://speakerdeck.com/rstankov/notakeynote' },
       {
         type: 'video',
-        url: 'https://www.youtube.com/watch?v=IXYTiJRzebQ&index=4&t=0s&list=PLOEJ0eNOcZeqYZCTipkAra8g-ZHYjAijK\n',
+        url: 'https://www.youtube.com/watch?v=IXYTiJRzebQ&index=4&t=0s&list=PLOEJ0eNOcZeqYZCTipkAra8g-ZHYjAijK',
       },
     ],
   },
