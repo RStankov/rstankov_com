@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2024/05/06',
+    type: 'podcast-episode',
+    name: 'Friendly S2E8 Radoslav Stankov does not need Hotwire',
+    event: {
+      name: 'SupeRails',
+      url: 'https://superails.com/posts/friendly-s2e8-radoslav-stankov-does-not-need-hotwire',
+    },
+    links: [
+      {
+        type: 'episode',
+        url: 'https://www.youtube.com/watch?v=hrIvHnbdJJI',
+      },
+    ],
+  },
+  {
     date: '2024/04/27',
     type: 'presentation',
     name: 'One engineer company with Ruby on Rails',
