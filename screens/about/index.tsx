@@ -157,9 +157,9 @@ export default function Page() {
         🔥 🚀
       </Year>
       <Year year={2024}>
-        Started a newsletter called{' '}
-        <HoverLink href="https://tips.rstankov.com">Rado's tips</HoverLink> ✏️
-        📭
+        Started the
+        <HoverLink href="https://tips.rstankov.com">Rado's tips</HoverLink>{' '}
+        Newsletter ✏️ 📭
       </Year>
       <div className={tw('text-center')}>
         <i>...to be continued</i> 😅

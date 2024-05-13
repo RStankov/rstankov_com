@@ -25,6 +25,14 @@ export default function Page() {
           </Link>{' '}
           🔥.
           <br />
+          I'm writing a newsletter the{' '}
+          <Link
+            href="https://tips.rstankov.com"
+            className={tw('font-semibold')}>
+            Rado's tips
+          </Link>{' '}
+          newsletter ✏️ 📭.
+          <br />
           Previously, I was the Head of Engineering at{' '}
           <Link
             href="https://www.producthunt.com"
@@ -32,15 +40,6 @@ export default function Page() {
             Product Hunt
           </Link>{' '}
           😺.
-        </div>
-        <div>
-          I'm writing a newsletter called{' '}
-          <Link
-            href="https://tips.rstankov.com"
-            className={tw('font-semibold')}>
-            Rado's tips
-          </Link>{' '}
-          ✏️ 📭.
         </div>
         <div>
           In my spare time, I'm:

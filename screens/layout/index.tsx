@@ -36,7 +36,7 @@ export default function Layout({ children }: IProps) {
                 <NavLink href="/" label="Home" />
               </li>
               <li>
-                <NavLink href="https://tips.rstankov.com" label="Tips" />
+                <NavLink href="https://tips.rstankov.com" label="Newsletter" />
               </li>
               <li>
                 <NavLink href="https://blog.rstankov.com" label="Blog" />
