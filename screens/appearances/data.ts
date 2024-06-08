@@ -26,6 +26,10 @@ export default [
         type: 'slides',
         url: 'https://speakerdeck.com/rstankov/one-engineer-company-with-ruby-on-rails',
       },
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=lUM4KIrsaQo',
+      },
     ],
   },
   {
