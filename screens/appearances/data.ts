@@ -2,6 +2,18 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2024/06/15',
+    type: 'presentation',
+    name: 'Living Without Exceptions',
+    event: { name: 'Baltic Ruby 2024', url: 'https://balticruby.org/' },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/living-without-exceptions',
+      },
+    ],
+  },
+  {
     date: '2024/05/06',
     type: 'podcast-episode',
     name: 'Friendly S2E8 Radoslav Stankov does not need Hotwire',
