@@ -42,7 +42,9 @@ export default function Appearance({ appearance }: IProps) {
         <div className={tw('flex-1')}>
           <strong>
             {appearance.links[0] ? (
-              <Link href={appearance.links[0].url}>{appearance.name}</Link>
+              <Link href={appearance.links[0].url} target="_blank">
+                {appearance.name}
+              </Link>
             ) : (
               appearance.name
             )}
@@ -50,7 +52,9 @@ export default function Appearance({ appearance }: IProps) {
           <div>
             {appearance.event.name &&
               (appearance.event.url ? (
-                <Link href={appearance.event.url}>{appearance.event.name}</Link>
+                <Link href={appearance.event.url} target="_blank">
+                  {appearance.event.name}
+                </Link>
               ) : (
                 appearance.event.name
               ))}
@@ -61,7 +65,11 @@ export default function Appearance({ appearance }: IProps) {
         {appearance.links.length > 0 && (
           <div className={tw('flex gap-2 items-center')}>
             {appearance.links.map((link, index) => (
-              <Link key={index} href={link.url} title={link.type}>
+              <Link
+                key={index}
+                href={link.url}
+                title={link.type}
+                target="_blank">
                 {LINK_ICONS[link.type] || null}
               </Link>
             ))}

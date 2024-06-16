@@ -21,7 +21,10 @@ export default function Page() {
         I love talking about technology, product, and process.
         <br />
         If you want me to speak on your event or podcast, reach out on{' '}
-        <Link href="https://twitter.com/rstankov">Twitter</Link>.
+        <Link href="https://www.linkedin.com/in/radoslavstankov/">
+          LinkedIn
+        </Link>
+        .
       </p>
       {gropedAppearances.map(({ year, appearances }) => (
         <section key={year}>
