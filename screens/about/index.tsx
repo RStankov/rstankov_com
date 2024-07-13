@@ -157,7 +157,7 @@ export default function Page() {
         🔥 🚀
       </Year>
       <Year year={2024}>
-        Started the
+        Started the{' '}
         <HoverLink href="https://tips.rstankov.com">Rado's tips</HoverLink>{' '}
         Newsletter ✏️ 📭
       </Year>
