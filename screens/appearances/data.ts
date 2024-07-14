@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2024/07/16',
+    type: 'presentation',
+    name: 'Ruby on Rails - The Single Engineer Framework',
+    event: {
+      name: 'Software University Seminar',
+      url: 'https://softuni.bg/trainings/4732/ruby-on-rails-the-single-engineer-framework-seminar',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/ruby-on-rails-the-single-engineer-framework',
+      },
+    ],
+  },
+  {
     date: '2024/06/15',
     type: 'presentation',
     name: 'Living Without Exceptions',
