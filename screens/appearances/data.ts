@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2024/07/23',
+    type: 'presentation',
+    name: 'The dream that turned into nightmare (lightning)',
+    event: {
+      name: 'Beer.js Summit 2024',
+      url: 'https://www.facebook.com/events/345882071627705',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/the-dream-that-turned-into-nightmare-lightning',
+      },
+    ],
+  },
+  {
     date: '2024/07/16',
     type: 'presentation',
     name: 'Ruby on Rails - The Single Engineer Framework',
