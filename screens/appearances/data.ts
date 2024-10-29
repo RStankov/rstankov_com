@@ -2,6 +2,26 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2024/11/08',
+    type: 'presentation',
+    name: 'AI Round Table',
+    event: {
+      name: 'Puzl ME.E.T. CEE',
+      url: 'https://www.puzl.com/meet-cee-budapest-event-2024',
+    },
+    links: [],
+  },
+  {
+    date: '2024/09/14',
+    type: 'presentation',
+    name: 'Future of AI - Panel',
+    event: {
+      name: 'Beer.js Summit 2024',
+      url: 'https://www.iotsummit.tech/',
+    },
+    links: [],
+  },
+  {
     date: '2024/07/23',
     type: 'presentation',
     name: 'The dream that turned into nightmare (lightning)',
