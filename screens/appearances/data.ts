@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2024/11/23',
+    type: 'presentation',
+    name: 'The Dream That Turned Into Nightmare',
+    event: {
+      name: 'JSTalks',
+      url: 'https://www.jstalks.net/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/the-dream-that-turned-into-nightmare',
+      },
+    ],
+  },
+  {
     date: '2024/11/08',
     type: 'presentation',
     name: 'AI Round Table',
