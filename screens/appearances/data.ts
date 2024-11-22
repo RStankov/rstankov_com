@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2024/12/07',
+    type: 'presentation',
+    name: 'Rails: The Missing Parts',
+    event: {
+      name: 'Ruby Banitsa Conf',
+      url: 'https://conf.rubybanitsa.com/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/rails-the-missing-parts',
+      },
+    ],
+  },
+  {
     date: '2024/11/23',
     type: 'presentation',
     name: 'The Dream That Turned Into Nightmare',
