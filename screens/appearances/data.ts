@@ -91,6 +91,10 @@ export default [
         type: 'slides',
         url: 'https://speakerdeck.com/rstankov/living-without-exceptions',
       },
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=4iQHtPrf8wI',
+      },
     ],
   },
   {
@@ -136,6 +140,10 @@ export default [
       {
         type: 'slides',
         url: 'https://speakerdeck.com/rstankov/component-driven-ui-with-viewcomponent-gem',
+      },
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=PLU0KH0FRNY',
       },
     ],
   },
