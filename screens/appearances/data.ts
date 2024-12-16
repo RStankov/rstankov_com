@@ -14,6 +14,10 @@ export default [
         type: 'slides',
         url: 'https://speakerdeck.com/rstankov/rails-the-missing-parts',
       },
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=c14M6QeFVgY',
+      },
     ],
   },
   {
