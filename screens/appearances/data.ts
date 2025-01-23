@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2025/01/22',
+    type: 'presentation',
+    name: 'The Dream That Turned Into Nightmare',
+    event: {
+      name: 'DEV.BG',
+      url: 'https://dev.bg/event/javascript-the-dream-that-turned-into-a-nightmare/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/the-dream-that-turned-into-nightmare',
+      },
+    ],
+  },
+  {
     date: '2024/12/07',
     type: 'presentation',
     name: 'Rails: The Missing Parts',
