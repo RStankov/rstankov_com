@@ -161,6 +161,11 @@ export default function Page() {
         <HoverLink href="https://tips.rstankov.com">Rado's tips</HoverLink>{' '}
         Newsletter ✏️ 📭
       </Year>
+      <Year year={2025}>
+        <strong>Angry Building</strong> rebranded as{' '}
+        <HoverLink href="https://www.producthunt.com">Product Hunt</HoverLink>{' '}
+        🔲 🚀
+      </Year>
       <div className={tw('text-center')}>
         <i>...to be continued</i> 😅
       </div>

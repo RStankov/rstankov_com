@@ -18,12 +18,10 @@ export default function Page() {
       <div className={tw('flex flex-col gap-4 text-lg mt-4')}>
         <div>
           I'm CTO and Co-Founder at{' '}
-          <Link
-            href="https://angrybuilding.com/"
-            className={tw('font-semibold')}>
-            Angry Building
-          </Link>{' '}
-          🔥.
+          <Link href="https://livo.me/" className={tw('font-semibold')}>
+            LIVO
+          </Link>
+          (<i>previously Angry Building</i>) 🔥.
           <br />
           I'm writing a newsletter the{' '}
           <Link
