@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2025/05/21',
+    type: 'presentation',
+    name: 'Ruby on Rails - The Single Engineer Framework',
+    event: {
+      name: 'DevDays Europe 2025',
+      url: 'https://devdays.lt/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/ruby-on-rails-the-single-engineer-framework',
+      },
+    ],
+  },
+  {
     date: '2025/01/22',
     type: 'presentation',
     name: 'The Dream That Turned Into Nightmare',
