@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2025/06/13',
+    type: 'presentation',
+    name: 'All you need is CSS',
+    event: {
+      name: 'React Norway 2025',
+      url: 'https://reactnorway.com/past-conferences/2025',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/all-you-need-is-css',
+      },
+    ],
+  },
+  {
     date: '2025/05/21',
     type: 'presentation',
     name: 'Ruby on Rails - The Single Engineer Framework',
