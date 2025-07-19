@@ -2,6 +2,30 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2025/07/24',
+    type: 'presentation',
+    name: 'Angry Batch',
+    event: {
+      name: 'Ruby Banica',
+      url: 'https://rubybanitsa.com/events/106',
+    },
+  },
+  {
+    date: '2025/07/23',
+    type: 'presentation',
+    name: 'Building LLM Powered Features (lightning talk)',
+    event: {
+      name: 'Beer.js Summit 2025',
+      url: 'https://www.facebook.com/events/599319172422282/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/building-llm-powered-features-lightning-talk',
+      },
+    ],
+  },
+  {
     date: '2025/06/13',
     type: 'presentation',
     name: 'All you need is CSS',
