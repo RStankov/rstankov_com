@@ -9,6 +9,12 @@ export default [
       name: 'Ruby Banica',
       url: 'https://rubybanitsa.com/events/106',
     },
+    links: [
+      {
+        type: 'code',
+        url: 'https://github.com/RStankov/angry-batch',
+      },
+    ],
   },
   {
     date: '2025/07/23',
