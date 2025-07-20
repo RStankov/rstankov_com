@@ -12,7 +12,7 @@ export default [
     links: [
       {
         type: 'code',
-        url: 'https://github.com/RStankov/angry-batch',
+        url: 'https://github.com/RStankov/AngryBatch',
       },
     ],
   },
