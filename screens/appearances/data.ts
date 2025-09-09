@@ -14,6 +14,10 @@ export default [
         type: 'code',
         url: 'https://github.com/RStankov/AngryBatch',
       },
+      {
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=JM2hqxmwrRg',
+      },
     ],
   },
   {
