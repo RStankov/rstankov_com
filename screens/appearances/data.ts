@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2025/10/29',
+    type: 'presentation',
+    name: 'Tips for Tailwind CSS',
+    event: {
+      name: 'October 2025 Beer.js Meetup',
+      url: 'https://www.facebook.com/events/24792515160343064',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/tips-for-tailwind-css',
+      },
+    ],
+  },
+  {
     date: '2025/07/24',
     type: 'presentation',
     name: 'Angry Batch',
