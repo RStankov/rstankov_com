@@ -2,6 +2,21 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2025/11/29',
+    type: 'presentation',
+    name: 'Building LLM Powered Features',
+    event: {
+      name: 'JSTalks',
+      url: 'https://www.jstalks.net/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/building-llm-powered-features',
+      },
+    ],
+  },
+  {
     date: '2025/10/29',
     type: 'presentation',
     name: 'Tips for Tailwind CSS',
