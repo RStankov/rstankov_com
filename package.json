@@ -15,7 +15,7 @@
     "@vercel/speed-insights": "^1.0.5",
     "classnames": "2.5.1",
     "date-fns": "3.3.0",
-    "lodash": "4.17.21",
+    "lodash": "4.17.23",
     "next": "14.2.32",
     "postcss": "8.4.33",
     "react": "18.2.0",
