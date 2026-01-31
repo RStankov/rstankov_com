@@ -1,4 +1,3 @@
-import * as React from 'react';
 import IconGithub from '~/icons/Github';
 import IconListen from '~/icons/Listen';
 import IconPodcast from '~/icons/Podcast';

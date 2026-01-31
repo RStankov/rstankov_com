@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Link from '~/components/Link';
 import tw from '~/types/tailwind';
 import coverImage from './cover.jpg';

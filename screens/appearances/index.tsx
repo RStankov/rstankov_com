@@ -1,7 +1,6 @@
 'use client';
 
 import Appearance from './Appearance';
-import React from 'react';
 import Switch from './Switch';
 import data from './data';
 import { useFilters, TYPES } from './utils';

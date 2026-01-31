@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { IAppearance } from './types';
 import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
