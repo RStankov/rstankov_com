@@ -4,6 +4,7 @@ import IconMastodon from '~/icons/Mastodon';
 import IconProductHunt from '~/icons/ProductHunt';
 import IconTwitter from '~/icons/Twitter';
 import IconBluesky from '~/icons/Bluesky';
+import IconThreads from '~/icons/Threads';
 import Link from '~/components/Link';
 import NavLink from './NavLink';
 import React from 'react';
@@ -64,13 +65,6 @@ export default function Layout({ children }: IProps) {
                 <IconGithub className={tw('w-8 h-8')} />
               </Link>
               <Link
-                href="https://producthunt.com/@rstankov"
-                title="Product Hunt"
-                target="_blank"
-                className={tw('text-gray-900 hover:text-brand')}>
-                <IconProductHunt className={tw('w-8 h-8')} />
-              </Link>
-              <Link
                 rel="me"
                 href="https://www.linkedin.com/in/radoslavstankov/"
                 title="Mastodon"
@@ -89,6 +83,16 @@ export default function Layout({ children }: IProps) {
               </Link>
               <Link
                 rel="me"
+                href="https://www.threads.com/@rstankov"
+                title="Threads"
+                target="_blank"
+                className={tw(
+                  'rounded-full p-1.5 w-8 h-8 inline-block bg-gray-900 hover:bg-brand',
+                )}>
+                <IconThreads className={tw('w-full h-full text-gray-50')} />
+              </Link>
+              <Link
+                rel="me"
                 href="https://bsky.app/profile/rstankov.bsky.social"
                 title="Bluesky"
                 target="_blank"
@@ -104,6 +108,13 @@ export default function Layout({ children }: IProps) {
                 target="_blank"
                 className={tw('text-gray-900 hover:text-brand')}>
                 <IconMastodon className={tw('w-8 h-8')} />
+              </Link>
+              <Link
+                href="https://producthunt.com/@rstankov"
+                title="Product Hunt"
+                target="_blank"
+                className={tw('text-gray-900 hover:text-brand')}>
+                <IconProductHunt className={tw('w-8 h-8')} />
               </Link>
             </div>
             <small>© Radoslav Stankov {new Date().getFullYear()} </small>
