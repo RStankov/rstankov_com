@@ -162,7 +162,10 @@ export default function Page() {
       </Year>
       <Year year={2025}>
         <strong>Angry Building</strong> rebranded as{' '}
-        <HoverLink href="https://livo.me">LIVO</HoverLink> 🔲 🚀
+        <HoverLink href="https://livo.me">LIVO</HoverLink> 🔲
+      </Year>
+      <Year year={2026}>
+        Become CTO of <HoverLink href="https://doczen.com">Doczen</HoverLink> 📦
       </Year>
       <div className={tw('text-center')}>
         <i>...to be continued</i> 😅

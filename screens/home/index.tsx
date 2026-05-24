@@ -16,11 +16,11 @@ export default function Page() {
       </div>
       <div className={tw('flex flex-col gap-4 text-lg mt-4')}>
         <div>
-          I'm CTO and Co-Founder at{' '}
-          <Link href="https://livo.me/" className={tw('font-semibold')}>
-            LIVO
-          </Link>
-          (<i>previously Angry Building</i>) 🔥.
+          I'm CTO at{' '}
+          <Link href="https://doczen.com" className={tw('font-semibold')}>
+            Doczen
+          </Link>{' '}
+          🚀.
           <br />
           I'm writing a newsletter the{' '}
           <Link
@@ -30,7 +30,13 @@ export default function Page() {
           </Link>{' '}
           newsletter ✏️ 📭.
           <br />
-          Previously, I was the Head of Engineering at{' '}
+          Previously, I was Co-Founder/CTO at{' '}
+          <Link
+            href="https://www.producthunt.com"
+            className={tw('font-semibold')}>
+            LIVO
+          </Link>{' '}
+          and the Head of Engineering at{' '}
           <Link
             href="https://www.producthunt.com"
             className={tw('font-semibold')}>
