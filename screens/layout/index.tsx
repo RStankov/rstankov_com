@@ -6,7 +6,7 @@ import IconTwitter from '~/icons/Twitter';
 import IconBluesky from '~/icons/Bluesky';
 import IconThreads from '~/icons/Threads';
 import Link from '~/components/Link';
-import NavLink from './NavLink';
+import Header from './Header';
 import React from 'react';
 import tw from '~/types/tailwind';
 import { Analytics } from '@vercel/analytics/react';
@@ -24,33 +24,7 @@ export default function Layout({ children }: IProps) {
           'antialiased bg-gray-50 text-gray-900 border-t-brand border-t-8 h-full',
         )}>
         <div className={tw('flex flex-col h-full max-w-3xl mx-auto px-4')}>
-          <header className={tw('flex items-center py-4')}>
-            <Link
-              href="/"
-              className={tw(
-                'text-lg font-bold hover:text-brand hidden sm:inline',
-              )}>
-              Radoslav Stankov
-            </Link>
-            <ul
-              className={tw('flex flex-1 justify-center sm:justify-end gap-2')}>
-              <li>
-                <NavLink href="/" label="Home" />
-              </li>
-              <li>
-                <NavLink href="/appearances" label="Appearances" />
-              </li>
-              <li>
-                <NavLink href="/about" label="About" />
-              </li>
-              <li>
-                <NavLink href="https://tips.rstankov.com" label="Newsletter" />
-              </li>
-              <li>
-                <NavLink href="https://blog.rstankov.com" label="Blog" />
-              </li>
-            </ul>
-          </header>
+          <Header />
           <main className={tw('flex-1')}>{children}</main>
           <footer
             className={tw(
@@ -117,7 +91,7 @@ export default function Layout({ children }: IProps) {
                 <IconProductHunt className={tw('w-8 h-8')} />
               </Link>
             </div>
-            <small>© Radoslav Stankov {new Date().getFullYear()} </small>
+            <small>© Radoslav Stankov {new Date().getFullYear()}</small>
           </footer>
         </div>
         <Analytics />

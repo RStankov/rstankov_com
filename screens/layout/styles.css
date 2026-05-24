@@ -8,6 +8,8 @@ a {
   transition: color 0.15s ease, opacity 0.15s ease;
 }
 
-a:hover {
-  text-decoration: underline;
+@media (hover: hover) {
+  a:hover {
+    text-decoration: underline;
+  }
 }

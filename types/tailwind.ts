@@ -39,10 +39,14 @@ type ITailwindClassNames =
   | 'transition-colors'
   | 'underline'
   | 'underline-offset-4'
+  | `${IBreakpoints}:flex`
   | `${IBreakpoints}:flex-row`
+  | `${IBreakpoints}:hidden`
   | `${IBreakpoints}:inline`
   | `${IBreakpoints}:items-start`
   | `${IBreakpoints}:justify-end`
+  | `${IBreakpoints}:h-${IDistanceWithFull}`
+  | `${IBreakpoints}:w-${IDistanceWithFull}`
   | `bg-${IColors}`
   | `border-${IColors}`
   | `border-${IDirection}-${IColors}`
@@ -72,8 +76,10 @@ type ITailwindClassNames =
   | `space-y-${IDistance}`
   | `text-${IColors}`
   | `text-${ISize}`
-  | `top-${IDistance}`
-  | `w-${IDistanceWithFull}`;
+  | `top-${IDistanceWithFull}`
+  | `right-${IDistance}`
+  | `w-${IDistanceWithFull}`
+  | `z-${IZIndex}`;
 
 type IColors =
   | 'brand'
@@ -97,6 +103,8 @@ type IDistanceWithAuto = 'auto' | IDistance;
 type ISize = 'xs' | 'sm' | 'lg' | 'xl' | '2xl' | '4xl';
 
 type IBreakpoints = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+
+type IZIndex = 0 | 10 | 20 | 30 | 40 | 50;
 
 // NOTE(rstankov): Check if strings contains only Tailwind classes
 //   Explanation how this works:

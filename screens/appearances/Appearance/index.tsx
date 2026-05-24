@@ -25,12 +25,12 @@ const LINK_ICONS = {
 
 const TYPE_ICONS = {
   presentation: (
-    <IconPresentaion className={tw('h-12 w-12')} title="Presentation" />
+    <IconPresentaion className={tw('h-8 w-8 sm:h-12 sm:w-12')} title="Presentation" />
   ),
   'podcast-episode': (
-    <IconPodcast className={tw('h-12 w-12')} title="Podcast episode" />
+    <IconPodcast className={tw('h-8 w-8 sm:h-12 sm:w-12')} title="Podcast episode" />
   ),
-  interview: <IconInterview className={tw('h-12 w-12')} title="Interview" />,
+  interview: <IconInterview className={tw('h-8 w-8 sm:h-12 sm:w-12')} title="Interview" />,
 };
 
 export default function Appearance({ appearance }: IProps) {
@@ -38,7 +38,7 @@ export default function Appearance({ appearance }: IProps) {
     <div className={tw('flex gap-4 items-start p-4 hover:bg-gray-50 transition-colors')}>
       {TYPE_ICONS[appearance.type]}
       <div
-        className={tw('flex flex-col sm:flex-row gap-4 items-center flex-1')}>
+        className={tw('flex gap-3 items-center flex-1')}>
         <div className={tw('flex-1')}>
           <strong>
             {appearance.links[0] ? (
