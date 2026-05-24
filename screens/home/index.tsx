@@ -6,43 +6,55 @@ const AVATAR_IMAGE = '/avatar.jpg';
 export default function Page() {
   return (
     <>
-      <div className={tw('flex flex-col sm:flex-row gap-4 items-center')}>
+      <div
+        className={tw(
+          'flex flex-col sm:flex-row gap-5 items-center sm:items-start mt-6',
+        )}>
         <img
           src={AVATAR_IMAGE}
-          className={tw('rounded-full w-16 h-16')}
+          className={tw(
+            'rounded-full w-24 h-24 ring-2 ring-brand shadow-sm shrink-0',
+          )}
           alt="Radoslav Stankov"
         />
-        <h1 className={tw('text-4xl font-bold')}>Hey, I'm Rado 👋</h1>
-      </div>
-      <div className={tw('flex flex-col gap-4 text-lg mt-4')}>
         <div>
-          I'm CTO at{' '}
-          <Link href="https://doczen.com" className={tw('font-semibold')}>
-            Doczen
-          </Link>{' '}
-          🚀.
-          <br />
-          I'm writing a newsletter the{' '}
-          <Link
-            href="https://tips.rstankov.com"
-            className={tw('font-semibold')}>
-            Rado's tips
-          </Link>{' '}
-          newsletter ✏️ 📭.
-          <br />
-          Previously, I was Co-Founder/CTO at{' '}
-          <Link
-            href="https://www.producthunt.com"
-            className={tw('font-semibold')}>
-            LIVO
-          </Link>{' '}
-          and the Head of Engineering at{' '}
-          <Link
-            href="https://www.producthunt.com"
-            className={tw('font-semibold')}>
-            Product Hunt
-          </Link>{' '}
-          😺.
+          <h1 className={tw('text-4xl font-bold mb-1')}>Hey, I'm Rado 👋</h1>
+          <p className={tw('text-gray-500')}>
+            CTO · Full Stack Developer · Speaker · Blogger
+          </p>
+        </div>
+      </div>
+      <div className={tw('flex flex-col gap-5 text-lg pt-6')}>
+        <div className={tw('space-y-1')}>
+          <div>
+            I&apos;m CTO at{' '}
+            <Link href="https://doczen.com" className={tw('font-semibold')}>
+              Doczen
+            </Link>{' '}
+            🚀.
+          </div>
+          <div>
+            I write the{' '}
+            <Link
+              href="https://tips.rstankov.com"
+              className={tw('font-semibold')}>
+              Rado&apos;s tips
+            </Link>{' '}
+            newsletter ✏️ 📭.
+          </div>
+          <div>
+            Previously, I was Co-Founder/CTO at{' '}
+            <Link href="https://livo.me" className={tw('font-semibold')}>
+              LIVO
+            </Link>{' '}
+            and Head of Engineering at{' '}
+            <Link
+              href="https://www.producthunt.com"
+              className={tw('font-semibold')}>
+              Product Hunt
+            </Link>{' '}
+            😺.
+          </div>
         </div>
         <div>
           In my spare time, I'm:
@@ -67,7 +79,7 @@ export default function Page() {
               .
             </li>
             <li>
-              Supporting couple of{' '}
+              Maintaining a couple of{' '}
               <Link
                 href="https://github.com/RStankov"
                 className={tw('font-semibold')}>
@@ -83,13 +95,14 @@ export default function Page() {
               <Link
                 href="https://github.com/producthunt/kitty-policy"
                 className={tw('font-semibold')}>
-                😸 KittyPolicy
+                😸 KittyPolicy.
               </Link>
             </li>
           </ul>
         </div>
         <div>
-          You can ping me on{' '}
+          I love discussing GraphQL, React, Ruby, engineering management, and
+          remote work. Find me on{' '}
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/radoslavstankov/"
@@ -109,19 +122,17 @@ export default function Page() {
             href="https://www.threads.net/@rstankov"
             className={tw('font-semibold')}>
             Threads
-          </Link>{' '}
-          or{' '}
+          </Link>
+          , or{' '}
           <Link
             target="_blank"
             href="https://twitter.com/rstankov"
             className={tw('font-semibold')}>
             Twitter
-          </Link>{' '}
-          about anything related to GraphQL, React, JavaScript, Ruby,
-          management, product development, remote work, or software engineering
-          in general.
+          </Link>
+          .
         </div>
-        <div>I'm always glad to help 🙌</div>
+        <div>I&apos;m always glad to help 🙌</div>
       </div>
     </>
   );

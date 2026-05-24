@@ -17,10 +17,10 @@ interface IProps {
 
 const LINK_ICONS = {
   slides: <IconSlides className={tw('h-5 hover:text-brand')} />,
-  video: <IconYouTube className={tw('h-5 hover:text-brand')} />,
+  video: <IconYouTube className={tw('h-6 hover:text-brand')} />,
   episode: <IconListen className={tw('h-5 hover:text-brand')} />,
   code: <IconGithub className={tw('h-5 hover:text-brand')} />,
-  link: <IconLink className={tw('h-4 hover:text-brand')} />,
+  link: <IconLink className={tw('h-5 hover:text-brand')} />,
 };
 
 const TYPE_ICONS = {
@@ -35,9 +35,10 @@ const TYPE_ICONS = {
 
 export default function Appearance({ appearance }: IProps) {
   return (
-    <div className={tw('flex gap-4 items-start')}>
+    <div className={tw('flex gap-4 items-start p-4 hover:bg-gray-50 transition-colors')}>
       {TYPE_ICONS[appearance.type]}
-      <div className={tw('flex flex-col sm:flex-row gap-4 items-start flex-1')}>
+      <div
+        className={tw('flex flex-col sm:flex-row gap-4 items-center flex-1')}>
         <div className={tw('flex-1')}>
           <strong>
             {appearance.links[0] ? (
@@ -62,7 +63,7 @@ export default function Appearance({ appearance }: IProps) {
           </div>
         </div>
         {appearance.links.length > 0 && (
-          <div className={tw('flex gap-2 items-center')}>
+          <div className={tw('flex gap-4 items-center')}>
             {appearance.links.map((link, index) => (
               <Link
                 key={index}

@@ -24,7 +24,7 @@ export default function Layout({ children }: IProps) {
           'antialiased bg-gray-50 text-gray-900 border-t-brand border-t-8 h-full',
         )}>
         <div className={tw('flex flex-col h-full max-w-3xl mx-auto px-4')}>
-          <header className={tw('flex items-center my-4')}>
+          <header className={tw('flex items-center py-4')}>
             <Link
               href="/"
               className={tw(
@@ -38,25 +38,25 @@ export default function Layout({ children }: IProps) {
                 <NavLink href="/" label="Home" />
               </li>
               <li>
-                <NavLink href="https://tips.rstankov.com" label="Newsletter" />
-              </li>
-              <li>
-                <NavLink href="https://blog.rstankov.com" label="Blog" />
-              </li>
-              <li>
                 <NavLink href="/appearances" label="Appearances" />
               </li>
               <li>
                 <NavLink href="/about" label="About" />
+              </li>
+              <li>
+                <NavLink href="https://tips.rstankov.com" label="Newsletter" />
+              </li>
+              <li>
+                <NavLink href="https://blog.rstankov.com" label="Blog" />
               </li>
             </ul>
           </header>
           <main className={tw('flex-1')}>{children}</main>
           <footer
             className={tw(
-              'text-center border-t-gray-400 border-t mt-6 pt-6 pb-8 mx-40',
+              'text-center border-t border-gray-200 mt-12 pt-6 pb-8',
             )}>
-            <div className={tw('flex gap-4 justify-center mb-2')}>
+            <div className={tw('flex gap-5 justify-center mb-3')}>
               <Link
                 href="https://github.com/rstankov"
                 title="GitHub"

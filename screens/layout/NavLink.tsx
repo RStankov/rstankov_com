@@ -19,8 +19,10 @@ export default function NavLink({
     <Link
       href={href}
       className={cn(
-        tw('hover:text-brand'),
-        currentPath === href && tw('text-brand'),
+        tw('px-3 py-1 rounded-full text-sm font-medium transition-colors'),
+        currentPath === href
+          ? tw('bg-brand text-white')
+          : tw('text-gray-600 hover:bg-gray-100 hover:text-gray-900'),
       )}>
       {label}
     </Link>
