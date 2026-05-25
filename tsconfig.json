@@ -22,21 +22,11 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
-    "typeRoots": [
-      "./node_modules/@types",
-      "./types/"
-    ],
+    "typeRoots": ["./node_modules/@types", "./types/"],
     "paths": {
-      "~/*": [
-        "./*"
-      ]
+      "~/*": ["./*"]
     },
-    "lib": [
-      "dom",
-      "es2015",
-      "es2016",
-      "esnext.asynciterable"
-    ],
+    "lib": ["dom", "es2015", "es2016", "esnext.asynciterable"],
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "incremental": true,
@@ -46,13 +36,6 @@
       }
     ]
   },
-  "include": [
-    "./**/*",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
-  ],
-  "exclude": [
-    ".next/**/*",
-    "node_modules/**/*"
-  ]
+  "include": ["./**/*", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
+  "exclude": [".next/**/*", "node_modules/**/*"]
 }

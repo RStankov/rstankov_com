@@ -9,57 +9,41 @@ import IconInterview from '~/icons/Interview';
 import { IAppearance } from '../types';
 import { parse, format } from 'date-fns';
 import Link from '~/components/Link';
-import tw from '~/types/tailwind';
 
 interface IProps {
   appearance: IAppearance;
 }
 
 const LINK_ICONS = {
-  slides: <IconSlides className={tw('h-5 hover:text-brand')} />,
-  video: <IconYouTube className={tw('h-6 hover:text-brand')} />,
-  episode: <IconListen className={tw('h-5 hover:text-brand')} />,
-  code: <IconGithub className={tw('h-5 hover:text-brand')} />,
-  link: <IconLink className={tw('h-5 hover:text-brand')} />,
+  slides: <IconSlides className="h-5 hover:text-brand" />,
+  video: <IconYouTube className="h-6 hover:text-brand" />,
+  episode: <IconListen className="h-5 hover:text-brand" />,
+  code: <IconGithub className="h-5 hover:text-brand" />,
+  link: <IconLink className="h-5 hover:text-brand" />,
 };
 
 const TYPE_ICONS = {
   presentation: (
-    <IconPresentaion
-      className={tw('h-8 w-8 sm:h-12 sm:w-12')}
-      title="Presentation"
-    />
+    <IconPresentaion className="size-8 sm:size-12" title="Presentation" />
   ),
   'podcast-episode': (
-    <IconPodcast
-      className={tw('h-8 w-8 sm:h-12 sm:w-12')}
-      title="Podcast episode"
-    />
+    <IconPodcast className="size-8 sm:size-12" title="Podcast episode" />
   ),
-  interview: (
-    <IconInterview
-      className={tw('h-8 w-8 sm:h-12 sm:w-12')}
-      title="Interview"
-    />
-  ),
+  interview: <IconInterview className="size-8 sm:size-12" title="Interview" />,
 };
 
 export default function Appearance({ appearance }: IProps) {
   return (
-    <div
-      className={tw(
-        'flex gap-4 items-start p-4 hover:bg-gray-50 transition-colors',
-      )}
-    >
+    <div className="flex gap-4 items-start p-4 hover:bg-gray-50 transition-colors">
       {TYPE_ICONS[appearance.type]}
-      <div className={tw('flex gap-3 items-center flex-1')}>
-        <div className={tw('flex-1')}>
+      <div className="flex gap-3 items-center flex-1">
+        <div className="flex-1">
           <strong>
             {appearance.links[0] ? (
               <Link
                 href={appearance.links[0].url}
                 target="_blank"
-                className={tw('hover:underline')}
+                className="hover:underline"
               >
                 {appearance.name}
               </Link>
@@ -73,7 +57,7 @@ export default function Appearance({ appearance }: IProps) {
                 <Link
                   href={appearance.event.url}
                   target="_blank"
-                  className={tw('hover:underline')}
+                  className="hover:underline"
                 >
                   {appearance.event.name}
                 </Link>
@@ -85,7 +69,7 @@ export default function Appearance({ appearance }: IProps) {
           </div>
         </div>
         {appearance.links.length > 0 && (
-          <div className={tw('flex gap-4 items-center')}>
+          <div className="flex gap-4 items-center">
             {appearance.links.map((link, index) => (
               <Link
                 key={index}

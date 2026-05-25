@@ -1,30 +1,25 @@
 import Link from '~/components/Link';
-import tw from '~/types/tailwind';
 import coverImage from './cover.jpg';
 import IPaths from '~/types/paths';
 
 export default function Page() {
   return (
-    <div className={tw('flex flex-col gap-6')}>
+    <div className="flex flex-col gap-6">
       <img
         src={coverImage.src}
-        className={tw('w-full h-72 object-cover rounded-md')}
+        className="w-full h-72 object-cover rounded-md"
         alt="Radoslav Stankov"
       />
       <div>
-        <h1 className={tw('text-2xl font-bold mb-3')}>About me</h1>
-        <div
-          className={tw(
-            'bg-gray-50 rounded-lg border border-gray-200 p-4 space-y-1',
-          )}
-        >
-          <p className={tw('text-xs font-medium text-gray-400 -mt-1 mb-1')}>
+        <h1 className="text-2xl font-bold mb-3">About me</h1>
+        <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 space-y-1">
+          <p className="text-xs font-medium text-gray-400 -mt-1 mb-1">
             My mottos
           </p>
-          <p className={tw('italic text-gray-600')}>
+          <p className="italic text-gray-600">
             I&apos;m always glad to help 🙌
           </p>
-          <p className={tw('italic text-gray-600')}>I always deliver 🚀</p>
+          <p className="italic text-gray-600">I always deliver 🚀</p>
         </div>
       </div>
       <div>
@@ -205,7 +200,7 @@ export default function Page() {
           📦
         </Year>
       </div>
-      <div className={tw('text-center')}>
+      <div className="text-center">
         <i>...to be continued</i> 😅
       </div>
     </div>
@@ -217,7 +212,7 @@ function HoverLink({ href, children }: { href: IPaths; children: string }) {
     <Link
       target={href.startsWith('http') ? '_blank' : undefined}
       href={href}
-      className={tw('underline hover:no-underline')}
+      className="underline hover:no-underline"
     >
       {children}
     </Link>
@@ -226,19 +221,15 @@ function HoverLink({ href, children }: { href: IPaths; children: string }) {
 
 function Year({ year, children }: { year: number; children: React.ReactNode }) {
   return (
-    <div className={tw('relative flex gap-5 pb-8 group')}>
+    <div className="relative flex gap-5 pb-8 group">
       <div
-        className={tw('absolute top-8 bottom-0 bg-gray-200 group-last:hidden')}
+        className="absolute top-8 bottom-0 bg-gray-200 group-last:hidden"
         style={{ left: 27, width: 2 }}
       />
-      <div
-        className={tw(
-          'relative flex justify-center items-center bg-gray-100 border border-gray-200 w-14 h-8 rounded-lg font-semibold text-gray-600 text-sm shrink-0',
-        )}
-      >
+      <div className="relative flex justify-center items-center bg-gray-100 border border-gray-200 w-14 h-8 rounded-lg font-semibold text-gray-600 text-sm shrink-0">
         {year}
       </div>
-      <div className={tw('flex-1')} style={{ paddingTop: 4 }}>
+      <div className="flex-1" style={{ paddingTop: 4 }}>
         {children}
       </div>
     </div>

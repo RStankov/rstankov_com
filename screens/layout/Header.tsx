@@ -3,21 +3,17 @@
 import { useState } from 'react';
 import Link from '~/components/Link';
 import NavLink from './NavLink';
-import tw from '~/types/tailwind';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={tw('relative')}>
-      <header className={tw('flex items-center py-4')}>
-        <Link
-          href="/"
-          className={tw('text-lg font-bold hover:text-brand flex-1')}
-        >
+    <div className="relative">
+      <header className="flex items-center py-4">
+        <Link href="/" className="text-lg font-bold hover:text-brand flex-1">
           Radoslav Stankov
         </Link>
-        <ul className={tw('hidden sm:flex gap-2')}>
+        <ul className="hidden sm:flex gap-2">
           <li>
             <NavLink href="/" label="Home" />
           </li>
@@ -36,7 +32,7 @@ export default function Header() {
         </ul>
         <button
           onClick={() => setOpen(!open)}
-          className={tw('sm:hidden p-1 text-gray-600')}
+          className="sm:hidden p-1 text-gray-600"
           aria-label="Toggle menu"
         >
           {open ? (
@@ -71,9 +67,7 @@ export default function Header() {
       </header>
       {open && (
         <nav
-          className={tw(
-            'sm:hidden absolute top-full left-0 right-0 z-10 bg-white border border-gray-200 shadow-sm rounded-lg flex flex-col gap-1 p-3',
-          )}
+          className="sm:hidden absolute top-full inset-x-0 z-10 bg-white border border-gray-200 shadow-sm rounded-lg flex flex-col gap-1 p-3"
           onClick={() => setOpen(false)}
         >
           <NavLink href="/" label="Home" />

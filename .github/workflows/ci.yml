@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.17.0'
+          cache: 'yarn'
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn tsc -noEmit
+      - run: yarn prettier --check .
+      - run: yarn lint

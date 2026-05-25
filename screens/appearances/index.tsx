@@ -5,7 +5,6 @@ import Switch from './Switch';
 import data from './data';
 import { useFilters, TYPES } from './utils';
 import Link from '~/components/Link';
-import tw from '~/types/tailwind';
 
 export default function Page() {
   const [filters, setFilters, gropedAppearances] = useFilters(data);
@@ -16,10 +15,10 @@ export default function Page() {
   );
 
   return (
-    <div className={tw('flex flex-col gap-6')}>
+    <div className="flex flex-col gap-6">
       <div>
-        <h1 className={tw('text-2xl font-bold mb-1')}>Appearances</h1>
-        <p className={tw('text-gray-600 mb-4')}>
+        <h1 className="text-2xl font-bold mb-1">Appearances</h1>
+        <p className="text-gray-600 mb-4">
           I&apos;ve given <strong>{typeCounts['presentation'] || 0}</strong>{' '}
           presentations, been on{' '}
           <strong>{typeCounts['podcast-episode'] || 0}</strong> podcasts, and
@@ -35,21 +34,13 @@ export default function Page() {
       </div>
       {gropedAppearances.map(({ year, appearances }) => (
         <section key={year}>
-          <header className={tw('flex items-center gap-3 mb-3')}>
-            <h2 className={tw('text-xl font-bold')}>{year}</h2>
-            <span
-              className={tw(
-                'bg-gray-100 text-gray-600 text-xs font-medium size-5 flex items-center justify-center rounded-full border border-gray-300 shrink-0',
-              )}
-            >
+          <header className="flex items-center gap-3 mb-3">
+            <h2 className="text-xl font-bold">{year}</h2>
+            <span className="bg-gray-100 text-gray-600 text-xs font-medium size-5 flex items-center justify-center rounded-full border border-gray-300 shrink-0">
               {appearances.length}
             </span>
           </header>
-          <div
-            className={tw(
-              'bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden divide-y divide-gray-100',
-            )}
-          >
+          <div className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden divide-y divide-gray-100">
             {appearances.map((appearance, index) => (
               <Appearance key={index} appearance={appearance} />
             ))}
