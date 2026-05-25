@@ -40,14 +40,16 @@ export default function Page() {
             <span
               className={tw(
                 'bg-gray-100 text-gray-600 text-xs font-medium size-5 flex items-center justify-center rounded-full border border-gray-300 shrink-0',
-              )}>
+              )}
+            >
               {appearances.length}
             </span>
           </header>
           <div
             className={tw(
               'bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden divide-y divide-gray-100',
-            )}>
+            )}
+          >
             {appearances.map((appearance, index) => (
               <Appearance key={index} appearance={appearance} />
             ))}

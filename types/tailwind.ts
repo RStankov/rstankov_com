@@ -96,7 +96,24 @@ type IColors =
 
 type IDirection = 'x' | 'y' | 't' | 'r' | 'b' | 'l';
 
-type IDistance = 0 | '0.5' | 1 | '1.5' | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 12 | 14 | 16 | 24 | 40 | 72;
+type IDistance =
+  | 0
+  | '0.5'
+  | 1
+  | '1.5'
+  | 2
+  | 3
+  | 4
+  | 5
+  | 6
+  | 7
+  | 8
+  | 12
+  | 14
+  | 16
+  | 24
+  | 40
+  | 72;
 type IDistanceWithFull = 'full' | 'px' | IDistance | '3xl';
 type IDistanceWithAuto = 'auto' | IDistance;
 
@@ -114,10 +131,10 @@ export type ITailwind<S> = S extends `${infer Class} ${infer Rest}`
     ? `${Class} ${ITailwind<Rest>}`
     : never
   : S extends `${infer Class}`
-  ? Class extends ITailwindClassNames
-    ? S
-    : never
-  : never;
+    ? Class extends ITailwindClassNames
+      ? S
+      : never
+    : never;
 
 // NOTE(rstankov): Helper to verify class names listed match available Tailwind class names
 export default function tw<S>(classes: ITailwind<S>) {

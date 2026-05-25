@@ -16,7 +16,8 @@ export default function Page() {
         <div
           className={tw(
             'bg-gray-50 rounded-lg border border-gray-200 p-4 space-y-1',
-          )}>
+          )}
+        >
           <p className={tw('text-xs font-medium text-gray-400 -mt-1 mb-1')}>
             My mottos
           </p>
@@ -216,7 +217,8 @@ function HoverLink({ href, children }: { href: IPaths; children: string }) {
     <Link
       target={href.startsWith('http') ? '_blank' : undefined}
       href={href}
-      className={tw('underline hover:no-underline')}>
+      className={tw('underline hover:no-underline')}
+    >
       {children}
     </Link>
   );
@@ -232,7 +234,8 @@ function Year({ year, children }: { year: number; children: React.ReactNode }) {
       <div
         className={tw(
           'relative flex justify-center items-center bg-gray-100 border border-gray-200 w-14 h-8 rounded-lg font-semibold text-gray-600 text-sm shrink-0',
-        )}>
+        )}
+      >
         {year}
       </div>
       <div className={tw('flex-1')} style={{ paddingTop: 4 }}>

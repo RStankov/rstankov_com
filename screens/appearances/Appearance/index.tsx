@@ -25,24 +25,42 @@ const LINK_ICONS = {
 
 const TYPE_ICONS = {
   presentation: (
-    <IconPresentaion className={tw('h-8 w-8 sm:h-12 sm:w-12')} title="Presentation" />
+    <IconPresentaion
+      className={tw('h-8 w-8 sm:h-12 sm:w-12')}
+      title="Presentation"
+    />
   ),
   'podcast-episode': (
-    <IconPodcast className={tw('h-8 w-8 sm:h-12 sm:w-12')} title="Podcast episode" />
+    <IconPodcast
+      className={tw('h-8 w-8 sm:h-12 sm:w-12')}
+      title="Podcast episode"
+    />
   ),
-  interview: <IconInterview className={tw('h-8 w-8 sm:h-12 sm:w-12')} title="Interview" />,
+  interview: (
+    <IconInterview
+      className={tw('h-8 w-8 sm:h-12 sm:w-12')}
+      title="Interview"
+    />
+  ),
 };
 
 export default function Appearance({ appearance }: IProps) {
   return (
-    <div className={tw('flex gap-4 items-start p-4 hover:bg-gray-50 transition-colors')}>
+    <div
+      className={tw(
+        'flex gap-4 items-start p-4 hover:bg-gray-50 transition-colors',
+      )}
+    >
       {TYPE_ICONS[appearance.type]}
-      <div
-        className={tw('flex gap-3 items-center flex-1')}>
+      <div className={tw('flex gap-3 items-center flex-1')}>
         <div className={tw('flex-1')}>
           <strong>
             {appearance.links[0] ? (
-              <Link href={appearance.links[0].url} target="_blank" className={tw('hover:underline')}>
+              <Link
+                href={appearance.links[0].url}
+                target="_blank"
+                className={tw('hover:underline')}
+              >
                 {appearance.name}
               </Link>
             ) : (
@@ -52,7 +70,11 @@ export default function Appearance({ appearance }: IProps) {
           <div>
             {appearance.event.name &&
               (appearance.event.url ? (
-                <Link href={appearance.event.url} target="_blank" className={tw('hover:underline')}>
+                <Link
+                  href={appearance.event.url}
+                  target="_blank"
+                  className={tw('hover:underline')}
+                >
                   {appearance.event.name}
                 </Link>
               ) : (
@@ -69,7 +91,8 @@ export default function Appearance({ appearance }: IProps) {
                 key={index}
                 href={link.url}
                 title={link.type}
-                target="_blank">
+                target="_blank"
+              >
                 {LINK_ICONS[link.type] || null}
               </Link>
             ))}

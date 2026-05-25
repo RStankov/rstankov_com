@@ -12,7 +12,8 @@ export default function Switch({ options, selected, onSelect }: IProps) {
     <div
       className={tw(
         'inline-flex rounded-lg border border-gray-200 divide-x divide-gray-200 overflow-hidden',
-      )}>
+      )}
+    >
       {options.map((option) => (
         <button
           key={option.value}
@@ -22,8 +23,11 @@ export default function Switch({ options, selected, onSelect }: IProps) {
             selected.indexOf(option.value) !== -1
               ? tw('bg-gray-900 text-white')
               : tw('bg-white text-gray-600 hover:bg-gray-50'),
-          )}>
-          {option.count !== undefined ? `${option.label} (${option.count})` : option.label}
+          )}
+        >
+          {option.count !== undefined
+            ? `${option.label} (${option.count})`
+            : option.label}
         </button>
       ))}
     </div>

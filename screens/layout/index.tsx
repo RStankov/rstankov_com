@@ -22,7 +22,8 @@ export default function Layout({ children }: IProps) {
       <body
         className={tw(
           'antialiased bg-white text-gray-900 border-t-brand border-t-4 h-full',
-        )}>
+        )}
+      >
         <div className={tw('flex flex-col h-full max-w-3xl mx-auto px-4')}>
           <Header />
           <main className={tw('flex-1')}>{children}</main>
@@ -30,13 +31,15 @@ export default function Layout({ children }: IProps) {
             <div
               className={tw(
                 'grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-3 mb-8',
-              )}>
+              )}
+            >
               <FooterLink href="https://github.com/rstankov" label="GitHub">
                 <IconGithub className={tw('size-5')} />
               </FooterLink>
               <FooterLink
                 href="https://www.linkedin.com/in/radoslavstankov/"
-                label="LinkedIn">
+                label="LinkedIn"
+              >
                 <IconLinkedIn className={tw('size-5')} />
               </FooterLink>
               <FooterLink href="https://twitter.com/rstankov" label="Twitter">
@@ -46,26 +49,30 @@ export default function Layout({ children }: IProps) {
               </FooterLink>
               <FooterLink
                 href="https://www.threads.com/@rstankov"
-                label="Threads">
+                label="Threads"
+              >
                 <IconCicle>
                   <IconThreads className={tw('size-4 text-white')} />
                 </IconCicle>
               </FooterLink>
               <FooterLink
                 href="https://bsky.app/profile/rstankov.bsky.social"
-                label="Bluesky">
+                label="Bluesky"
+              >
                 <IconCicle>
                   <IconBluesky className={tw('size-4 text-white')} />
                 </IconCicle>
               </FooterLink>
               <FooterLink
                 href="https://mastodon.social/@rstankov"
-                label="Mastodon">
+                label="Mastodon"
+              >
                 <IconMastodon className={tw('size-5')} />
               </FooterLink>
               <FooterLink
                 href="https://producthunt.com/@rstankov"
-                label="Product Hunt">
+                label="Product Hunt"
+              >
                 <IconProductHunt className={tw('size-5')} />
               </FooterLink>
             </div>
@@ -86,7 +93,8 @@ function IconCicle({ children }: { children: React.ReactNode }) {
     <span
       className={tw(
         'rounded-full p-0.5 size-5 inline-flex items-center justify-center bg-gray-800 group-hover:bg-brand transition-colors',
-      )}>
+      )}
+    >
       {children}
     </span>
   );
@@ -108,7 +116,8 @@ function FooterLink({
       rel="me noopener"
       className={tw(
         'group flex items-center gap-2 text-sm text-gray-600 hover:text-brand',
-      )}>
+      )}
+    >
       {children}
       <span>{label}</span>
     </Link>

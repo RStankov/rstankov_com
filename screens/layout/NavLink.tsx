@@ -23,7 +23,8 @@ export default function NavLink({
         currentPath === href
           ? tw('bg-brand text-white')
           : tw('text-gray-500 hover:bg-gray-100 hover:text-gray-900'),
-      )}>
+      )}
+    >
       {label}
     </Link>
   );
