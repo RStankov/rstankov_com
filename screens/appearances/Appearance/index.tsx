@@ -42,7 +42,7 @@ export default function Appearance({ appearance }: IProps) {
         <div className={tw('flex-1')}>
           <strong>
             {appearance.links[0] ? (
-              <Link href={appearance.links[0].url} target="_blank">
+              <Link href={appearance.links[0].url} target="_blank" className={tw('hover:underline')}>
                 {appearance.name}
               </Link>
             ) : (
@@ -52,7 +52,7 @@ export default function Appearance({ appearance }: IProps) {
           <div>
             {appearance.event.name &&
               (appearance.event.url ? (
-                <Link href={appearance.event.url} target="_blank">
+                <Link href={appearance.event.url} target="_blank" className={tw('hover:underline')}>
                   {appearance.event.name}
                 </Link>
               ) : (

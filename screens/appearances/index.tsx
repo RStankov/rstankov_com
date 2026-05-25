@@ -46,7 +46,7 @@ export default function Page() {
           </header>
           <div
             className={tw(
-              'bg-white rounded-lg border border-gray-100 shadow-sm overflow-hidden divide-y divide-gray-100',
+              'bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden divide-y divide-gray-100',
             )}>
             {appearances.map((appearance, index) => (
               <Appearance key={index} appearance={appearance} />

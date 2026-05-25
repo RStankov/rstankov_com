@@ -7,9 +7,3 @@ a {
   text-decoration: none;
   transition: color 0.15s ease, opacity 0.15s ease;
 }
-
-@media (hover: hover) {
-  a:hover {
-    text-decoration: underline;
-  }
-}

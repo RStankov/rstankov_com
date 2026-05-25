@@ -15,7 +15,7 @@ export default function Page() {
         <h1 className={tw('text-2xl font-bold mb-3')}>About me</h1>
         <div
           className={tw(
-            'bg-white rounded-lg border border-gray-100 shadow-sm p-4 space-y-1',
+            'bg-gray-50 rounded-lg border border-gray-200 p-4 space-y-1',
           )}>
           <p className={tw('text-xs font-medium text-gray-400 -mt-1 mb-1')}>
             My mottos
@@ -32,16 +32,21 @@ export default function Page() {
           <HoverLink href="https://en.wikipedia.org/wiki/Adobe_Flash">
             Flash
           </HoverLink>{' '}
-          at a local agency in my hometown of{' '}
+          at a{' '}
+          <HoverLink href="https://web.archive.org/web/20100330150619/http://www.pixeldepo.com/">
+            local agency
+          </HoverLink>{' '}
+          in my hometown of{' '}
           <HoverLink href="https://www.google.com/maps?q=Dobrich+Bulgaria">
             Dobrich, Bulgaria
           </HoverLink>
-          . Quickly moved through PHP and JavaScript before discovering Ruby on
-          Rails. 👨‍💻
+          <br />
+          Quickly moved through PHP and JavaScript before discovering Ruby on
+          Rails 👨‍💻
         </Year>
         <Year year={2009}>
           First contribution to a major open source project -{' '}
-          <HoverLink href="http://prototypejs.org/">Prototype.js</HoverLink>.
+          <HoverLink href="http://prototypejs.org/">Prototype.js</HoverLink>
         </Year>
         <Year year={2010}>
           Finished my bachelor's in computer science from{' '}
@@ -80,7 +85,7 @@ export default function Page() {
           Open sourced{' '}
           <HoverLink href="https://github.com/RStankov/SearchObject">
             Search Object
-          </HoverLink>
+          </HoverLink>{' '}
           💎
         </Year>
         <Year year={2014}>
@@ -101,7 +106,7 @@ export default function Page() {
           Started organizing{' '}
           <HoverLink href="https://www.meetup.com/React-Sofia">
             React Sofia Meetup
-          </HoverLink>
+          </HoverLink>{' '}
           ⚛️
         </Year>
         <Year year={2017}>
@@ -114,7 +119,7 @@ export default function Page() {
           First talk at an international conference -{' '}
           <HoverLink href="https://www.wearedevelopers.com/">
             WeAreDevelopers
-          </HoverLink>
+          </HoverLink>{' '}
           🎤
           <br />
           <HoverLink href="https://www.producthunt.com/">
@@ -144,6 +149,13 @@ export default function Page() {
           </HoverLink>
           <br />
           <i>This was a busy year</i> 🤩
+        </Year>
+        <Year year={2019}>
+          Released{' '}
+          <HoverLink href="https://rubygems.org/gems/kitty_policy">
+            KittyPolicy
+          </HoverLink>{' '}
+          gem 💎
         </Year>
         <Year year={2020}>
           New <HoverLink href="https://rstankov.com">rstankov.com</HoverLink>
@@ -180,6 +192,12 @@ export default function Page() {
         <Year year={2025}>
           Angry Building rebranded as{' '}
           <HoverLink href="https://livo.me">LIVO</HoverLink> 🔲
+          <br />
+          Released{' '}
+          <HoverLink href="https://rubygems.org/gems/angry_batch">
+            AngryBatch
+          </HoverLink>{' '}
+          gem 💎
         </Year>
         <Year year={2026}>
           Became CTO of <HoverLink href="https://doczen.com">Doczen</HoverLink>{' '}
@@ -208,12 +226,12 @@ function Year({ year, children }: { year: number; children: React.ReactNode }) {
   return (
     <div className={tw('relative flex gap-5 pb-8 group')}>
       <div
-        className={tw('absolute top-8 bottom-0 bg-gray-900 group-last:hidden')}
+        className={tw('absolute top-8 bottom-0 bg-gray-200 group-last:hidden')}
         style={{ left: 27, width: 2 }}
       />
       <div
         className={tw(
-          'relative flex justify-center items-center bg-gray-900 w-14 h-8 rounded-lg font-bold text-gray-50 text-sm shrink-0',
+          'relative flex justify-center items-center bg-gray-100 border border-gray-200 w-14 h-8 rounded-lg font-semibold text-gray-600 text-sm shrink-0',
         )}>
         {year}
       </div>
