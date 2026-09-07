@@ -2,6 +2,25 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2026/09/12',
+    type: 'presentation',
+    name: 'Tips for Building Useful Agent Skills',
+    event: {
+      name: 'AI Industrial Summit 2026 – AI Next',
+      url: 'https://aisummit.technology/',
+    },
+    links: [
+      {
+        type: 'slides',
+        url: 'https://speakerdeck.com/rstankov/tips-for-building-useful-agent-skills',
+      },
+      {
+        type: 'code',
+        url: 'https://github.com/RStankov/talks-code/tree/master/2026.09.12%20-%20Tips%20for%20Building%20Useful%20Agent%20Skills',
+      },
+    ],
+  },
+  {
     date: '2025/11/29',
     type: 'presentation',
     name: 'Building LLM Powered Features',
