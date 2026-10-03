@@ -13,9 +13,7 @@ export default function Page() {
         />
         <div>
           <h1 className="text-3xl font-bold mb-1">Hey, I'm Rado 👋</h1>
-          <p className="text-gray-500 text-sm">
-            CTO · Developer · Speaker · Blogger
-          </p>
+          <p className="text-gray-500 text-sm">CTO · Developer · Speaker</p>
         </div>
       </div>
       <div className="flex flex-col gap-5 text-lg pt-6 leading-relaxed">
