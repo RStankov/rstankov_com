@@ -89,10 +89,7 @@ export default function Page() {
             </li>
             <li>
               Maintaining a couple of{' '}
-              <Link
-                href="https://github.com/RStankov"
-                className="font-semibold hover:text-brand"
-              >
+              <Link href="/projects" className="font-semibold hover:text-brand">
                 💻 open source
               </Link>{' '}
               projects like{' '}
