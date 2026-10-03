@@ -1,18 +1,38 @@
 'use client';
 
+import { Suspense } from 'react';
 import Appearance from './Appearance';
 import Switch from './Switch';
 import data from './data';
-import { useFilters, TYPES } from './utils';
+import { useFilters, filterAndGroupAppearances, TYPES } from './utils';
 import Link from '~/components/Link';
 
-export default function Page() {
-  const [filters, setFilters, gropedAppearances] = useFilters(data);
+const typeCounts = data.reduce(
+  (acc, { type }) => ({ ...acc, [type]: (acc[type] || 0) + 1 }),
+  {} as Record<string, number>,
+);
 
-  const typeCounts = data.reduce(
-    (acc, { type }) => ({ ...acc, [type]: (acc[type] || 0) + 1 }),
-    {} as Record<string, number>,
+export default function Page() {
+  return (
+    <Suspense fallback={<Appearances filters={[]} onSelect={noop} />}>
+      <FilteredAppearances />
+    </Suspense>
   );
+}
+
+function FilteredAppearances() {
+  const [filters, setFilters] = useFilters();
+
+  return <Appearances filters={filters} onSelect={setFilters} />;
+}
+
+interface IAppearancesProps {
+  filters: string[];
+  onSelect: ReturnType<typeof useFilters>[1];
+}
+
+function Appearances({ filters, onSelect }: IAppearancesProps) {
+  const groupedAppearances = filterAndGroupAppearances(data, filters);
 
   return (
     <div className="flex flex-col gap-6">
@@ -30,9 +50,9 @@ export default function Page() {
           </Link>
           .
         </p>
-        <Switch options={TYPES} selected={filters} onSelect={setFilters} />
+        <Switch options={TYPES} selected={filters} onSelect={onSelect} />
       </div>
-      {gropedAppearances.map(({ year, appearances }) => (
+      {groupedAppearances.map(({ year, appearances }) => (
         <section key={year}>
           <header className="flex items-center gap-3 mb-3">
             <h2 className="text-xl font-bold">{year}</h2>
@@ -50,3 +70,5 @@ export default function Page() {
     </div>
   );
 }
+
+function noop() {}

@@ -1,4 +1,4 @@
-import React from 'react';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { IAppearance } from './types';
 import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
@@ -28,19 +28,35 @@ interface IAppearancesOfYear {
 type IUseFilters = [
   IType[],
   (type: IType, options?: { include?: boolean }) => void,
-  IAppearancesOfYear[],
 ];
 
-export function useFilters(data: IAppearance[]): IUseFilters {
-  const [filters, setFilters] = React.useState<IType[]>([]);
+export function useFilters(): IUseFilters {
+  const router = useRouter();
+  const pathname = usePathname();
+  const filters = useSearchParams()
+    .getAll('type')
+    .filter((type) => TYPES.some(({ value }) => value === type));
 
   return [
     filters,
     (type: IType, options = {}) => {
-      setFilters(toggleFilter(type, filters, options.include));
+      const params = new URLSearchParams();
+      toggleFilter(type, filters, options.include).forEach((filter) =>
+        params.append('type', filter),
+      );
+      const query = params.toString();
+      router.replace(query ? `${pathname}?${query}` : pathname, {
+        scroll: false,
+      });
     },
-    groupAppearances(filterAppearances(data, filters)),
   ];
+}
+
+export function filterAndGroupAppearances(
+  appearances: IAppearance[],
+  types: IType[],
+): IAppearancesOfYear[] {
+  return groupAppearances(filterAppearances(appearances, types));
 }
 
 function toggleFilter(type: IType, filters: IType[], include?: boolean) {
@@ -57,7 +73,7 @@ function toggleFilter(type: IType, filters: IType[], include?: boolean) {
 
 function filterAppearances(
   appearances: IAppearance[],
-  types: any,
+  types: IType[],
 ): IAppearance[] {
   if (types.length === 0) {
     return appearances;
