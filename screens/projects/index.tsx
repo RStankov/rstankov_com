@@ -49,7 +49,7 @@ export default function Page() {
       <div>
         <h1 className="text-2xl font-bold mb-1">Projects</h1>
         <p className="text-gray-600">
-          Open source projects I maintain. Everything else lives on my{' '}
+          Open source projects I maintain. Older and smaller ones are on my{' '}
           <Link
             href="https://github.com/rstankov"
             target="_blank"
