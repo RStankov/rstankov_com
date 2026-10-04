@@ -13,7 +13,9 @@ export default function Page() {
         />
         <div>
           <h1 className="text-3xl font-bold mb-1">Hey, I'm Rado 👋</h1>
-          <p className="text-gray-500 text-sm">CTO · Developer · Speaker</p>
+          <p className="text-gray-500 text-sm">
+            CTO · Product builder · Developer
+          </p>
         </div>
       </div>
       <div className="flex flex-col gap-5 text-lg pt-6 leading-relaxed">
@@ -26,20 +28,11 @@ export default function Page() {
             >
               Doczen
             </Link>{' '}
-            🚀.
+            🚀, where we use AI to help companies automate and optimize their
+            internal processes.
           </div>
           <div>
-            I write the{' '}
-            <Link
-              href="https://tips.rstankov.com"
-              className="font-semibold hover:text-brand"
-            >
-              Rado&apos;s tips
-            </Link>{' '}
-            newsletter ✏️ 📭.
-          </div>
-          <div>
-            Previously, I was Co-Founder/CTO at{' '}
+            Before that, I was Co-Founder &amp; CTO at{' '}
             <Link
               href="https://livo.me"
               className="font-semibold hover:text-brand"
@@ -55,21 +48,26 @@ export default function Page() {
             </Link>{' '}
             😺.
           </div>
+          <div>
+            I&apos;ve been building products since 2002. These days I lead
+            teams and still ship features every day 💻.
+          </div>
         </div>
         <div>
-          In my spare time, I'm:
+          On the side, I&apos;m:
           <ul className="list-disc pl-4 space-y-1">
             <li>
-              Blogging at{' '}
+              Writing the{' '}
               <Link
-                href="https://blog.rstankov.com"
+                href="https://tips.rstankov.com"
                 className="font-semibold hover:text-brand"
               >
-                📝 blog.rstankov.com
-              </Link>
+                ✏️ Rado&apos;s tips
+              </Link>{' '}
+              newsletter.
             </li>
             <li>
-              Speaking at various{' '}
+              Speaking at{' '}
               <Link
                 href="/appearances"
                 className="font-semibold hover:text-brand"
@@ -82,13 +80,21 @@ export default function Page() {
                 className="font-semibold hover:text-brand"
               >
                 🎤 podcasts
-              </Link>
-              .
+              </Link>{' '}
+              (
+              <Link
+                target="_blank"
+                href="https://www.linkedin.com/in/radoslavstankov/"
+                className="font-semibold hover:text-brand"
+              >
+                ping me
+              </Link>{' '}
+              if you&apos;d like me as a guest on yours).
             </li>
             <li>
-              Maintaining a couple of{' '}
+              Maintaining{' '}
               <Link href="/projects" className="font-semibold hover:text-brand">
-                💻 open source
+                open source
               </Link>{' '}
               projects like{' '}
               <Link
@@ -102,14 +108,14 @@ export default function Page() {
                 href="https://github.com/producthunt/kitty-policy"
                 className="font-semibold hover:text-brand"
               >
-                😸 KittyPolicy.
+                😸 KittyPolicy
               </Link>
+              .
             </li>
           </ul>
         </div>
         <div>
-          I love discussing GraphQL, React, Ruby, engineering management, and
-          remote work. Find me on{' '}
+          I love discussing AI, engineering, and product. Find me on{' '}
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/radoslavstankov/"
