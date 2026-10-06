@@ -49,8 +49,8 @@ export default function Page() {
             😺.
           </div>
           <div>
-            I&apos;ve been building products since 2002. These days I lead
-            teams and still ship features every day 💻.
+            I&apos;ve been building products since 2002. These days I lead teams
+            and still ship features every day 💻.
           </div>
         </div>
         <div>
