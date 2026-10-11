@@ -2,6 +2,16 @@ import { IAppearance } from './types';
 
 export default [
   {
+    date: '2026/10/14',
+    type: 'presentation',
+    name: 'Code Review with Review Box',
+    event: {
+      name: 'Vibe Banica',
+      url: 'https://vibebanitsa.com/events/114',
+    },
+    links: [],
+  },
+  {
     date: '2026/09/12',
     type: 'presentation',
     name: 'Tips for Building Useful Agent Skills',
