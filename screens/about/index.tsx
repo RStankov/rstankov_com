@@ -198,6 +198,12 @@ export default function Page() {
         <Year year={2026}>
           Became CTO of <HoverLink href="https://doczen.com">Doczen</HoverLink>{' '}
           📦
+          <br />
+          Released{' '}
+          <HoverLink href="https://review-box.rstankov.com/">
+            Review Box
+          </HoverLink>{' '}
+          🗳️
         </Year>
       </div>
       <div className="text-center">
