@@ -57,6 +57,17 @@ export default function Page() {
           On the side, I&apos;m:
           <ul className="list-disc pl-4 space-y-1">
             <li>
+              Developing{' '}
+              <Link
+                target="_blank"
+                href="https://review-box.rstankov.com/"
+                className="font-semibold hover:text-brand"
+              >
+                🗳️ Review Box
+              </Link>
+              , a code review desktop app.
+            </li>
+            <li>
               Writing the{' '}
               <Link
                 href="https://tips.rstankov.com"
